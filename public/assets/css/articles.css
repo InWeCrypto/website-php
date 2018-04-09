@@ -170,6 +170,7 @@ html,body{
 .cont .pagination li:last-child a{
 	height: 100%;
 	width: 0.25rem;
+	color: transparent;
 	margin-left: 0.1rem;
 	display: inline-block;
 	background: transparent url(../images/page-right.png) no-repeat center / 0.07rem auto;
