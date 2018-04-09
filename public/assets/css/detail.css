@@ -1,0 +1,163 @@
+body {
+    padding: 0 !important;
+}
+.content {
+    margin:1.38rem 5.74rem 0rem 5.7rem;
+}
+.content .page{
+    width: 100%;
+    height: 100%;
+}
+.content .page .title{
+    height: auto;
+    font-size: .24rem;
+    font-family: "PingFangSC-Regular";
+    color:#333333;
+    line-height: 1em;
+}
+.content .page .box{
+    margin-top: .17rem;
+    height: .2rem;
+    font-size: .16rem;
+    font-family: "PingFangSC-Regular";
+    color:#959595;
+    line-height: .2rem;
+}
+.content .page .box .flag{
+    margin-left: .15rem;
+    padding: .03rem .06rem;
+    color: #EB6106;
+    border: 1px solid #EB6106;
+    border-radius: 4px;
+}
+.content .page .box .right{
+    line-height: .2rem;
+    height: 0.2rem;
+}
+.content .page .box .right a{
+    display: inline-block;
+    margin-right: 0.13rem;
+    cursor: pointer;
+}
+.content .page .box .right a.weiboIcon:hover{
+    background: url("../images/detail/web.png") no-repeat center center;
+    background-size: .15rem .15rem;
+}
+.content .page .box .right a.airportIcon:hover{
+    background: url("../images/detail/telegram.png") no-repeat center center;
+}
+.content .page .box .right a.twitterIcon:hover{
+    background: url("../images/detail/Twitter.png") no-repeat center center;
+    background-size: .15rem .15rem;
+}
+.content .page .box .right a.qqIcon:hover{
+    background: url("../images/detail/qq.png") no-repeat center center;
+    background-size: .14rem .15rem;
+}
+.content .page .box .right a.weixinIcon:hover{
+    background: url("../images/detail/wechat.png") no-repeat center center;
+}
+.content .page .box .right a.weiboIcon{
+    width: .27rem;
+    height: .2rem;
+    background: url("../images/detail/web5.png") no-repeat center center;
+    background-size: .15rem .13rem;
+}
+.content .page .box .right a.airportIcon{
+    width: .25rem;
+    height: .2rem;
+    background: url("../images/detail/telegram5.png") no-repeat center center;
+    background-size: .15rem .12rem;
+}
+.content .page .box .right a.twitterIcon{
+    width: .25rem;
+    height: .2rem;
+    background: url("../images/detail/Twitter5.png") no-repeat center center;
+    background-size: .15rem .12rem;
+}
+.content .page .box .right a.qqIcon{
+    width: .25rem;
+    height: .2rem;
+    background: url("../images/detail/qq5.png") no-repeat center center;
+    background-size: .11rem .14rem;
+}
+.content .page .box .right a.weixinIcon{
+    width: .25rem;
+    height: .2rem;
+    background: url("../images/detail/wechat5.png") no-repeat center center;
+    background-size: .25rem .2rem;
+}
+.content .page .article{
+    margin: .43rem 0 .59rem 0;
+    font-family: "PingFangSC-Regular";
+    word-break: break-word;
+}
+.content .page footer p{
+    color: #009857;
+    line-height: .36rem;
+    height: .36rem;
+    font-size: .16rem;
+    font-family: "PingFangSC-Regular";
+}
+.content .page .btn-box{
+    margin-top: .65rem;
+}
+.content .page .btn-box .btn{
+    margin-left: .3rem;
+    display: inline-block;
+    padding: .09rem .29rem;
+    background-color: #009857;
+    color: #FFF;
+    border: 1px solid #009857;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'PingFangSC-Regular';
+}
+.content .page .btn-box .btn:hover{
+    background-color: #FFF;
+    color: #009857;
+}
+.content .headerBox .navBox .eright .langChange .langBox p{
+    color: #000;
+}
+.content .headerBox .navBox .eright .langChange .langBox p.active{
+    color: #009857;
+}
+
+.content .headerBox .navBox.green{
+    background-color: #009857;
+}
+.content .headerBox .navBox.green .eright{
+    color: #FFF;
+}
+.content .headerBox .navBox.green .eright>div:hover{
+    color: #FFF;
+}
+.content .headerBox .navBox.green .eleft div{
+    display: none;
+}
+.content .headerBox .navBox.green .eleft{
+    width:2.42rem;
+    color: #FFF;
+    background: url('../images/detail/logo_Navigation_bar.png') no-repeat left center;
+    background-size: 2.42rem .42rem;
+}
+.pc .footer{
+    margin-top: 1.08rem;
+    height: .8rem;
+    width: 100%;
+    background-color: #F9F9F9;
+}
+.mobile .content {
+    margin: 1.57rem .43rem 0rem 0.5rem;
+}
+.mobile .content .page .title{
+    font-size: .4rem;
+    font-family: "PingFang SC";
+    font-weight: normal;
+    line-height: .42rem;
+    height: auto;
+}
+.mobile .content .page .box{
+    margin-top: .28rem;
+}

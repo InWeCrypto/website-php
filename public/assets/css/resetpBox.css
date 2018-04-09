@@ -1,0 +1,96 @@
+
+.resetp-box {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:15;
+}
+.resetp-box .resetp-bg {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.6);
+}
+.resetp-box .resetp-cont {
+	position:relative;
+	width:100%;
+	height:100%;
+	z-index:11;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+}
+.resetp-box .resetp-container {
+	background:#fff;
+	border-radius:0.04rem;
+	padding:0 0.38rem;
+	position:relative;
+	width:4.7rem;
+}
+.resetp-box .resetp-container .icon-close {
+	position:absolute;
+	right:0.1rem;
+	top:0.1rem;
+	cursor:pointer;
+}
+.resetp-box .resetp-container .resetp-title {
+	padding:0.3rem 0;
+	text-align:center;
+	font-size:0.2rem;
+}
+.resetp-box .resetp-container .resetp-item {
+	padding:0 0.2rem;
+	font-size:0.16rem;
+}
+.resetp-box .resetp-container .resetp-item .key {
+	width:0.8rem;
+	margin-right:0.1rem;
+}
+.resetp-box .resetp-container .resetp-item .value {
+	padding:0.2rem 0;
+	border-bottom:0.01rem solid #ececec;
+}
+.resetp-box .resetp-container .resetp-item .value input {
+	width:100%;
+	border:none;
+	outline:none;
+	display:block;
+	color:#ff571f;
+}
+.resetp-box .resetp-container .resetp-btn {
+	padding:0.5rem 0;
+	text-align:center;
+}
+.resetp-box .resetp-container .resetp-btn .btn {
+	width:90%;
+	background:#008f2e;
+	color:#fff;
+	font-size:0.16rem;
+	padding:0.08rem 0;
+	display:inline-block;
+	cursor:pointer;
+	border-radius:0.04rem;
+}
+.resetp-box .resetp-container .resetp-btn .btn.disable {
+	background:#9b9b9b;
+}
+.resetp-box .resetp-container .resetp-btn .btn.disable:hover {
+	background:#9b9b9b;
+}
+.resetp-box .resetp-container .resetp-btn .resetp-error {
+	margin-top:0.1rem;
+	color:#ff571f;
+}

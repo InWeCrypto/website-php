@@ -1,0 +1,486 @@
+body {
+    padding: 0 !important;
+  }
+  .e-hugeDownLoadBox {
+    position: relative;
+    margin: 0 ;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #333;
+  }
+  .e-hugeDownLoadBox img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .e-hugeDownLoadBox .imgCover1 {
+    position: absolute;
+    right: 0;
+    top: 2.9rem;
+    z-index: 10;
+    width: 3.42rem;
+  }
+  .e-hugeDownLoadBox .headerBox {
+    width: 100%;
+    background: #F7F7F7;
+    overflow: hidden;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox {
+    background: #F7F7F7;
+  }
+  /*.e-hugeDownLoadBox .headerBox .navBox {
+    display: flex;
+    justify-content: space-between;
+    background: #F7F7F7;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eleft {
+    display: flex;
+    align-items: center;
+    margin-left: 2.11rem;
+    cursor: pointer;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eleft .logobox {
+    width: .5rem;
+    height: .5rem;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eleft .logotextbox {
+    margin-left: .22rem;
+    font-size: .28rem;
+    color: #333;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eright {
+    display: flex;
+    margin-right: 2.19rem;
+    font-size: .2rem;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eright div {
+    margin-left: .66rem;
+    cursor: pointer;
+    font-family: "beatles";
+    letter-spacing: .15em;
+    font-weight: 200;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eright div.langChange {
+    position: relative;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eright div.langChange .langBox {
+    display: none;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eright div.langChange .langBox p {
+    margin-top: .06rem;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eright div.langChange .langBox p:hover {
+    color: #008f2e;
+  }
+  .e-hugeDownLoadBox .headerBox .navBox .eright div.langChange:hover .langBox {
+    display: block;
+  }*/
+  .e-hugeDownLoadBox .headerBox .mess1 {
+    margin-top: 1.72rem;
+    text-align: center;
+    font-size: .4rem;
+    line-height: .4rem;
+    font-weight: 200;
+  }
+  .e-hugeDownLoadBox .headerBox .mess2 {
+    margin-top: .19rem;
+    margin-bottom: 1.14rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #666;
+    font-weight: 200;
+  }
+  .e-hugeDownLoadBox .downloadBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5.5rem;
+    background: #fff;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload {
+    margin-right: 1.14rem;
+    height: 100%;
+    width: 3.48rem;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .mmess1 {
+    margin-top: 1.9rem;
+    font-size: .3rem;
+    font-weight: 200;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .mmess2 {
+    margin-top: .18rem;
+    font-size: .18rem;
+    font-weight: 200;
+    color: #999;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .54rem;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios {
+    width: 1.56rem;
+    height: .47rem;
+    box-sizing: border-box;
+    border-radius: .24rem;
+    border: 1px solid #FF5B26;
+    color: #FF5B26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios .icon {
+    display: block;
+    width: .28rem;
+    height: .31rem;
+    background: url("../images/dios.png") no-repeat center center / contain;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios .text {
+    margin-top: .03rem;
+    margin-left: .16rem;
+    font-size: .18rem;
+    line-height: .47rem;
+    font-weight: 200;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:hover,
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:active {
+    background: #FF5B26;
+    color: #fff;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:hover .icon,
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:active .icon {
+    background: url("../images/dios_ico.png") no-repeat center center / contain;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and {
+    width: 1.56rem;
+    height: .47rem;
+    box-sizing: border-box;
+    border-radius: .24rem;
+    border: 1px solid #008F2E;
+    color: #008F2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and .icon {
+    display: block;
+    width: .28rem;
+    height: .31rem;
+    background: url("../images/dandroid.png") no-repeat center center / contain;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and .text {
+    margin-top: .03rem;
+    margin-left: .16rem;
+    font-size: .18rem;
+    line-height: .47rem;
+    font-weight: 200;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:hover,
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:active {
+    background: #008F2E;
+    color: #fff;
+  }
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:hover .icon,
+  .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:active .icon {
+    background: url("../images/dandroid_ico.png") no-repeat center center / contain;
+  }
+  .e-hugeDownLoadBox .downloadBox .downloadPhoneImg {
+    margin-left: 1.14rem;
+    margin-top: .7rem;
+    height: 5.12rem;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox {
+    position: relative;
+    width: 100%;
+    height: 5.5rem;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .imgCover2 {
+    position: absolute;
+    left: 0;
+    top: 1.6rem;
+    z-index: 10;
+    width: 4.5rem;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .pcImg {
+    margin-right: .84rem;
+    margin-top: 1.23rem;
+    width: 5.51rem;
+    height: 3.76rem;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .pcDownload {
+    margin-left: .84rem;
+    height: 100%;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .pcDownload .mess1 {
+    margin-top: 1.92rem;
+    font-size: .3rem;
+    font-weight: 200;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .pcDownload .mess2 {
+    margin-top: .17rem;
+    font-size: .18rem;
+    font-weight: 200;
+    color: #999;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .56rem;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .ios {
+    margin-right: .3rem;
+    width: 1.56rem;
+    height: .47rem;
+    box-sizing: border-box;
+    border-radius: .24rem;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .ios .icon {
+    display: block;
+    width: .28rem;
+    height: .31rem;
+    background: url("../images/dmac_ico.png") no-repeat center center / contain;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .ios .text {
+    margin-top: .03rem;
+    margin-left: .16rem;
+    font-size: .18rem;
+    line-height: .47rem;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .and {
+    width: 1.56rem;
+    height: .47rem;
+    box-sizing: border-box;
+    border-radius: .24rem;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .and .icon {
+    display: block;
+    width: .28rem;
+    height: .31rem;
+    background: url("../images/dwindows.png") no-repeat center center / contain;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .and .text {
+    margin-top: .03rem;
+    margin-left: .16rem;
+    font-size: .18rem;
+    line-height: .47rem;
+  }
+  /*.e-hugeDownLoadBox .contactBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+  }
+  .e-hugeDownLoadBox .contactBox .titlev {
+    margin-top: .37rem;
+    text-align: center;
+    font-size: .3rem;
+    color: #FF5B26;
+  }
+  .e-hugeDownLoadBox .contactBox .imgBox {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-top: .25rem;
+  }
+  .e-hugeDownLoadBox .contactBox .iconBox {
+    margin-top: .53rem;
+    display: flex;
+    justify-content: center;
+  }
+  .e-hugeDownLoadBox .contactBox .iconBox li {
+    position: relative;
+    height: .22rem;
+    width: .28rem;
+    margin: 0 .2rem;
+    cursor: pointer;
+  }
+  .e-hugeDownLoadBox .contactBox .iconBox li.airportIcon .airportQrcode {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: -1.84rem;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    width: 1.64rem;
+    height: 1.64rem;
+    box-sizing: border-box;
+    padding: .07rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+  }
+  .e-hugeDownLoadBox .contactBox .iconBox li.airportIcon:hover .airportQrcode {
+    display: block;
+    opacity: 1;
+  }
+  .e-hugeDownLoadBox .contactBox .footerText {
+    margin-top: .3rem;
+    margin-bottom: .24rem;
+    text-align: center;
+    font-size: .14rem;
+  }*/
+  .mobile #e-hugeDownLoadBox .imgCover1 {
+    width: 2.96rem;
+    top: 2.35rem;
+  }
+  /*.mobile #e-hugeDownLoadBox .headerBox .navBox {
+    justify-content: center;
+  }
+  .mobile #e-hugeDownLoadBox .headerBox .navBox .eleft {
+    margin-left: 0;
+  }*/
+  .mobile #e-hugeDownLoadBox .headerBox .mess1 {
+    margin-top: 1.5rem;
+  }
+  .mobile #e-hugeDownLoadBox .headerBox .mess2 {
+    margin-bottom: .74rem;
+  }
+  .mobile #e-hugeDownLoadBox .headerBox .mess2.isEnTouch {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .mmess1 {
+    text-align: center;
+    margin-top: .48rem;
+    font-size: .3rem;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .mmess2 {
+    margin-top: .16rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #999;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox {
+    position: relative;
+    z-index: 15;
+    width: 100%;
+    justify-content: center;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios,
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and {
+    margin: 0 .23rem;
+    width: 2.38rem;
+    height: .72rem;
+    border-radius: .36rem;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios .icon,
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and .icon {
+    width: .43rem;
+    height: .48rem;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios .text,
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and .text {
+    line-height: .72rem;
+    font-size: .28rem;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:hover,
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:active {
+    color: #FF5B26;
+    background: #fff;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:hover .icon,
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .ios:active .icon {
+    background: url("../images/dios.png") no-repeat center center / contain;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:hover,
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:active {
+    color: #008F2E;
+    background: #fff;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:hover .icon,
+  .mobile #e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox .and:active .icon {
+    background: url("../images/dandroid.png") no-repeat center center / contain;
+  }
+  .mobile #e-hugeDownLoadBox .downloadBox .downloadPhoneImg {
+    margin-left: 0;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .imgCover2 {
+    width: 3.97rem;
+    top: 2.4rem;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcImg {
+    margin: 0;
+    margin-top: .7rem;
+    margin-bottom: .53rem;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .mess1 {
+    text-align: center;
+    margin-top: .48rem;
+    font-size: .3rem;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .mess2 {
+    margin-top: .16rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #999;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .btnBox {
+    width: 100%;
+    justify-content: center;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .btnBox .ios,
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .btnBox .and {
+    margin: 0 .23rem;
+    width: 2.38rem;
+    height: .72rem;
+    border-radius: .36rem;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .btnBox .ios .icon,
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .btnBox .and .icon {
+    width: .43rem;
+    height: .48rem;
+  }
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .btnBox .ios .text,
+  .mobile #e-hugeDownLoadBox .pcDownloadBox .pcDownload .btnBox .and .text {
+    line-height: .72rem;
+    font-size: .28rem;
+  }
+  

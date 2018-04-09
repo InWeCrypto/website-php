@@ -1,0 +1,105 @@
+
+.register-box {
+	background:#fff;
+	width:5.5rem;
+	border-radius:0.04rem;
+	position:relative;
+}
+.register-box .register-title {
+	font-size:0.24rem;
+	font-family:"Microsoft YaHei","impact";
+	font-weight:600;
+	color:#333;
+	padding:0.2rem 0 0.3rem 0;
+	position:relative;
+	text-align:center;
+}
+.register-box .register-title .icon-return {
+	position:absolute;
+	left:0.1rem;
+}
+.register-box .register-title .icon-return:hover {
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+.register-box .register-title .icon-close {
+	position:absolute;
+	right:0.2rem;
+	top:0.2rem;
+	cursor:pointer;
+}
+.register-box .register-cont {
+	padding:0.3rem 1rem;
+}
+.register-box .register-cont .register-item {
+	padding:0.16rem 0;
+	text-align:left;
+	border-bottom:0.01rem solid #ececec;
+}
+.register-box .register-cont .register-item .register-name {
+	width:1.2rem;
+}
+.register-box .register-cont .register-item .register-input {
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;
+}
+.register-box .register-cont .register-item .register-input .input {
+	width:100%;
+	border:none;
+	outline:none;
+	box-shadow:none;
+	border-radius:0;
+	color:#333;
+}
+.register-box .register-cont .register-item .btn1 {
+	width:0.6rem;
+	height:0.24rem;
+	text-align:center;
+	background:#ff571f;
+	color:#fff;
+	border:none;
+	border-radius:0.04rem;
+	font-size:0.12rem;
+	cursor:pointer;
+	outline:none;
+}
+.register-box .register-cont .register-item .btn1:hover {
+	background:#ff7c50;
+}
+.register-box .register-cont .register-item .btn2 {
+	outline:none;
+	width:0.6rem;
+	height:0.24rem;
+	text-align:center;
+	background:#b1afaf;
+	color:#fff;
+	border:none;
+	border-radius:0.04rem;
+	font-size:0.12rem;
+	line-height:0.2rem;
+	cursor:pointer;
+}
+.register-box .register-cont .register-btn {
+	padding:0.5rem 0 0.5rem 0;
+}
+.register-box .register-cont .register-btn .btn {
+	background:#008f2e;
+	width:100%;
+	padding:0.09rem 0;
+	text-align:center;
+	color:#fff;
+	border-radius:0.04rem;
+	cursor:pointer;
+	font-size:0.16rem;
+}
+.register-box .register-cont .register-btn .btn.disable {
+	background:#9b9b9b;
+}
+.register-box .register-cont .register-btn .btn.disable:hover {
+	background:#9b9b9b;
+}
+.register-box .register-cont .register-btn .btn:hover {
+	background:#017225;
+}

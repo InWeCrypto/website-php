@@ -1,0 +1,33 @@
+
+.fastsign-box {
+	background:#fff;
+	width:5.5rem;
+	border-radius:0.04rem;
+	position:relative;
+	text-align:center;
+}
+.fastsign-box .fastsign-title {
+	font-size:0.24rem;
+	font-family:"Microsoft YaHei","impact";
+	font-weight:600;
+	color:#333;
+	padding:0.2rem 0 0.6rem 0;
+	position:relative;
+}
+.fastsign-box .fastsign-title .icon-return {
+	position:absolute;
+	left:0.1rem;
+}
+.fastsign-box .fastsign-qcode {
+	padding:0.4rem 0 0.18rem 0;
+}
+.fastsign-box .fastsign-qcode .img {
+	width:2.24rem;
+	height:2.24rem;
+}
+.fastsign-box .t1 {
+	padding-bottom:1rem;
+	color:#ff571f;
+}
+
+

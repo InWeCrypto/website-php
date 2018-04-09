@@ -1,0 +1,99 @@
+
+
+.sign-in {
+	background:#fff;
+	width:5.5rem;
+	border-radius:0.04rem;
+	position:relative;
+}
+.sign-in .icon-close {
+	position:absolute;
+	right:0.2rem;
+	top:0.2rem;
+}
+.sign-in .sign-in-content {
+	text-align:center;
+	box-sizing:border-box;
+	padding:0 1rem;
+}
+.sign-in .sign-in-title {
+	font-size:0.24rem;
+	font-family:"Microsoft YaHei","impact";
+	font-weight:600;
+	color:#333;
+	padding:0.2rem 0 0.6rem 0;
+}
+.sign-in .sign-in-item {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:0.2rem 0;
+	border-bottom:0.01rem solid #ececec;
+	font-size:0.16rem;
+	position:relative;
+}
+.sign-in .sign-in-item .item-name {
+	width:0.8rem;
+	color:#262626;
+	text-align:left;
+}
+.sign-in .sign-in-item .item-input {
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;
+}
+.sign-in .sign-in-item .item-input .input {
+	width:100%;
+	border:none;
+	outline:none;
+	box-shadow:none;
+	color:#333;
+}
+.sign-in .forget {
+	text-align:right;
+	padding:0.05rem 0;
+	color:#acacac;
+}
+.sign-in .btn-box {
+	padding:0.44rem 0 0.18rem 0;
+}
+.sign-in .btn-box .signbtn {
+	padding:0.09rem 0;
+	width:100%;
+	background:#008f2e;
+	color:#fff;
+	font-size:0.16rem;
+	display:inline-block;
+	border-radius:0.04rem;
+}
+.sign-in .btn-box .signbtn.disable {
+	background:#9b9b9b;
+}
+.sign-in .btn-box .signbtn.disable:hover {
+	background:#9b9b9b;
+}
+.sign-in .btn-box .signbtn:hover {
+	background:#017225;
+}
+.sign-in .fast-sign {
+	font-size:0.16rem;
+	color:#acacac;
+}
+.sign-in .go-register {
+	padding:0.54rem 0 0.2rem 0;
+	text-align:right;
+}
+.sign-in .go-register .register-text {
+	position:relative;
+	right:-0.8rem;
+	color:#ff571f;
+	cursor:pointer;
+}
+
+

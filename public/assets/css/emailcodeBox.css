@@ -1,0 +1,124 @@
+
+.emailcode-box {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:10;
+}
+.emailcode-box .emailcode-bg {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+}
+.emailcode-box .emailcode-content {
+	position:relative;
+	width:100%;
+	height:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+}
+.emailcode-box .emailcode-container {
+	background:#fff;
+	border-radius:0.04rem;
+	position:relative;
+	padding:0 0.2rem;
+	width:4.6rem;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.emailcode-box .emailcode-container .icon-close {
+	position:absolute;
+	right:0.1rem;
+	top:0.1rem;
+	cursor:pointer;
+}
+.emailcode-box .emailcode-container .emailcode-title {
+	padding:0.3rem 0;
+	font-size:0.2rem;
+	text-align:center;
+}
+.emailcode-box .emailcode-container .orange {
+	color:#ff571f;
+}
+.emailcode-box .emailcode-container .text-under {
+	text-decoration:underline #ff571f;
+	cursor:pointer;
+}
+.emailcode-box .emailcode-container .emailcode-input {
+	padding:0.1rem;
+	box-sizing:border-box;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+}
+.emailcode-box .emailcode-container .emailcode-input .code-item {
+	height:0.5rem;
+	width:0.44rem;
+	border-radius:0.04rem;
+	background:#f7f7f7;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	margin:0.1rem;
+	box-sizing:border-box;
+}
+.emailcode-box .emailcode-container .emailcode-input .code-item.cur {
+	box-shadow:0 0 10px #ff571f;
+}
+.emailcode-box .emailcode-container .emailcode-btn {
+	padding:0.08rem 0 0.2rem 0;
+	text-align:center;
+}
+.emailcode-box .emailcode-container .emailcode-btn .emailsure {
+	border-radius:0.04rem;
+	background:#008f2e;
+	display:inline-block;
+	width:3.3rem;
+	padding:0.08rem 0;
+	color:#fff;
+	cursor:pointer;
+}
+.emailcode-box .emailcode-container .emailcode-error {
+	padding-bottom:0.2rem;
+	text-align:center;
+	font-size:0.12rem;
+	color:#ff571f;
+}
+.emailcode-box .emailcode-container .emailcode-input-item {
+	position:fixed;
+	-webkit-transform:translate3d(-10000px,0,0);
+	transform:translate3d(-10000px,0,0);
+}
