@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="/assets/css/detail.css">
     <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/js/util.js"></script>
-    <title>资讯详情</title>
+    <title>InWeCrypto - {{ $title }}</title>
 </head>
 
 <body class="pc pace-done">
