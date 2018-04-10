@@ -60,7 +60,7 @@
             </div>
             <footer>
                 <p>
-                    <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;people already read</p>
+                    <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;Readed</p>
                 <div class='btn-box clearfix pcView'>
                     <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWe</span>
                     <span class="btn right" onclick="location.href='./download.html'">Download</span>
