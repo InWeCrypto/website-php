@@ -40,5 +40,5 @@ Route::group(['prefix' => $locale], function ($router) use ($locale) {
     $router->any('/search/all', 'ArticleController@search');
 });
 
-$router->any('/newsdetail', 'ArticleController@show');
 $router->any('/newsdetail2', 'ArticleController@show');
+$router->any('/newsdetail', 'ArticleController@show');
