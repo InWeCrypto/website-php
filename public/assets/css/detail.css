@@ -14,8 +14,9 @@ body {
     font-family: "PingFangSC-Regular";
 }
 .content .page img{
-    margin: .44rem auto .43rem auto;
+    margin: 0 auto;
     max-width: 100%;
+    display: block;
 }
 .content .page .title{
     height: auto;
