@@ -120,6 +120,12 @@
                     }
                 })
             }
+
+            if(IsTouchDevice){
+                $(".headerBox").hide();
+                $(".btn-box.clearfix").hide();
+                $(".mobile .content .page").css("margin-top","0.5rem");
+            }
         })
     </script>
     <script src="/assets/js/share.js?{{ $jss_version }}"></script>

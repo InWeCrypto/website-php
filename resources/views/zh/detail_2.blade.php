@@ -119,6 +119,15 @@
                         $(".headerBox .navBox").removeClass("active");
                     }
                 })
+
+
+                
+                if(IsTouchDevice){
+                    $(".headerBox").hide();
+                    $(".btn-box.clearfix").hide();
+                    $(".mobile .content .page").css("margin-top","0.5rem");
+                }
+
             }
         })
     </script>
