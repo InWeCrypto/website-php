@@ -107,17 +107,16 @@
                 // });
                 var offsetTop = parseInt($('.page').offset().top) + 100;
                 $(".headerBox .navBox").addClass("active");
-
-
-
-
-                if(IsTouchDevice){
-                    $(".headerBox").hide();
-                    $(".btn-box.clearfix").hide();
-                    $(".mobile .content .page").css("margin-top","0.5rem");
-                }
-
             }
+
+
+
+            if(IsTouchDevice){
+                $(".headerBox").hide();
+                $(".btn-box.clearfix").hide();
+                $(".mobile .content .page").css("margin-top","0.5rem");
+            }
+
         })
     </script>
     <script src="/assets/js/share.js?{{ $jss_version }}"></script>

@@ -42,7 +42,7 @@
 </head>
 <style>
 	.headerBox .navBox {
-		
+
 		height: 0.7rem;
 	}
 
@@ -118,7 +118,7 @@
 			var theEvent = e || window.event;
 		　var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
 			if (code == 13){
-				location.href="/en/search/all?k="+$(".headerBox input").val();
+				location.href="/zh/search/all?k="+$(".headerBox input").val();
 			}
 		});
 	})
