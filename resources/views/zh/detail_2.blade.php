@@ -73,11 +73,6 @@
                 <span class="btn right" onclick="location.href='/zh/download'">下载APP</span>
             </div>
         </footer>
-        <div class="globalFooter">
-            <div class="footer pcView">
-                <script src="/template/footer.js?{{ $jss_version }}"></script>
-            </div>
-        </div>
     </div>
     <script>
         var search = function (e) {

@@ -148,9 +148,6 @@
         </div>
         <a href="/en/download">Download</a>
     </div>
-    <div class="footer pcView">
-        <script src="/template/footer.js?{{ $jss_version }}"></script>
-    </div>
 </body>
 <script>
     var search = function (e) {
