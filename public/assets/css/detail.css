@@ -37,10 +37,14 @@ body {
 }
 .content .page .box .flag{
     margin-left: .15rem;
-    padding: .03rem .06rem;
+    padding: .03rem .13rem;
+    font-size: 0.14rem;
     color: #EB6106;
     border: 1px solid #EB6106;
     border-radius: 4px;
+}
+.mobile .content .page .box .flag{
+    font-size: 0.24rem;
 }
 .content .page .box .right{
     line-height: .2rem;

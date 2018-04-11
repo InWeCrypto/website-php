@@ -5,11 +5,11 @@ if(pathname== '/newsdetail2' || pathname == '/newsdetail'){
     pathname = pathname + location.search;
 }
 document.writeln("<div class=\'navBox\'>");
-document.writeln("  <div onClick='location.href=\"/en/home\"' class=\'eleft\'>");
-document.writeln("    <div class=\'logobox\'>");
+document.writeln("  <div class=\'eleft\'>");
+document.writeln("    <div onClick='location.href=\"/en/home\"' class=\'logobox\'>");
 document.writeln("      <img src=\'/assets/images/eicon1.png\' alt=\'\'>");
 document.writeln("    </div>");
-document.writeln("    <div class=\'logotextbox\'>");
+document.writeln("    <div onClick='location.href=\"/en/home\"' class=\'logotextbox\'>");
 document.writeln("			<img class=\'white\' src=\'/assets/images/eInWeCrypto-logo.png\' alt=\'\'>");
 document.writeln("    	<img class=\'black\' src=\'/assets/images/logo_Navigationbar.png\' alt=\'\'>");
 document.writeln("		</div>");
