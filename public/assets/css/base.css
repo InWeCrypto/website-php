@@ -1686,6 +1686,9 @@ html body.pace-done #root .mView{
 	cursor:pointer;
 	color: #898989;
 }
+.mobile .contactBox .iconBox li {
+    font-size: 0.22rem;
+}
 .contactBox .iconBox li a{
 	color: #898989;
 }

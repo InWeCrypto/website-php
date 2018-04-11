@@ -99,9 +99,9 @@
 		<a href="/en/download">下载app</a>
 	</div>
 
-	<div class="globalFooter">
+
 		<script src="/template/footer.js?{{ $jss_version }}"></script>
-	</div>
+	
 <script>
 
 //	$(".input input").val(decodeURIComponent(location.search.replace("?kw=","")));

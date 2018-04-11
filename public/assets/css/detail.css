@@ -121,6 +121,9 @@ body {
     font-size: .16rem;
     font-family: "PingFangSC-Regular";
 }
+.mobile .content footer p{
+    font-size: .22rem;
+}
 .content .btn-box{
     margin-top: .65rem;
 }
