@@ -27,18 +27,21 @@ html,body{
 }
 .cont .input input{
 	width:6.66rem;
+	width: 100%;
 	height:0.54rem; 
 	background:rgba(255,255,255,1);
 	border-radius: 0.04rem; 
-	border: solid 1px #e5e5e5;
-	box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.1);
+	border: solid 1px #D2D2D2;
+	/*box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.1);*/
 	margin: 0 auto;
 	outline:none;
 	padding: 0 0.1rem;
 	display: block;
+	box-sizing: border-box;
 }
 .cont .input input:focus{
-	box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.22);
+	/*box-shadow:0.04rem 0.01rem 0.13rem rgba(0,0,0,0.22);*/
+	border: solid 1px #EB6106;
 }
 .cont .keyWords{
 	height: 0.8rem;
@@ -180,8 +183,8 @@ html,body{
 }
 a.join{
 	display: block;
-	height: 0.67rem;
-	width: 0.67rem;
+	height: 1rem;
+	width: 1rem;
 	position: fixed;
 	bottom: 1rem;
 	right: 2rem;
@@ -363,3 +366,52 @@ body.mobile{
 .mobile .headerBox input{
 	display: none;
 }
+
+
+
+.page-index	.headerBox .navBox .eleft .logotextbox .black{
+	display: none;
+}
+.page-index	.headerBox .navBox .eleft .logobox{
+	display: none;
+}
+.page-index	.headerBox .navBox.active .eleft .logobox{
+	display: block;
+}
+.page-index	.headerBox .navBox.active .eleft .logotextbox .black{
+	display: block;
+}
+.page-index	.headerBox .navBox{
+	justify-content: flex-start;
+}
+.page-index	.headerBox .navBox.active{
+	justify-content: space-between;
+}
+.page-index	.headerBox .navBox input.search {
+  width: 4.45rem;
+  height: 0.48rem;
+  background: rgba(255,255,255,1);
+  border: solid 1px #D2D2D2;
+  margin-left: 0.2rem;
+  padding: 0 0.1rem;
+  outline:none;
+  box-sizing: border-box;
+  display: none;
+}
+.page-index	.headerBox .navBox.active input.search{
+	display: block;
+/*	animation: searchInput 0.5s ease-in-out;*/
+}
+@keyframes searchInput {
+	0% {opacity: 0;height: 0;}
+	100% {opacity: 1;height: 0.48rem}
+}
+.page-index	.headerBox .navBox input.search:focus{
+	border: solid 1px #EB6106;
+}
+.cont .keyWords{
+	display: block;
+}
+/*	.cont .keyWords.active{
+		display: none;
+	}*/

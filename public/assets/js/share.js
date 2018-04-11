@@ -3,11 +3,6 @@ $(function() {
     var _height = '500px';
     var _top= '50px';
     var _left= '50px';
-    var bodyHeight = parseInt(document.body.clientHeight);
-    var clientHeight = parseInt(document.documentElement.clientHeight);
-    if(bodyHeight >= clientHeight) {
-        $('.navBox').addClass('green');
-    }
     $('.pc').off().on('click', '.js-weibo', function(e) {
         event.preventDefault();
         var _shareUrl = 'http://v.t.sina.com.cn/share/share.php?&appkey=895033136';     //真实的appkey，必选参数

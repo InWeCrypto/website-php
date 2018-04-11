@@ -637,6 +637,7 @@ html {
 }
 body {
 	font-size:0.14rem;
+	min-width: 800px;
 }
 /* iphone 6 */
 html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,input,textarea,select,button,hr,blockquote,pre {
@@ -677,7 +678,6 @@ textarea {
 	vertical-align:top;
 }
 img {
-    max-width:100%;
 	vertical-align:middle;
 }
 ins {
@@ -1225,6 +1225,18 @@ html,body {
 	-ms-flex-pack:center;
 	justify-content:center;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*手机*/
 .m-header-box,.m-header-hold {
 	display:none;
 }
@@ -1467,6 +1479,10 @@ html body.pace-done #root .mView{
 	-ms-flex-align:end;
 	align-items:flex-end;
 	background: #ffffff;
+	transition: all 0.5 ease-in;
+}
+.headerBox .navBox *{
+	transition: all 0.5 ease-in;
 }
 .headerBox .navBox .eleft {
 	margin-left:2.17rem;
@@ -1492,11 +1508,12 @@ html body.pace-done #root .mView{
 	position:relative;
   margin-left: .20rem;
   width: 1.84rem;
+  width: auto;
   height: .23rem;
 }
 .headerBox .navBox .eleft .logotextbox img{
 	display: none;
-
+	
 }
 .headerBox .navBox .eleft .logotextbox .black{
 	display: block;
@@ -1519,11 +1536,12 @@ html body.pace-done #root .mView{
 	font-family:"beatles";
 }
 .headerBox .navBox .eright div {
-	margin-left:.95rem;
+	margin-left:.5rem;
 	cursor:pointer;
 	font-family:"beatles";
 	letter-spacing:.15em;
 	font-weight:200;
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 .headerBox .navBox .eright div:hover{
 	color: #009857;
@@ -1648,11 +1666,13 @@ html body.pace-done #root .mView{
 	width: 0.3rem;
 }
 .contactBox .footerText{
-	float: right;
+	float: left;
 	margin: 0;
 	color: #333333;
 	font-size: 0.14rem;
 	margin-right: 1.4rem;
+	margin-top: 0.08rem;
+  margin-left: 0.15rem;
 }
 .contactBox .iconBox{
 	margin: 0;
@@ -1730,4 +1750,19 @@ html body.pace-done #root .mView{
     text-align: center;
     line-height: 0.5rem;
     color: #898989;
+}
+.globalFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+}
+.globalFooter .contactBox{
+    min-width: 754px;
+}
+.navBox{
+    min-width: 754px;
 }

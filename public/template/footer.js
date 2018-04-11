@@ -1,5 +1,6 @@
 document.writeln("<div class=\'contactBox\' id=\'contactBox\'>");
 document.writeln("      <img class=\'logo\' src=\'/assets/images/eicon1.png\' />");
+document.writeln("      <div class=\'footerText \'>©InWeCrypto 2018</div>");
 document.writeln("      <div class=\'ct\'>");
 document.writeln("      	<ul class=\'iconBox\'>");
 document.writeln("      	  <li class=\'airportIcon\'>");
@@ -28,6 +29,5 @@ document.writeln("      	      Discord");
 document.writeln("      	    </a>");
 document.writeln("      	  </li>");
 document.writeln("      	</ul>");
-document.writeln("      	<div class=\'footerText \'>©InWeCrypto 2018</div>");
 document.writeln("      </div>");
 document.writeln("    </div>");

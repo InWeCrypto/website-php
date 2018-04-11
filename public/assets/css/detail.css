@@ -1,12 +1,24 @@
 body {
     padding: 0 !important;
+    min-width: 800px;
+}
+.globalFooter .contactBox{
+    min-width: 754px;
 }
 .content {
-    margin:1.38rem 5.74rem 0rem 5.7rem;
-}
-.content .page{
     width: 100%;
     height: 100%;
+}
+.content .navBox{
+    min-width: 754px;
+}
+.content .page{
+    margin:1.38rem 5.74rem 0rem 5.7rem;
+    font-family: "PingFangSC-Regular";
+}
+.content .page img{
+    margin: .44rem auto .43rem auto;
+    max-width: 100%;
 }
 .content .page .title{
     height: auto;
@@ -89,20 +101,31 @@ body {
 }
 .content .page .article{
     margin: .43rem 0 .59rem 0;
-    font-family: "PingFangSC-Regular";
     word-break: break-word;
+   margin-bottom: 4rem;
 }
-.content .page footer p{
+.content .page .article p{
+    margin: .18rem 0;
+    font-size: .16rem;
+    line-height: .44rem;
+    height: auto;
+    font-family: "PingFangSC-Regular";
+}
+.content footer{
+    margin: .99rem 5.74rem 0rem 5.7rem;
+    min-width: 316px;
+}
+.content footer p{
     color: #009857;
     line-height: .36rem;
     height: .36rem;
     font-size: .16rem;
     font-family: "PingFangSC-Regular";
 }
-.content .page .btn-box{
+.content .btn-box{
     margin-top: .65rem;
 }
-.content .page .btn-box .btn{
+.content .btn-box .btn{
     margin-left: .3rem;
     display: inline-block;
     padding: .09rem .29rem;
@@ -113,9 +136,13 @@ body {
     cursor: pointer;
     font-family: 'PingFangSC-Regular';
 }
-.content .page .btn-box .btn:hover{
+.content .btn-box .btn:hover{
     background-color: #FFF;
     color: #009857;
+}
+.content .headerBox .navBox{
+    position: fixed;
+    z-index: 10;
 }
 .content .headerBox .navBox .eright .langChange .langBox p{
     color: #000;
@@ -142,8 +169,8 @@ body {
     background: url('../images/detail/logo_Navigation_bar.png') no-repeat left center;
     background-size: 2.42rem .42rem;
 }
-.pc .footer{
-    margin-top: 1.08rem;
+.content .footer{
+    margin-top: .99rem;
     height: .8rem;
     width: 100%;
     background-color: #F9F9F9;
@@ -160,4 +187,47 @@ body {
 }
 .mobile .content .page .box{
     margin-top: .28rem;
+}
+/*.page-index	.headerBox .navBox .eleft .logotextbox .black{
+	display: none;
+}
+.page-index	.headerBox .navBox .eleft .logobox{
+	display: none;
+}*/
+.page-index	.headerBox .navBox.active .eleft .logobox{
+	display: block;
+}
+.page-index	.headerBox .navBox.active .eleft .logotextbox .black{
+	display: block;
+}
+.page-index	.headerBox .navBox{
+	justify-content: flex-start;
+}
+.page-index	.headerBox .navBox.active{
+	justify-content: space-between;
+}
+.page-index	.headerBox .navBox input.search {
+  width: 4.45rem;
+  height: 0.48rem;
+  background: rgba(255,255,255,1);
+  border: solid 1px #D2D2D2;
+  margin-left: 0.2rem;
+  padding: 0 0.1rem;
+  outline:none;
+  box-sizing: border-box;
+  display: none;
+}
+.page-index	.headerBox .navBox.active input.search{
+	display: block;
+/*	animation: searchInput 0.5s ease-in-out;*/
+}
+@keyframes searchInput {
+	0% {opacity: 0;height: 0;}
+	100% {opacity: 1;height: 0.48rem}
+}
+.page-index	.headerBox .navBox input.search:focus{
+	border: solid 1px #EB6106;
+}
+.cont .keyWords{
+	display: block;
 }

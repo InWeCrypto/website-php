@@ -2,35 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>InWeCrypto IOS(App) Download</title>
     <meta name="renderer" content="webkit" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/downios.css" />
-    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/js/util.js"></script>
-    <title>ios下载</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="description" content="How to install InWeCrypto app (iOS) 1.Download App 2. Trusted Root Certificate 3. Open the App">
+    <!--  twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@inwecryptocom" />
+    <meta property="twitter:title" content="InWeCrypto IOS Download" />
+    <meta property="twitter:description" content="How to install InWeCrypto app (iOS) 1.Download App 2. Trusted Root Certificate 3. Open the App"
+    />
+    <meta property="twitter:url" content="/assets/images/eicon1.png" />
+    <!-- End -->
+
+    <!--  OpenGraph -->
+    <meta property="fb:app_id" content="inwecryptocom" />
+    <meta property="og:site_name" content="inwecrypto">
+    <meta property="og:title" content="InWeCrypto IOS下载" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ Request::path() }}" />
+    <meta property="og:image" content="/assets/images/eicon1.png" />
+    <meta property="og:description" content="How to install InWeCrypto app (iOS) 1.Download App 2. Trusted Root Certificate 3. Open the App"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/downios.css" />
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/util.js"></script>
 </head>
 
 <body style="padding-left: 54px; padding-right: 54px;" class="pc pace-done">
     <div class="container m-container e-hugeDownIosBox" id="e-hugeDownIosBox">
         <div class="imgCover1">
-            <img src="../assets/images/dyou_yingying.png" alt="" />
+            <img src="/assets/images/dyou_yingying.png" alt="" />
         </div>
         <div class="headerBox">
-            <script src="../template/top.js"></script>
+            <script src="/template/top-en.js"></script>
             <p class="mess1">How to install InWeCrypto app (iOS)?</p>
             <p class="mess2">
-                <img src="../assets/images/fiosqrcode.png" alt="" />
+                <img src="/assets/images/fiosqrcode.png" alt="" />
             </p>
             <p class="mess3">Scan the QR code to download</p>
             <button class="downloadIosBtn mView" onclick="location.href='https://www.pgyer.com/InWeCrypto'">Download</button>
         </div>
         <div class="downloadBox" id="downloadBox">
             <div class="downloadPhoneImg">
-                <img src="../assets/images/fdownloadapp.png" alt="" />
+                <img src="/assets/images/fdownloadapp.png" alt="" />
             </div>
             <div class="mobileDownload">
                 <p class="mmess1">1.Download App</p>
@@ -43,10 +71,10 @@
         </div>
         <div class="pcDownloadBox">
             <div class="imgCover2">
-                <img src="../assets/images/eicon18.png" alt="" />
+                <img src="/assets/images/eicon18.png" alt="" />
             </div>
             <div class="imgCover3">
-                <img src="../assets/images/eicon19.png" alt="" />
+                <img src="/assets/images/eicon19.png" alt="" />
             </div>
             <div class="pcDownload">
                 <p class="mess1">2. Trusted Root Certificate</p>
@@ -57,12 +85,12 @@
                 </p>
             </div>
             <div class="pcImg">
-                <img src="../assets/images/fapplication_book.png" alt="" />
+                <img src="/assets/images/fapplication_book.png" alt="" />
             </div>
         </div>
         <div class="downloadBox " id="openApp">
             <div class="downloadPhoneImg">
-                <img src="../assets/images/fopenapp.png" alt="" />
+                <img src="/assets/images/fopenapp.png" alt="" />
             </div>
             <div class="mobileDownload">
                 <p class="mmess1">3. Open the App</p>
@@ -71,7 +99,7 @@
                 </p>
             </div>
         </div>
-        <script src="../template/footer.js"></script>
+        <script src="/template/footer.js"></script>
     </div>
 </body>
 

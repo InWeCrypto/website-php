@@ -20,12 +20,12 @@ switch ($locale = substr(Request::path(), 0, 2)) {
         $locale = App::getLocale();
 }
 Route::any('/', function () use ($locale) {
-    return redirect($locale);
+    return redirect($locale . '/home');
 });
 
 Route::group(['prefix' => $locale], function ($router) use ($locale) {
-    $router->any('/', function () use ($locale) {
-        return view($locale . '.' . 'index');
+    $router->any('/platform', function () use ($locale) {
+        return view($locale . '.' . 'platform');
     });
     $router->any('/download', function() use ($locale) {
         return view($locale . '.' . 'download');
@@ -35,7 +35,7 @@ Route::group(['prefix' => $locale], function ($router) use ($locale) {
     });
 
 
-    $router->any('/articles', 'ArticleController@index');
+    $router->any('/home', 'ArticleController@index');
 
     $router->any('/search/all', 'ArticleController@search');
 });

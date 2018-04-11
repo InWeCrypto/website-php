@@ -45,6 +45,8 @@ body,html {
 }
 .e-hugeBox .headerBox .navBox .eleft .logotextbox .white{
 	display: block;
+	height: 100%;
+  width: auto;
 }
 .e-hugeBox .headerBox .navBox .eright div.langChange .langBox p{
 	color: #ffffff;

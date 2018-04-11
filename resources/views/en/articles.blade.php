@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>InWeCrypto</title>
-  <meta name="renderer" content="webkit" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="icon" type="image/x-icon" href="./static/logo.png">
-  <link rel="stylesheet" href="/assets/css/base.css" />
-  <link rel="stylesheet" href="/assets/css/articles.css" />
-  <script type="text/javascript" src="/assets/js/jquery.min.js" ></script>
-  <script type="text/javascript" src="/assets/js/util.js" ></script>
-</head>
-<body class="pace-done">
-  <div class="headerBox">
-    <script src="/template/top-en.js"></script>
-  </div>
+    <meta charset="utf-8">
+  	<title>InWeCrypto-Community</title>
+  	<meta name="renderer" content="webkit" />
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="mobile-web-app-capable" content="yes">
+  	<meta name="apple-touch-fullscreen" content="yes">
+  	<meta name="screen-orientation" content="portrait">
+  	<meta name="full-screen" content="yes">
+  	<meta name="browsermode" content="application">
+  	<meta name="x5-orientation" content="portrait">
+  	<meta name="x5-fullscreen" content="true">
+  	<meta name="x5-page-mode" content="app">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  	<meta name="description" content="InWe-community">
+  	<meta property="description" content=""/>
+  	<!--  twitter -->
+  	<meta property="twitter:card" content="summary" />
+  	<meta property="twitter:site" content="@inwecryptocom" />
+  	<meta property="twitter:title" content="inwecrypto-community" />
+  	<meta property="twitter:description" content="InWe-community" />
+  	<meta property="twitter:url" content="/assets/images/eicon1.png" />
+  	<!-- End -->
 
-  <div class="cont">
-  	<h1 class="hidden" title="inwecrypto"> inwecrypto </h1>
+  	<!--  OpenGraph -->
+  	<meta property="fb:app_id" content="inwecryptocom" />
+  	<meta property="og:site_name" content="inwecrypto">
+  	<meta property="og:title" content="inwecryptocom" />
+  	<meta property="og:type" content="article" />
+  	<meta property="og:url" content="{{ Request::path() }}" />
+  	<meta property="og:image" content="/assets/images/eicon1.png" />
+  	<meta property="og:description" content="InWe-community" />
+  	<!-- End -->
+
+  	<link rel="shortcut icon" href="/favicon.ico">
+  	<link rel="stylesheet" href="/assets/css/base.css" />
+  	<link rel="stylesheet" href="/assets/css/articles.css" />
+  	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  	<script type="text/javascript" src="/assets/js/util.js"></script>
+</head>
+
+<body class="pace-done page-index">
+	<div class="headerBox">
+		<script src="/template/top-en.js"></script>
+	</div>
+
+	<div class="cont">
+		<h1 class="hidden" title="inwecrypto"> inwecrypto </h1>
 		<img class="title" src="/assets/images/logo_search.png" alt="" />
-  	<div class="input">
-  		<input type="text" />
-  	</div>
-  	<ul class="keyWords">
-        @foreach($search_keywords as $item)
-        <li><a href="/en/search/all?k={{ $item['name'] }}">{{ $item['name'] }}</a></li>
-        @endforeach
-  	</ul>
-  	<div class="kw-ctl">
-  		<img class="open active" src="/assets/images/open_icon.png"/>
-  		<img class="close" src="/assets/images/close_icon.png"/>
-  	</div>
+		<div class="input">
+			<input type="text" />
+		</div>
+		<ul class="keyWords">
+            @foreach($search_keywords as $item)
+            <li><a href="/en/search/all?k={{ $item['name'] }}">{{ $item['name'] }}</a></li>
+            @endforeach
+		</ul>
+		<div class="kw-ctl">
+			<img class="open active" src="/assets/images/open_icon.png" />
+			<img class="close" src="/assets/images/close_icon.png" />
+		</div>
 
 
 		<ul class="articles">
@@ -44,55 +74,82 @@
                 <h2>{{ $article['title'] }}</h2>
                     <p>{{ $article['created_at'] }}</p>
                     @if ($article['is_sole'] == 1)
-                    <section>原创</section>
+                    <section>Original</section>
                     @endif
                 </div>
             </li></a>
             @endforeach
 		</ul>
 
-  	     {!! $articles->links() !!}
-  </div>
+		{!! $articles->links() !!}
+	</div>
 
 
-  <a class="join" target="_blank" title="Join In InWe" href="https://t.me/inwe_crypto"></a>
+	<a class="join" target="_blank" title="Join In InWe" href="https://t.me/inwe_crypto"></a>
 
-  <div class="download">
-  	<div class="left">
-  		<img src="/assets/images/logo_download.png" alt=""/>
-  		<div class="ct">
-  			<img src="/assets/images/inwecrypto_download.png" alt=""/>
-  			<p>Download to view more info!</p>
-  		</div>
-  	</div>
-  	<a href="download.html">download app</a>
-  </div>
+	<div class="download">
+		<div class="left">
+			<img src="/assets/images/logo_download.png" alt="" />
+			<div class="ct">
+				<img src="/assets/images/inwecrypto_download.png" alt="" />
+				<p>Download to view more info!</p>
+			</div>
+		</div>
+		<a href="/en/download">download app</a>
+	</div>
 
-
-  <script src="/template/footer.js"></script>
-
-
-
+	<div class="globalFooter">
+		<script src="/template/footer.js"></script>
+	</div>
 <script>
+
+//	$(".input input").val(decodeURIComponent(location.search.replace("?kw=","")));
+
+
+	var search = function(e){
+		var theEvent = e || window.event;
+	　var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+		if (code == 13){
+			location.href="/en/search/all?k="+$(this).val();
+		}
+	}
 
 	$(function(){
 
-		$(".input input").bind("keydown",function(e){
-			var theEvent = e || window.event;
-		　var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-			if (code == 13){
-				location.href="/en/search/all?k="+$(this).val();
-			}
-		});
+		$(".input input").bind("keydown",search);
 
 		$(".kw-ctl").click(function(){
 			$(".kw-ctl").toggleClass("active");
 			$(".keyWords").toggleClass("open");
 		});
 
+		//手机端时
+		if(!IsTouchDevice){
+			$(".headerBox .navBox .eleft").append('<input class="search" type="text" />');
+			var headInput = $(".headerBox .navBox .eleft .search");
+			var searchInput = $(".input input");
+			headInput.bind("keydown",search);
+	//		headInput.val(decodeURIComponent(location.search.replace("?kw=","")));
+			headInput.bind("input",function(){
+				searchInput.val($(this).val());
+			})
+			searchInput.bind("input",function(){
+				headInput.val($(this).val());
+			})
+			var offsetTop = $(".input input").offset().top;
+			$("body").scroll(function(e){
+				if(Math.abs($(".cont")[0].getBoundingClientRect().top) >= offsetTop){
+					$(".headerBox .navBox").addClass("active");
+					$(".cont .keyWords").addClass("active");
+				}else{
+					$(".headerBox .navBox").removeClass("active");
+					$(".cont .keyWords").removeClass("active");
+				}
+			})
+		}
 
 	})
 
-</script>
+	</script>
 </body>
 </html>

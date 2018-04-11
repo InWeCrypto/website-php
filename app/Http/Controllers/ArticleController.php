@@ -28,6 +28,9 @@ class ArticleController extends BaseController
     public function show(Request $request)
     {
         $id = $request->get('art_id');
+        if(!$id){
+            return redirect('/' . $this->lang . '/home');
+        }
         $cache = 'INWE:ARTICLE:SHOW:' . $id;
         $cache_time = env('ARTICLE_CACHE_TIME', 10);
         $url = 'article/' . $id;
@@ -36,7 +39,9 @@ class ArticleController extends BaseController
             return $res;
         });
         $lang = $res['lang'] ?? $this->lang;
-        return view($lang . '.' .'detail', $res);
+        // newsdetail2 是手机显示页面, newsdetail是分享出去的页面
+        $page = $request->route()->uri() == 'newsdetail2' ? 'detail_2' : 'detail';
+        return view($lang . '.' . $page, $res);
     }
 
     public function search()
