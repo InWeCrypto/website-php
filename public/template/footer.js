@@ -19,7 +19,7 @@ document.writeln("      	  </li>");
 document.writeln("      	  <li class=\'airportIcon\'>");
 document.writeln("      	    <a href=\'https://twitter.com/inwe_crypto\'>Twitter</a>");
 document.writeln("      	  <li>");
-document.writeln("      	    <a href=\'https://t.me/inwecrypto\'>");
+document.writeln("      	    <a href=\'https://medium.com/@TrinityProtocol\'>");
 document.writeln("      	      Medium");
 document.writeln("      	    </a>");
 document.writeln("      	  </li>");
