@@ -38,6 +38,10 @@ Route::group(['prefix' => $locale], function ($router) use ($locale) {
     $router->any('/home', 'ArticleController@index');
 
     $router->any('/search/all', 'ArticleController@search');
+
+    $router->any('/', function () use ($locale) {
+        return redirect($locale . '/home');
+    });
 });
 
 $router->any('/newsdetail2', 'ArticleController@show');
