@@ -183,15 +183,7 @@
             // searchInput.bind("input", function () {
             //     headInput.val($(this).val());
             // });
-            var offsetTop = parseInt($('.page').offset().top) + 100;
-            $(window).scroll(function (e) {
-                var pageHeight  = $('.page')[0].getBoundingClientRect().top;
-                if ( Math.abs(pageHeight) >= offsetTop) {
-                    $(".headerBox .navBox").addClass("active");
-                } else {
-                    $(".headerBox .navBox").removeClass("active");
-                }
-            })
+            $(".headerBox .navBox").addClass("active");
         }
 
 

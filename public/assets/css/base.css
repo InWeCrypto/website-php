@@ -1513,7 +1513,7 @@ html body.pace-done #root .mView{
 }
 .headerBox .navBox .eleft .logotextbox img{
 	display: none;
-	
+
 }
 .headerBox .navBox .eleft .logotextbox .black{
 	display: block;
@@ -1765,4 +1765,8 @@ html body.pace-done #root .mView{
 }
 .navBox{
    /* min-width: 754px;*/
+}
+
+input{
+    -webkit-appearance: none;
 }

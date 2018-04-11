@@ -27,7 +27,7 @@ body {
 .content .page .box{
     margin-top: .17rem;
     height: .2rem;
-    font-size: .16rem;
+    font-size: .26rem;
     font-family: "PingFangSC-Regular";
     color:#959595;
     line-height: .2rem;
@@ -105,8 +105,8 @@ body {
 }
 .content .page .article p{
     margin: .18rem 0;
-    font-size: .16rem;
-    line-height: .44rem;
+    font-size: .26rem;
+    line-height: .52rem;
     height: auto;
     font-family: "PingFangSC-Regular";
 }
@@ -133,6 +133,7 @@ body {
     border: 1px solid #009857;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 0.25rem;
     font-family: 'PingFangSC-Regular';
 }
 .content .btn-box .btn:hover{
