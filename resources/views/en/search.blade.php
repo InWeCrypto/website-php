@@ -42,7 +42,7 @@
 </head>
 <style>
 	.headerBox .navBox {
-		background: rgba(247, 247, 247, 1);
+		
 		height: 0.7rem;
 	}
 

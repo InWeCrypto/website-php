@@ -5,7 +5,7 @@ if(pathname== '/newsdetail2' || pathname == '/newsdetail'){
     pathname = pathname + location.search;
 }
 document.writeln("<div class=\'navBox\'>");
-document.writeln("  <div class=\'eleft\'>");
+document.writeln("  <div onClick='location.href=\"/zh/home\"' class=\'eleft\'>");
 document.writeln("    <div class=\'logobox\'>");
 document.writeln("      <img src=\'/assets/images/eicon1.png\' alt=\'\'>");
 document.writeln("    </div>");
