@@ -27,10 +27,13 @@ body {
 .content .page .box{
     margin-top: .17rem;
     height: .2rem;
-    font-size: .26rem;
+    font-size: .16rem;
     font-family: "PingFangSC-Regular";
     color:#959595;
     line-height: .2rem;
+}
+.mobile .content .page .box{
+    font-size: .26rem;
 }
 .content .page .box .flag{
     margin-left: .15rem;
@@ -105,10 +108,14 @@ body {
 }
 .content .page .article p{
     margin: .18rem 0;
-    font-size: .26rem;
-    line-height: .52rem;
+    font-size: .16rem;
+    line-height: .36rem;
     height: auto;
     font-family: "PingFangSC-Regular";
+}
+.mobile .content .page .article p{
+    font-size: .26rem;
+    line-height: .52rem;
 }
 .content footer{
     margin: .99rem 5.74rem 0rem 5.7rem;
@@ -127,6 +134,7 @@ body {
 .content .btn-box{
     margin-top: .65rem;
 }
+
 .content .btn-box .btn{
     margin-left: .3rem;
     display: inline-block;
@@ -136,8 +144,11 @@ body {
     border: 1px solid #009857;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.25rem;
+    font-size: 0.16rem;
     font-family: 'PingFangSC-Regular';
+}
+.mobile .content .btn-box .btn{
+    font-size: 0.26rem;
 }
 .content .btn-box .btn:hover{
     background-color: #FFF;

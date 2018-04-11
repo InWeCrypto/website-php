@@ -1727,6 +1727,7 @@ html body.pace-done #root .mView{
     box-sizing: border-box;
     height: 1.4rem;
     padding: 0;
+    padding-top: 0.2rem;
 }
 .mobile .contactBox .logo{
 	display: none;
@@ -1739,6 +1740,8 @@ html body.pace-done #root .mView{
 	float: none;
 	width: 100%;
 	padding: 0.1rem 0 0.2rem;
+    padding-top: 0;
+    margin-top: -0.1rem;
 }
 .mobile .contactBox .iconBox li{
 	width: 16.6%;
@@ -1753,6 +1756,7 @@ html body.pace-done #root .mView{
     text-align: center;
     line-height: 0.5rem;
     color: #898989;
+    font-size: 0.22rem;
 }
 .globalFooter{
     position: fixed;

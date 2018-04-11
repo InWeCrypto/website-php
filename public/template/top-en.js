@@ -45,7 +45,12 @@ document.writeln("    </div>");
 document.writeln("  </div>");
 document.writeln("</div>");
 $(function(){
-	var menuMap = {'home':'index','download':'home'};
+    var menuMap = {
+        'home':'index',
+        'download':'home',
+        'platform':'home',
+        'downios':'home'
+    };
 	Object.keys(menuMap).forEach(function(item){
 		if(new RegExp(item).test(location.pathname)){
 			$(".navBox ."+menuMap[item]).addClass("active");
