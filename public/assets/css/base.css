@@ -1776,4 +1776,10 @@ html body.pace-done #root .mView{
 
 input{
     -webkit-appearance: none;
+    font-size: 0.2rem;
+    font-weight: 400;
+}
+.mobile input{
+    font-size: 0.34rem;
+    font-weight: 300;
 }
