@@ -40,7 +40,7 @@
     <title>InWeCrypto - {{ $title }}</title>
 </head>
 
-<body class="pc pace-done">
+<body class="pc pace-done page-index">
     <div class="content">
         <div class="headerBox">
             <script src="/template/top.js?{{ $jss_version }}"></script>
@@ -64,16 +64,16 @@
                 {!! $content !!}
             </div>
         </div>
+        <footer>
+            <p>
+                <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;人已读
+            </p>
+            <div class='btn-box clearfix'>
+                <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">加入InWe社区</span>
+                <span class="btn right" onclick="location.href='/en/download'">下载APP</span>
+            </div>
+        </footer>
         <div class="globalFooter">
-            <footer>
-                <p>
-                    <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;人已读
-                </p>
-                <div class='btn-box clearfix pcView'>
-                    <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">加入讨论组</span>
-                    <span class="btn right" onclick="location.href='/zh/download'">下载APP</span>
-                </div>
-            </footer>
             <div class="footer pcView">
                 <script src="/template/footer.js?{{ $jss_version }}"></script>
             </div>

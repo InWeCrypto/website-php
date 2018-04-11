@@ -64,16 +64,16 @@
                 {!! $content !!}
             </div>
         </div>
+        <footer>
+            <p>
+                <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;Readed
+            </p>
+            <div class='btn-box clearfix'>
+                <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWeCrypto</span>
+                <span class="btn right" onclick="location.href='/en/download'">Download</span>
+            </div>
+        </footer>
         <div class="globalFooter">
-            <footer>
-                <p>
-                    <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;Readed
-                </p>
-                <div class='btn-box clearfix pcView'>
-                    <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWeCrypto</span>
-                    <span class="btn right" onclick="location.href='/en/download'">Download</span>
-                </div>
-            </footer>
             <div class="footer pcView">
                 <script src="/template/footer.js?{{ $jss_version }}"></script>
             </div>

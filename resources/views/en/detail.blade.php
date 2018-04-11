@@ -99,7 +99,7 @@
     <title></title>
 </head>
 
-<body class="pc pace-done">
+<body class="pc pace-done page-index">
     <div class="content">
         <div class="headerBox">
             <script src="/template/top-en.js?{{ $jss_version }}"></script>
@@ -123,16 +123,16 @@
                 {!! $content !!}
             </div>
         </div>
+        <footer>
+            <p>
+                <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;Readed
+            </p>
+            <div class='btn-box clearfix'>
+                <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWeCrypto</span>
+                <span class="btn right" onclick="location.href='/en/download'">Download</span>
+            </div>
+        </footer>
         <div class="globalFooter">
-            <footer>
-                <p>
-                    <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;Readed
-                </p>
-                <div class='btn-box clearfix pcView'>
-                    <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWeCrypto</span>
-                    <span class="btn right" onclick="location.href='/en/download'">Download</span>
-                </div>
-            </footer>
             <div class="footer pcView">
                 <script src="/template/footer.js?{{ $jss_version }}"></script>
             </div>
@@ -193,6 +193,24 @@
                 }
             })
         }
+
+
+
+        function isWeiXin() {
+        var ua = window.navigator.userAgent.toLowerCase();
+        console.log(ua);//mozilla/5.0 (iphone; cpu iphone os 9_1 like mac os x) applewebkit/601.1.46 (khtml, like gecko)version/9.0 mobile/13b143 safari/601.1
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+        } else {
+        return false;
+        }
+        }
+        if(isWeiXin()){
+            $(".headerBox").hide();
+            $(".btn-box.clearfix").hide();
+        }
+
+
     })
 </script>
 <script src="/assets/js/share.js?{{ $jss_version }}"></script>

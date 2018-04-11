@@ -1,19 +1,16 @@
 body {
     padding: 0 !important;
-    /*min-width: 800px;*/
 }
 .globalFooter .contactBox{
     min-width: 754px;
 }
 .content {
-    width: 100%;
-    height: 100%;
-}
-.content .navBox{
-    min-width: 754px;
+   width: 100%;
+   height: 100%;
+   padding-bottom: 100px;
 }
 .content .page{
-    margin:1.38rem 5.74rem 0rem 5.7rem;
+    margin: 1.38rem 5.74rem 0 5.7rem;
     font-family: "PingFangSC-Regular";
 }
 .content .page img{
@@ -25,7 +22,7 @@ body {
     font-size: .24rem;
     font-family: "PingFangSC-Regular";
     color:#333333;
-    line-height: 1em;
+    line-height: .36rem;
 }
 .content .page .box{
     margin-top: .17rem;
@@ -100,9 +97,11 @@ body {
     background-size: .25rem .2rem;
 }
 .content .page .article{
-    margin: .43rem 0 .59rem 0;
+    margin: 0;
     word-break: break-word;
-   margin-bottom: 4rem;
+    height: auto;
+    font-size: 26px;
+    font-weight: normal;
 }
 .content .page .article p{
     margin: .18rem 0;
@@ -170,30 +169,45 @@ body {
     background-size: 2.42rem .42rem;
 }
 .content .footer{
-    margin-top: .99rem;
-    height: .8rem;
     width: 100%;
     background-color: #F9F9F9;
 }
-.mobile .content {
+.mobile .content .page{
     margin: 1.57rem .43rem 0rem 0.5rem;
+    font-size: 26px;
+}
+
+.mobile .content footer {
+    margin: 0;
+    width: 100%;
+    padding: 0 0.5rem 0 0.45rem;
+    box-sizing: border-box;
 }
 .mobile .content .page .title{
     font-size: .4rem;
     font-family: "PingFang SC";
     font-weight: normal;
-    line-height: .42rem;
+    line-height: .48rem;
     height: auto;
 }
 .mobile .content .page .box{
     margin-top: .28rem;
 }
-/*.page-index	.headerBox .navBox .eleft .logotextbox .black{
-	display: none;
+.page-index	.headerBox .navBox {
+    margin: 0;
+    position: fixed;
 }
-.page-index	.headerBox .navBox .eleft .logobox{
-	display: none;
-}*/
+.page-index	.headerBox .navBox .eleft{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.page-index	.headerBox .navBox .eright{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .page-index	.headerBox .navBox.active .eleft .logobox{
 	display: block;
 }
@@ -201,7 +215,7 @@ body {
 	display: block;
 }
 .page-index	.headerBox .navBox{
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 .page-index	.headerBox .navBox.active{
 	justify-content: space-between;
