@@ -39,10 +39,10 @@
     <!-- End -->
 
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/download.css" />
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/util.js"></script>
+    <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
+    <link rel="stylesheet" href="/assets/css/download.css?{{ $jss_version }}" />
+    <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
+    <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
     <title>下载</title>
 </head>
 
@@ -52,7 +52,7 @@
             <img src="/assets/images/dyou_yingying.png" alt="" />
         </div>
         <div class="headerBox">
-            <script src="/template/top-en.js"></script>
+            <script src="/template/top-en.js?{{ $jss_version }}"></script>
             <p class="mess1">Access with Multiple Client</p>
             <p class="mess2">Supporting multiple application platforms, including iOS、Android、Windows and Mac.</p>
             <div></div>
@@ -123,7 +123,7 @@
                 ©InWeCrypto 2018
             </div>
         </div> -->
-        <script src="/template/footer.js"></script>
+        <script src="/template/footer.js?{{ $jss_version }}"></script>
     </div>
 </body>
 

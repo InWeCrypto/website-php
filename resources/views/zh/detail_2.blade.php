@@ -33,17 +33,17 @@
     <!-- End -->
 
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/detail.css">
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/util.js"></script>
+    <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
+    <link rel="stylesheet" href="/assets/css/detail.css?{{ $jss_version }}">
+    <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
+    <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
     <title>InWeCrypto - {{ $title }}</title>
 </head>
 
-<body class="pc pace-done page-index" style="margin: 0;">
+<body class="pc pace-done">
     <div class="content">
         <div class="headerBox">
-            <script src="/template/top.js"></script>
+            <script src="/template/top.js?{{ $jss_version }}"></script>
         </div>
         <div class="page">
             <h1 class="title">{{ $title }}</h1>
@@ -75,7 +75,7 @@
                 </div>
             </footer>
             <div class="footer pcView">
-                <script src="/template/footer.js"></script>
+                <script src="/template/footer.js?{{ $jss_version }}"></script>
             </div>
         </div>
     </div>
@@ -122,7 +122,7 @@
             }
         })
     </script>
-    <script src="/assets/js/share.js"></script>
+    <script src="/assets/js/share.js?{{ $jss_version }}"></script>
 </body>
 
 </html>

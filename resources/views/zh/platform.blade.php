@@ -37,10 +37,10 @@
   <!-- End -->
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/assets/css/base.css" />
-  <link rel="stylesheet" href="/assets/css/download.css" />
-  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/util.js"></script>
+  <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
+  <link rel="stylesheet" href="/assets/css/download.css?{{ $jss_version }}" />
+  <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
+  <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
             <img src="/assets/images/dyou_yingying.png" alt="" />
         </div>
         <div class="headerBox">
-            <script src="/template/top.js"></script>
+            <script src="/template/top.js?{{ $jss_version }}"></script>
             <p class="mess1">多平台终端接入</p>
             <p class="mess2">支持iOS、Android、Windows、Mac等多个场景应用</p>
             <div></div>
@@ -121,7 +121,7 @@
             </div>
         </div> -->
 
-        <script src="/template/footer.js"></script>
+        <script src="/template/footer.js?{{ $jss_version }}"></script>
     </div>
 </body>
 

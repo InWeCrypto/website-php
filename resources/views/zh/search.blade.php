@@ -35,10 +35,10 @@
   	<!-- End -->
 
   	<link rel="shortcut icon" href="/favicon.ico">
-  	<link rel="stylesheet" href="/assets/css/base.css" />
-  	<link rel="stylesheet" href="/assets/css/articles.css" />
-  	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-  	<script type="text/javascript" src="/assets/js/util.js"></script>
+  	<link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
+  	<link rel="stylesheet" href="/assets/css/articles.css?{{ $jss_version }}" />
+  	<script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
+  	<script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
 </head>
 <style>
 	.headerBox .navBox {
@@ -68,7 +68,7 @@
 
 <body class="pace-done">
   <div class="headerBox">
-    <script src="/template/top-en.js"></script>
+    <script src="/template/top-en.js?{{ $jss_version }}"></script>
   </div>
 
   <div class="cont">
@@ -101,7 +101,7 @@
   </div>
 
 
-  <script src="/template/footer.js"></script>
+  <script src="/template/footer.js?{{ $jss_version }}"></script>
 
 
 

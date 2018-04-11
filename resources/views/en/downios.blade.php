@@ -36,10 +36,10 @@
     <meta property="og:description" content="How to install InWeCrypto app (iOS) 1.Download App 2. Trusted Root Certificate 3. Open the App"
     />
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/downios.css" />
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/util.js"></script>
+    <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
+    <link rel="stylesheet" href="/assets/css/downios.css?{{ $jss_version }}" />
+    <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
+    <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
 </head>
 
 <body style="padding-left: 54px; padding-right: 54px;" class="pc pace-done">
@@ -48,7 +48,7 @@
             <img src="/assets/images/dyou_yingying.png" alt="" />
         </div>
         <div class="headerBox">
-            <script src="/template/top-en.js"></script>
+            <script src="/template/top-en.js?{{ $jss_version }}"></script>
             <p class="mess1">How to install InWeCrypto app (iOS)?</p>
             <p class="mess2">
                 <img src="/assets/images/fiosqrcode.png" alt="" />
@@ -99,7 +99,7 @@
                 </p>
             </div>
         </div>
-        <script src="/template/footer.js"></script>
+        <script src="/template/footer.js?{{ $jss_version }}"></script>
     </div>
 </body>
 

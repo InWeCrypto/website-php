@@ -1,6 +1,5 @@
-var arr = location.pathname.split('/');
-var pathname = arr[arr.length-1];
-if(pathname== 'newsdetail2' || pathname == 'newsdetail'){
+var pathname = location.pathname.replace(/\/(zh|en)\//g, '');
+if(pathname== '/newsdetail2' || pathname == '/newsdetail'){
     pathname = 'home';
 }else{
     pathname = pathname + location.search;
