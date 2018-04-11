@@ -45,6 +45,7 @@ body {
 }
 .mobile .content .page .box .flag{
     font-size: 0.24rem;
+    padding: .02rem .13rem;
 }
 .content .page .box .right{
     line-height: .2rem;

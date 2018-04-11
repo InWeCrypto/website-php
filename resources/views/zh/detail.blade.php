@@ -129,7 +129,7 @@
             </p>
             <div class='btn-box clearfix'>
                 <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">加入InWe社区</span>
-                <span class="btn right" onclick="location.href='/en/download'">下载APP</span>
+                <span class="btn right" onclick="location.href='/zh/download'">下载APP</span>
             </div>
         </footer>
         <div class="globalFooter">
