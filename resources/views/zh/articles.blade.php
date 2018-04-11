@@ -56,7 +56,7 @@
 		</div>
 		<ul class="keyWords">
             @foreach($search_keywords as $item)
-            <li><a href="/en/search/all?k={{ $item['name'] }}">{{ $item['name'] }}</a></li>
+            <li><a href="/zh/search/all?k={{ $item['name'] }}">{{ $item['name'] }}</a></li>
             @endforeach
 		</ul>
 		<div class="kw-ctl">
@@ -101,7 +101,7 @@
 
 
 		<script src="/template/footer.js?{{ $jss_version }}"></script>
-	
+
 <script>
 
 //	$(".input input").val(decodeURIComponent(location.search.replace("?kw=","")));

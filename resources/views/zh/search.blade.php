@@ -69,7 +69,7 @@
 
 <body class="pace-done page-search">
   <div class="headerBox">
-    <script src="/template/top-en.js?{{ $jss_version }}"></script>
+    <script src="/template/top.js?{{ $jss_version }}"></script>
   </div>
 
   <div class="cont">
