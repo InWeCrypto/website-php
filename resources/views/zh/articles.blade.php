@@ -96,6 +96,7 @@
 				<p>下载查看更多信息!</p>
 			</div>
 		</div>
+		<a href="https://t.me/inwe_crypto">加入InWe</a>
 		<a href="/en/download">下载app</a>
 	</div>
 

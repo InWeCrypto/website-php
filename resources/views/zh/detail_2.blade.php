@@ -68,10 +68,10 @@
             <p>
                 <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;人已读
             </p>
-            <div class='btn-box clearfix'>
+            <!--<div class='btn-box clearfix'>
                 <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">加入InWe社区</span>
                 <span class="btn right" onclick="location.href='/zh/download'">下载APP</span>
-            </div>
+            </div>-->
         </footer>
     </div>
     <script>

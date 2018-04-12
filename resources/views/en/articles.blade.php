@@ -92,9 +92,10 @@
 			<img src="/assets/images/logo_download.png" alt="" />
 			<div class="ct">
 				<img src="/assets/images/inwecrypto_download.png" alt="" />
-				<p>Download to view more info!</p>
+				<p>Download to view more</p>
 			</div>
 		</div>
+		<a href="https://t.me/inwe_crypto">Join InWe</a>
 		<a href="/en/download">download app</a>
 	</div>
 

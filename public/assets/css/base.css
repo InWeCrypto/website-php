@@ -1,3 +1,6 @@
+html,body{
+	-webkit-overflow-scroll: touch;
+}
 .container {
 	max-width:14rem;
 	min-width:10rem;

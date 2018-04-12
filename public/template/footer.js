@@ -3,9 +3,9 @@ document.writeln("      <img class=\'logo\' src=\'/assets/images/eicon1.png\' />
 document.writeln("      <div class=\'footerText \'>©InWeCrypto 2018</div>");
 document.writeln("      <div class=\'ct\'>");
 document.writeln("      	<ul class=\'iconBox\'>");
-document.writeln("      	  <li class=\'airportIcon\'>");
+/*document.writeln("      	  <li class=\'airportIcon\'>");
 document.writeln("      	      WeChat <img class=\'airportQrcode\' src=\'/assets/images/commendus.jpeg\' alt=\'\'>");
-document.writeln("      	  </li>");
+document.writeln("      	  </li>");*/
 document.writeln("      	  <li>");
 document.writeln("      	    <a href=\'mailto:support@inwecrypto.com\'>");
 document.writeln("      	      Email");

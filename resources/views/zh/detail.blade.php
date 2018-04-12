@@ -127,10 +127,10 @@
             <p>
                 <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;人已读
             </p>
-            <div class='btn-box clearfix'>
+            <!--<div class='btn-box clearfix'>
                 <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">加入InWe社区</span>
                 <span class="btn right" onclick="location.href='/zh/download'">下载APP</span>
-            </div>
+            </div>-->
         </footer>
         <div class="globalFooter">
             <div class="footer pcView">
@@ -146,6 +146,7 @@
                 <p>下载查看更多信息!</p>
             </div>
         </div>
+        <a href="https://t.me/inwe_crypto">加入InWe</a>
         <a href="/zh/download">下载APP</a>
     </div>
 </body>
