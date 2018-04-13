@@ -30,6 +30,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ Request::path() }}" />
     <meta property="og:description" content="{{ $desc ?: $title }}" />
+    <meta property="og:image" content="{{ $img ?: url('/assets/images/eicon1.png')}}" />
     <!-- End -->
 
     <link rel="shortcut icon" href="/favicon.ico">

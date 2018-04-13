@@ -34,6 +34,7 @@ Route::group(['prefix' => $locale], function ($router) use ($locale) {
         return view($locale . '.' . 'downios');
     });
 
+    $router->any('/helpcenter', 'ArticleController@helpcenter');
 
     $router->any('/home', 'ArticleController@index');
 

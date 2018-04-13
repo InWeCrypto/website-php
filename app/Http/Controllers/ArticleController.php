@@ -66,4 +66,24 @@ class ArticleController extends BaseController
             return $res;
         });
     }
+
+    public function helpcenter(Request $req)
+    {
+        $page = $req->get('page', 1);
+
+        $lang = $this->lang;
+
+        $url = 'article?type=[8,9,10,11]&per_page=20&lang=' . $lang . '&page=' . $page;
+
+        $res = $this->httpReq($url);
+
+        extract($res);
+
+        $articles =new LengthAwarePaginator($data, $total, $per_page, $current_page, [
+                'path' => Paginator::resolveCurrentPath(),  //设定个要分页的url地址。也可以手动通过 $paginator ->setPath(‘路径’) 设置
+                'pageName' => 'page',
+        ]);
+
+        return view($this->lang . '.' .'helpcenter', compact('articles'));
+    }
 }
