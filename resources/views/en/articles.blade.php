@@ -101,7 +101,7 @@
 
 
 		<script src="/template/footer.js?{{ $jss_version }}"></script>
-	
+
 <script>
 
 //	$(".input input").val(decodeURIComponent(location.search.replace("?kw=","")));

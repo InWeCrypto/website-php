@@ -111,6 +111,10 @@ body {
     height: auto;
     /*font-size: 26px;*/
     font-weight: normal;
+    font-size: .16rem;
+}
+.mobile .content .page .article{
+    font-size: .26rem;
 }
 .content .page .article p{
     margin: .18rem 0;
