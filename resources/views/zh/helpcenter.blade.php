@@ -60,7 +60,7 @@ window.addEventListener("orientationchange", function(event) {
           <ul class="ui annoucmentListUl">
               @foreach($articles as $article)
               <li class="annoucmentListLi">
-                <a href="{{ action('ArticleController@show', ['art_id' => $article['id']]) }}">
+                <a href="/newsdetail2?art_id={{ $article['id'] }}">
                   <div class="liBox">
                     <p class="annoBoxLiText ellitext">{{ $article['title'] }}</p></div>
                 </a>
