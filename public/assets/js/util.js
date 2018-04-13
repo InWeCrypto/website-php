@@ -36,7 +36,7 @@ const getMainMinHeight = () => {
     }else{
         var header = 0
     }
-	
+
 	let footer =
 		document.getElementById("footerBox") &&
 		parseInt(document.getElementById("footerBox").offsetHeight, 10);
@@ -100,7 +100,7 @@ const getLocalItem = key => {
 		return item;
 	}
 };
-//cdy
+//电脑
 const indexRemFun = () => {
     if (!IsTouchDevice){
         var dw = document.body.clientWidth;
@@ -108,12 +108,13 @@ const indexRemFun = () => {
         document.getElementsByTagName("html")[0].style.fontSize = dw + "px";
     }
 };
+//移动
 const remFun = () => {
 	if (IsTouchDevice) {
         var dw = document.body.clientWidth;
 		dw = dw * 100 / 750;
         document.getElementsByTagName("html")[0].style.fontSize = dw + "px";
-        
+
 	}
 };
 const addClass = (ele, cls) => {
@@ -246,16 +247,16 @@ const toPosition = (id, e) => {
     let dom = document.getElementById(id);
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     let position = dom.getBoundingClientRect().top + scrollTop;
-    clearInterval(targetDom.timer);  
+    clearInterval(targetDom.timer);
     let firstPos = -1, secondPos = -2;
     //默认上次与本次位置不同
-    let goonFlag = true; 
-    targetDom.timer=setInterval(function(){  
-        var currentPos=document.documentElement.scrollTop || document.body.scrollTop, iSpeed=0;  
-        iSpeed=(position-currentPos)/8;  
-        iSpeed=iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);  
-        if((parseInt(position) != parseInt(currentPos)) && goonFlag ){  
-            window.scrollTo(0,currentPos+iSpeed); 
+    let goonFlag = true;
+    targetDom.timer=setInterval(function(){
+        var currentPos=document.documentElement.scrollTop || document.body.scrollTop, iSpeed=0;
+        iSpeed=(position-currentPos)/8;
+        iSpeed=iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+        if((parseInt(position) != parseInt(currentPos)) && goonFlag ){
+            window.scrollTo(0,currentPos+iSpeed);
             if(firstPos != secondPos){
                 //前后两次位置不同
                 firstPos = secondPos;
@@ -265,10 +266,10 @@ const toPosition = (id, e) => {
                 goonFlag = false;
             }
         }else{
-            //清理滚动  
-            clearInterval(targetDom.timer);  
-        }  
-    },1);  
+            //清理滚动
+            clearInterval(targetDom.timer);
+        }
+    },1);
 }
 
 //判断微信环境
@@ -343,19 +344,19 @@ const isWeiXin = () => {
 
 
 
-  
+
 //初始化
 $(function(){
-	
+
 	if (IsTouchDevice) {
-		$("body").addClass("mobile");
+	//	$("body").addClass("mobile");
 		$(".mView").show();
 		$(".pcView").hide();
 	} else {
-		$("body").addClass("pc");
+		//$("body").addClass("pc");
 		$('.mView').hide();
 	}
-	
+
 	/*菜单*/
 	$(".navBox .closeMenu").bind("click",function(){
 		$(".navBox .sub").removeClass("active");
@@ -366,30 +367,9 @@ $(function(){
 	$(".navBox .contact").click(function(e){
   	toPosition("contactBox",e);
   })
-	
-	window.addEventListener("orientationchange", function(event) {
-	    if (window.orientation == 180 || window.orientation == 0) {
-	        var dw = document.body.clientWidth;
-	        setTimeout(() => {
-	            remFun();
-	        }, 100);
-	       
-	    }
-	    if (window.orientation == 90 || window.orientation == -90) {
-	        var dw = document.body.clientWidth;
-	        setTimeout(() => {
-	            remFun();
-	        }, 100);
-	    }
-	});
-	
-	window.addEventListener("resize",function() {
-      indexRemFun();
- 	});	
- 	
- 	remFun();
-	indexRemFun();
-	
-	
-	
+
+
+
+
+
 })

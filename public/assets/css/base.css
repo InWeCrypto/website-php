@@ -1,3 +1,6 @@
+html,body{
+	-webkit-overflow-scroll: touch;
+}
 .container {
 	max-width:14rem;
 	min-width:10rem;
@@ -1744,7 +1747,7 @@ html body.pace-done #root .mView{
     margin-top: -0.1rem;
 }
 .mobile .contactBox .iconBox li{
-	width: 16.6%;
+	width: 20%;
 	margin: 0;
 	padding: 0;
 	text-align: center;

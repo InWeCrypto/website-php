@@ -1,3 +1,30 @@
+var bodyClass = document.querySelector("body").className;
+if (IsTouchDevice) {
+	document.querySelector("body").className = bodyClass+' mobile';
+} else {
+	document.querySelector("body").className = bodyClass+' pc';
+}
+
+indexRemFun();
+remFun();
+window.addEventListener("resize",function() {
+    indexRemFun();
+});
+window.addEventListener("orientationchange", function(event) {
+  if (window.orientation == 180 || window.orientation == 0) {
+    var dw = document.body.clientWidth;
+    setTimeout(() => {
+        remFun();
+    }, 100);
+  }
+  if (window.orientation == 90 || window.orientation == -90) {
+    var dw = document.body.clientWidth;
+    setTimeout(() => {
+        remFun();
+    }, 100);
+  }
+});
+
 var pathname = location.pathname.replace(/\/(zh|en)\//g, '');
 if(pathname== '/newsdetail2' || pathname == '/newsdetail'){
     pathname = 'home';

@@ -19,8 +19,8 @@
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="@inwecryptocom" />
     <meta property="twitter:title" content="{{ $title }}" />
-    <meta property="twitter:description" content="{{ $desc ?? $title }}" />
-    <meta property="twitter:url" content="/assets/images/eicon1.png" />
+    <meta property="twitter:description" content="{{ $desc ?: $title }}" />
+    <meta property="twitter:url" content="{{ $img ?: url('/assets/images/eicon1.png')}}" />
     <!-- End -->
 
     <!--  OpenGraph -->
@@ -29,7 +29,7 @@
     <meta property="og:title" content="{{ $title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ Request::path() }}" />
-    <meta property="og:description" content="{{ $desc ?? $title }}" />
+    <meta property="og:description" content="{{ $desc ?: $title }}" />
     <!-- End -->
 
     <link rel="shortcut icon" href="/favicon.ico">
@@ -68,10 +68,10 @@
             <p>
                 <span class="number">{{ $click_rate }}</span>&nbsp;&nbsp;Readed
             </p>
-            <div class='btn-box clearfix'>
+            <!--<div class='btn-box clearfix'>
                 <span class="btn right" onclick="location.href='https://t.me/inwe_crypto'">Join InWeCrypto</span>
                 <span class="btn right" onclick="location.href='/en/download'">Download</span>
-            </div>
+            </div>-->
         </footer>
     </div>
     <script>

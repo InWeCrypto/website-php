@@ -92,15 +92,16 @@
 			<img src="/assets/images/logo_download.png" alt="" />
 			<div class="ct">
 				<img src="/assets/images/inwecrypto_download.png" alt="" />
-				<p>Download to view more info!</p>
+				<p>Download to view more</p>
 			</div>
 		</div>
-		<a href="/en/download">download app</a>
+		<a href="https://t.me/inwe_crypto">Join InWe</a>
+		<a href="/en/download">Download</a>
 	</div>
 
 
 		<script src="/template/footer.js?{{ $jss_version }}"></script>
-	
+
 <script>
 
 //	$(".input input").val(decodeURIComponent(location.search.replace("?kw=","")));
