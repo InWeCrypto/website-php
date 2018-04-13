@@ -100,7 +100,7 @@ const getLocalItem = key => {
 		return item;
 	}
 };
-//cdy
+//电脑
 const indexRemFun = () => {
     if (!IsTouchDevice){
         var dw = document.body.clientWidth;
@@ -108,6 +108,7 @@ const indexRemFun = () => {
         document.getElementsByTagName("html")[0].style.fontSize = dw + "px";
     }
 };
+//移动
 const remFun = () => {
 	if (IsTouchDevice) {
         var dw = document.body.clientWidth;
@@ -367,28 +368,7 @@ $(function(){
   	toPosition("contactBox",e);
   })
 	
-	window.addEventListener("orientationchange", function(event) {
-	    if (window.orientation == 180 || window.orientation == 0) {
-	        var dw = document.body.clientWidth;
-	        setTimeout(() => {
-	            remFun();
-	        }, 100);
-	       
-	    }
-	    if (window.orientation == 90 || window.orientation == -90) {
-	        var dw = document.body.clientWidth;
-	        setTimeout(() => {
-	            remFun();
-	        }, 100);
-	    }
-	});
-	
-	window.addEventListener("resize",function() {
-      indexRemFun();
- 	});	
- 	
- 	remFun();
-	indexRemFun();
+
 	
 	
 	
