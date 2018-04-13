@@ -96,7 +96,7 @@
 			</div>
 		</div>
 		<a href="https://t.me/inwe_crypto">Join InWe</a>
-		<a href="/en/download">download app</a>
+		<a href="/en/download">Download</a>
 	</div>
 
 
