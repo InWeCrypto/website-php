@@ -22,7 +22,7 @@
     <meta property="twitter:site" content="@inwecryptocom" />
     <meta property="twitter:title" content="{{ $title }}" />
     <meta property="twitter:description" content="{{ $desc ?? $title }}" />
-    <meta property="twitter:url" content="/assets/images/eicon1.png" />
+    <meta property="twitter:url" content="{{ $img ?? \URL::secureAsset('/assets/images/eicon1.png')}}" />
     <!-- End -->
 
     <!--  OpenGraph -->

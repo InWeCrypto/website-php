@@ -109,7 +109,7 @@ body {
     margin: 0;
     word-break: break-word;
     height: auto;
-    font-size: 26px;
+    /*font-size: 26px;*/
     font-weight: normal;
 }
 .content .page .article p{
