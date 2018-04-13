@@ -73,7 +73,7 @@ class ArticleController extends BaseController
 
         $lang = $this->lang;
 
-        $url = 'article?type=[8,9,10,11]&lang=' . $lang . '&page=' . $page;
+        $url = 'article?type=[8,9,10,11]&per_page=20&lang=' . $lang . '&page=' . $page;
 
         $res = $this->httpReq($url);
 
