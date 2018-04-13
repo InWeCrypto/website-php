@@ -1,0 +1,63 @@
+.left-menus {
+  width: 2rem;
+}
+.left-menus .left-menus-anno {
+  width: 2rem;
+}
+.mobile #helpcenter {
+  padding: 0;
+  margin: 0;
+  width: 6.9rem;
+  margin: 0 auto;
+}
+.mobile #helpcenter .annoCon {
+  display: block;
+  width: 6.9rem;
+  margin: 0 auto;
+}
+.mobile #helpcenter .annoCon .f1 {
+  border: 0;
+  width: 100%;
+  padding: 0 0.3rem;
+}
+.mobile #helpcenter .annoCon ul {
+  display: block;
+  padding: 0;
+}
+.mobile #helpcenter .annoCon ul li {
+  height: 1rem;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.mobile #helpcenter .annoCon ul li .liBox {
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+.mobile #helpcenter .annoCon ul li .liBox .annoBoxLiText {
+  width: 100%;
+  line-height: 1rem;
+  font-size: 0.26rem;
+  margin: auto;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.mobile #helpcenter .annoCon ul li:after {
+  content: "";
+  position: absolute;
+  height: 0.02rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F6F6F6;
+}
