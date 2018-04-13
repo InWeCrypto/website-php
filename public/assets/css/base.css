@@ -1463,7 +1463,7 @@ html body.pace-done #root .mView{
 
 /*头部导航栏*/
 .headerBox .navBox {
-	position:absolute;
+	position:fixed;
 	left:0;
 	top:0;
 	z-index:20;
