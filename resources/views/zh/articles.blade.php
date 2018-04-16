@@ -86,7 +86,7 @@
 	</div>
 
 
-	<a class="join" target="_blank" title="Join In InWe" href="https://t.me/inwe_crypto"></a>
+	<a class="join mView" target="_blank" title="Join In InWe" href="https://t.me/inwe_crypto"></a>
 
 	<div class="download">
 		<div class="left">
