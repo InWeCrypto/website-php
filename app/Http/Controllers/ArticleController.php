@@ -31,13 +31,13 @@ class ArticleController extends BaseController
         if(!$id){
             return redirect('/' . $this->lang . '/home');
         }
-        $cache = 'INWE:ARTICLE:SHOW:' . $id;
-        $cache_time = env('ARTICLE_CACHE_TIME', 10);
+        // $cache = 'INWE:ARTICLE:SHOW:' . $id;
+        // $cache_time = env('ARTICLE_CACHE_TIME', 10);
         $url = 'article/' . $id;
-        $res = Cache::remember($cache, $cache_time, function() use($url) {
+        // $res = Cache::remember($cache, $cache_time, function() use($url) {
             $res = $this->httpReq($url);
-            return $res;
-        });
+            // return $res;
+        // });
         $lang = $res['lang'] ?? $this->lang;
         // newsdetail2 是手机显示页面, newsdetail是分享出去的页面
         $page = $request->route()->uri() == 'newsdetail2' ? 'detail_2' : 'detail';
