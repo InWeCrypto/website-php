@@ -96,7 +96,6 @@
             color: rgba(255, 85, 0, 1);
         }
     </style>
-    <title></title>
 </head>
 
 <body class="pc pace-done page-index">
