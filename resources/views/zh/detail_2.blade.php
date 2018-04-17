@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="/assets/css/detail.css?{{ $jss_version }}">
     <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
     <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
-    <title>InWeCrypto - news</title>
+    <title>InWeCrypto - {{ $title }}</title>
 </head>
 
 <body class="pc pace-done page-index">
