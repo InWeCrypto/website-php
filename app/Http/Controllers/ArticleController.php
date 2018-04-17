@@ -36,7 +36,7 @@ class ArticleController extends BaseController
         $url = 'article/' . $id;
         // $res = Cache::remember($cache, $cache_time, function() use($url) {
             $res = $this->httpReq($url);
-            return $res;
+            // return $res;
         // });
         $lang = $res['lang'] ?? $this->lang;
         // newsdetail2 是手机显示页面, newsdetail是分享出去的页面
