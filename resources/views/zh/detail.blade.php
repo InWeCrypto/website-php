@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,7 +39,7 @@
     <link rel="stylesheet" href="/assets/css/detail.css?{{ $jss_version }}">
     <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
     <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
-    <title>InWeCrypto - {{ $title }}</title>
+    <title>InWeCrypto - news</title>
     <style>
         .mobile .download {
             display: flex;
@@ -97,7 +96,6 @@
             color: rgba(255, 85, 0, 1);
         }
     </style>
-    <title></title>
 </head>
 
 <body class="pc pace-done  page-index">
@@ -161,6 +159,7 @@
     }
 
     $(function () {
+    		$(".time").text(getLocalTime($(".time").text().trim()));
 
         $(".input input").bind("keydown", search);
 

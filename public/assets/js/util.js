@@ -149,13 +149,41 @@ const chargeFooterFixed = () => {
 	// 	return false;
 	// }
 };
-const getLocalTime = time => {
+/*const getLocalTime = time => {
 	let time1 = time;
 	if (time1.indexOf("-") != -1) {
 		time1 = time.replace(/\-/gi, "/");
 	}
 	const def = new Date().getTimezoneOffset();
 	let localTime = new Date(time1).getTime() - def * 60 * 1000;
+	let d = new Date(localTime);
+	let year = d.getFullYear();
+	let month = d.getMonth() + 1;
+	let day = d.getDate();
+	let hours = d.getHours();
+	let min = d.getMinutes();
+	let s = d.getSeconds();
+	return `${year}-${month < 10 ? "0" + month : month}-${
+		day < 10 ? "0" + day : day
+	} ${hours < 10 ? "0" + hours : hours}:${min < 10 ? "0" + min : min}:${
+		s < 10 ? "0" + s : s
+	}`;
+};*/
+
+const getLocalTime = time => {
+	if (!time) {
+		return "";
+	}
+	let time1 = time;
+	let localTime = "";
+	if (time1.indexOf("-") != -1 && time1.indexOf("T") == -1) {
+		time1 = time.replace(/\-/gi, "/");
+		const def = new Date().getTimezoneOffset();
+		localTime = new Date(time1).getTime() - def * 60 * 1000;
+	}
+	if (time1.indexOf("T") != -1) {
+		localTime = time1;
+	}
 	let d = new Date(localTime);
 	let year = d.getFullYear();
 	let month = d.getMonth() + 1;
