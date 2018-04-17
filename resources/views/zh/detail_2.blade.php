@@ -85,7 +85,7 @@
         }
 
         $(function () {
-
+						$(".time").text(getLocalTime($(".time").text().trim()));
             $(".input input").bind("keydown", search);
 
             $(".kw-ctl").click(function () {
