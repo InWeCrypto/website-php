@@ -100,7 +100,7 @@
 
 <body class="pc pace-done page-index">
     <div style="height: 0;width: 0;overflow: hidden;">
-        <img src="{{ $img ?: url('/assets/images/eicon1.png')}}?x-oss-process=image/crop,x_0,y_0,w_300,h_300,g_se">
+        <img src="{{ $img ?: url('/assets/images/eicon1.png')}}?x-oss-process=image/crop,x_0,y_0,w_400,h_400,g_se">
     </div>
     <div class="content">
         <div class="headerBox">
