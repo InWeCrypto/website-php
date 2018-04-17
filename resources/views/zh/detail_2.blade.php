@@ -42,6 +42,9 @@
 </head>
 
 <body class="pc pace-done page-index">
+    <div style="height: 0;width: 0;overflow: hidden;">
+        <img src="{{ $img ?: url('/assets/images/eicon1.png')}}?x-oss-process=image/crop,x_0,y_0,w_300,h_300,g_se">
+    </div>
     <div class="content">
         <div class="headerBox">
             <script src="/template/top.js?{{ $jss_version }}"></script>
