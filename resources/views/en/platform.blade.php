@@ -68,7 +68,7 @@
                             <span class="text">IOS</span>
                         </div>
                     </a>
-                    <div class="and" onclick="location.href='https://www.pgyer.com/InWeCryptoAndroid'">
+                    <div class="and" onclick="location.href='http://fir.im/InWeCryptoAndroid'">
                         <span class="icon"></span>
                         <span class="text">Android</span>
                     </div>
