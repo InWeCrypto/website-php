@@ -51,10 +51,10 @@
             <script src="/template/top-en.js?{{ $jss_version }}"></script>
             <p class="mess1">How to install InWeCrypto app (iOS)?</p>
             <p class="mess2">
-                <img src="/assets/images/fiosqrcode.png" alt="" />
+                <img src="/assets/images/fiosqrcode.jpg" alt="" />
             </p>
             <p class="mess3">Scan the QR code to download</p>
-            <button class="downloadIosBtn mView" onclick="location.href='https://www.pgyer.com/InWeCrypto'">Download</button>
+            <button class="downloadIosBtn mView" onclick="location.href='http://fir.im/InWeCrypto'">Download</button>
         </div>
         <div class="downloadBox" id="downloadBox">
             <div class="downloadPhoneImg">
