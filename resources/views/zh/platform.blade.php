@@ -86,11 +86,11 @@
                 <p class="mess1">PC客户端下载</p>
                 <p class="mess2">敬请期待</p>
                 <div class="btnBox">
-                    <div class="ios">
+                    <div class="ios" id='macdownload'>
                         <span class="icon"></span>
                         <span class="text">Mac</span>
                     </div>
-                    <div class="and">
+                    <div class="and" id='windownload'>
                         <span class="icon"></span>
                         <span class="text">Windows</span>
                     </div>
@@ -122,6 +122,50 @@
         </div> -->
 
         <script src="/template/footer.js?{{ $jss_version }}"></script>
+        <script>
+            $(function(){
+
+                var getUrl = function () {
+                    let result = null
+                    $.ajax({
+                        url: 'https://inwecrypto-china.oss-cn-shanghai.aliyuncs.com/pc-wallet/latest-mac.json',
+                        type: 'GET',
+                        async: false,
+                        success: function (res) {
+
+                            if (res) {
+                                var version = res.version;
+                                var url = res.url.substring(0, res.url.lastIndexOf('/') + 1)
+                                result = {
+                                    mac: encodeURI(url + 'InWeCrypto-' + version + '.dmg'),
+                                    win: encodeURI(url + "InWeCrypto Setup " + version + '.exe')
+                                }
+                            } else {
+                                alert('获取json文件错误')
+                            }
+                        }
+                    });
+                    return result;
+                }
+                var pcDownloadURI = getUrl();
+                if(pcDownloadURI){
+                    var macd=$("#macdownload");
+                    var wind=$("#windownload");
+                    if(pcDownloadURI.mac&&pcDownloadURI.mac.length>0){
+                        macd.addClass('effect');
+                        macd.on('click',function(){
+                            window.open(pcDownloadURI.mac)
+                        })
+                    }
+                    if(pcDownloadURI.win&&pcDownloadURI.win.length>0){
+                        wind.addClass('effect');
+                        wind.on('click',function(){
+                            window.open(pcDownloadURI.win)
+                        })
+                    }
+                }
+            });
+        </script>
     </div>
 </body>
 
