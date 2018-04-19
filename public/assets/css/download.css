@@ -484,3 +484,35 @@ body {
     font-size: .28rem;
   }
   
+
+.e-hugeDownLoadBox .pcDownloadBox .btnBox .ios.effect{
+    border: 1px solid #FF5B26;
+    color: #FF5B26;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .ios.effect .icon{
+    background: url("../images/dios.png") no-repeat center center / contain;
+  }
+   .e-hugeDownLoadBox .pcDownloadBox .btnBox .ios.effect:hover{
+      color: #ffffff;
+      background: #FF5B26;
+   }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .ios.effect:hover .icon{
+     background: url("../images/dios_ico.png") no-repeat center center / contain;
+  }
+
+
+
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .and.effect{
+    border: 1px solid #008F2E;
+    color: #008F2E;
+  }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .and.effect .icon{
+    background: url("../images/windows11.png") no-repeat center center / contain;
+  }
+   .e-hugeDownLoadBox .pcDownloadBox .btnBox .and.effect:hover{
+      color: #ffffff;
+      background: #008F2E;
+   }
+  .e-hugeDownLoadBox .pcDownloadBox .btnBox .and.effect:hover .icon{
+     background: url("../images/windows22.png") no-repeat center center / contain;
+  }
