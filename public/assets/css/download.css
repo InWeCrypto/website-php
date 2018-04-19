@@ -118,6 +118,7 @@ body {
     font-size: .18rem;
     font-weight: 200;
     color: #999;
+    display:none!important;
   }
   .e-hugeDownLoadBox .downloadBox .mobileDownload .btnBox {
     display: flex;
@@ -233,6 +234,7 @@ body {
     font-size: .18rem;
     font-weight: 200;
     color: #999;
+    display: none!important;
   }
   .e-hugeDownLoadBox .pcDownloadBox .btnBox {
     display: flex;
