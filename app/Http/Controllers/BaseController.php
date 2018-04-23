@@ -18,10 +18,16 @@ class BaseController extends Controller
     public function __construct(){
         $this->lang = \App::getLocale();
     }
-    public function httpReq($url = '')
+    public function httpReq($url = '', $params = [])
     {
-        $url = $url ? $url . '?' . Request::getQueryString() : str_replace('/'.$this->lang.'/', '', Request::getRequestUri());
-        $url = env('INWE_URL') . $url ;
+        if(!$url){
+            $url = str_replace('/'.$this->lang.'/', '', Request::getRequestUri());
+        }else{
+            parse_str(Request::getQueryString(), $querys);
+            $params = array_merge($querys, $params);
+            $url .= '?' . http_build_query($params);
+        }
+        $url = env('INWE_URL') . $url;
 
         $header = [
             'lang' => $this->lang
