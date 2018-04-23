@@ -43,7 +43,7 @@ class ArticleController extends BaseController
         $page = $request->route()->uri() == 'newsdetail2' ? 'detail_2' : 'detail';
 
         if($ip = $request->header('X-Forwarded-For')){
-            \Log::info('文章详情页访问IP:' . $ip);
+            \Log::info('文章 ' . $id . '详情页访问IP:' . $ip);
         }
 
         return view($lang . '.' . $page, $res);
