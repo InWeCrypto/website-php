@@ -42,9 +42,10 @@ class ArticleController extends BaseController
         // newsdetail2 是手机显示页面, newsdetail是分享出去的页面
         $page = $request->route()->uri() == 'newsdetail2' ? 'detail_2' : 'detail';
 
-        $ip = getRealIp();
+        if($ip = $request->header('X-Forwarded-For')){
+            \Log::info('文章详情页访问IP:' . $ip);
+        }
 
-        \Log::info('文章详情页访问IP:' . $ip);
         return view($lang . '.' . $page, $res);
     }
 
