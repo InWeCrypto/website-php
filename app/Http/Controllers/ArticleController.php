@@ -33,9 +33,9 @@ class ArticleController extends BaseController
         }
         // $cache = 'INWE:ARTICLE:SHOW:' . $id;
         // $cache_time = env('ARTICLE_CACHE_TIME', 10);
-        $url = 'article/' . $id;
+        $url = 'article/' . $id ;
         // $res = Cache::remember($cache, $cache_time, function() use($url) {
-            $res = $this->httpReq($url);
+            $res = $this->httpReq($url, ['update_click_rate' => true]);
             // return $res;
         // });
         $lang = $res['lang'] ?? $this->lang;
@@ -43,7 +43,7 @@ class ArticleController extends BaseController
         $page = $request->route()->uri() == 'newsdetail2' ? 'detail_2' : 'detail';
 
         if($ip = $request->header('X-Forwarded-For')){
-            \Log::info('文章 ' . $id . '详情页访问IP:' . $ip);
+            \Log::info('文章 ' . $id . ' 详情页访问IP:' . $ip);
         }
 
         return view($lang . '.' . $page, $res);
