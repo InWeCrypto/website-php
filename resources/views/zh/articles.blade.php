@@ -100,7 +100,7 @@
 			</div>
 		</div>
 		<a href="https://t.me/inwe_crypto">加入InWe</a>
-		<a href="/en/download">下载app</a>
+		<a href="/zh/platform">下载app</a>
 	</div>
 
 

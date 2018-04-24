@@ -154,9 +154,9 @@
 						</div>
 					</div>
 
-					<div class="downloadBtn showFlowBox mView">
+					<!--<div class="downloadBtn showFlowBox mView">
 						<a href="/en/download">Download</a>
-					</div>
+					</div>-->
 
 					<div class="downloadBtnHold"></div>
 				</div>

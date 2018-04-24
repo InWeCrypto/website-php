@@ -121,9 +121,9 @@
             <img src="/assets/images/eicon16.png" alt=""></div>
         </div>
 
-        <div class="downloadBtn showFlowBox mView">
+        <!--<div class="downloadBtn showFlowBox mView">
             <a href="/zh/platform">进入下载页面</a>
-        </div>
+        </div>-->
 
         <div class="downloadBtnHold"></div>
       </div>
