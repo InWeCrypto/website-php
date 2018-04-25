@@ -48,7 +48,7 @@
 
 <body style="padding-left: 54px; padding-right: 54px;" class="pc pace-done">
 	<div style="height: 0;width: 0;overflow: hidden;opacity: 0;">
-			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273500830'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1273500830%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+			<script type="text/javascript">var cnzz_protocol = "https://";document.write(unescape("%3Cspan id='cnzz_stat_icon_1273500830'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1273500830%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
 		</div> 
 	<div class="pace  pace-inactive">
 		<div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
@@ -154,9 +154,9 @@
 						</div>
 					</div>
 
-					<div class="downloadBtn showFlowBox mView">
+					<!--<div class="downloadBtn showFlowBox mView">
 						<a href="/en/download">Download</a>
-					</div>
+					</div>-->
 
 					<div class="downloadBtnHold"></div>
 				</div>
