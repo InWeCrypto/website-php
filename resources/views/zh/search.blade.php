@@ -111,7 +111,10 @@
 <script>
 
 	$(function(){
-        $(".headerBox .navBox .eleft").append('<input class="search" type="text" />')
+		$(".articles li div p").each(function(){
+			$(this).text(getLocalTime($(this).text()))
+		})
+    $(".headerBox .navBox .eleft").append('<input class="search" type="text" />')
 
 		$(".headerBox input").val('{{ $k }}');
 		$(".input input").val('{{ $k }}');

@@ -99,7 +99,7 @@
 			</div>
 		</div>
 		<a href="https://t.me/inwe_crypto">Join InWe</a>
-		<a href="/en/platform">Download</a>
+		<a href="/en/download_app">Download</a>
 	</div>
 
 
@@ -119,7 +119,9 @@
 	}
 
 	$(function(){
-
+		$(".articles li div p").each(function(){
+			$(this).text(getLocalTime($(this).text()))
+		})
 		$(".input input").bind("keydown",search);
 
 		$(".kw-ctl").click(function(){
