@@ -1,0 +1,86 @@
+html,body{
+	height: 100%!important;
+	width: 100%!important;
+	padding: 0!important;
+}
+*{
+	box-sizing: border-box;
+}
+.content{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: transparent url(../images/rpbg-3.png) no-repeat center top / 100% 100%;
+}
+.content #qrCodeOrigin{
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+.content #qrCode{
+	position: absolute;
+	top: 22.5%;
+	left: 50%;
+	height: 28%;
+	width: auto;
+	transform: translateX(-50%);
+	background: #ffffff;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.content .ct{
+	position: absolute;
+	left: 25px;
+	right: 25px;
+	top: 68%;
+}
+.content .ct .input-ct{
+	border-radius: 10px;
+	overflow: hidden;
+	border: solid 1px #FFEB00;
+	background: #ffffff;
+	position: relative;
+	padding: 12px 100px 12px 10px;
+	height: 45px;
+	margin-bottom: 10px;
+}
+.content .ct .input-ct input{
+	height: 19px;
+	line-height: 21px;
+	border: none;
+	background: #ffffff;
+	color: 333333;
+	width: 100%;
+	font-size: 15px;
+	outline: none;
+}
+.content .ct .input-ct label{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 80px;
+	text-align: center;
+	background: #FFEB00;
+	text-align: center;
+	line-height: 45px;
+	font-size: 15px;
+	color: #BC7705;
+	font-weight: 500;
+}
+.content .ct ul{
+	width: 100%;
+}
+.content .ct ul li{
+	line-height: 15px;
+	color: #AB0043;
+	font-size: 12px;
+}
+
+
+
+
+

@@ -34,7 +34,7 @@ class BaseController extends Controller
         ];
 
         $res = HttpReq::url($url)->header($header)->request();
-        if ($res['code'] != '4000') {
+        if (empty($res['code']) || $res['code'] != '4000') {
             abort(401);
         }
 
