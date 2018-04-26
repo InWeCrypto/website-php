@@ -51,7 +51,7 @@
 		<div class="btn-cont">
 			<p><em>inwecrypto.com</em></p>
 			<p>In Crypto We Trust.</p>
-			<a class="btn ios" href="https://inwecrypto-china.oss-cn-shanghai.aliyuncs.com/inwecrypto.ipa">
+			<a class="btn ios" href="itms-services://?action=download-manifest&url=https://inwecrypto-china.oss-cn-shanghai.aliyuncs.com/manifest.plist">
 				<img src="/assets/images/download-icon01.png" />Download
 			</a>
 			<a class="btn android" href="https://inwecrypto-china.oss-cn-shanghai.aliyuncs.com/inwecrypto.apk">
