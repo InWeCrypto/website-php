@@ -70,7 +70,7 @@
   <script>
     $(function(){
         $(".rp-cont button").click(function(){
-            if(".content").hasClass("dom-ct"){
+            if($(".content").hasClass("dom-ct")){
                 window.open("{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}");
             }else{
                 location.href = "{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}";
