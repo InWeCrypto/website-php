@@ -63,7 +63,7 @@
   </div>
 	<div class="rp-bg">
 		<div class="rp-cont" >
-			<h1>了开始就啊大灵放假撒浪蝶狂蜂</h1>
+			<h1>{{ $share_msg }}</h1>
 			<button>领红包</button>
 		</div>
 	</div>

@@ -26,6 +26,7 @@ class RedbagController extends BaseController
                 $share_type_class = 'img-ct';
             break;
             case 2:
+                return redirect(action('RedbagController@draw', compact('id','redbag_addr')));
             break;
             case 3:
                 $share_type_class = 'iframe-ct';
@@ -36,11 +37,9 @@ class RedbagController extends BaseController
             default:
                 abort(404);
         }
-
-
-
         $share_attr = $res['share_attr'];
-        return view('redbag.rpDetail', compact('share_type','share_attr', 'id', 'redbag_addr', 'share_type_class'));
+        $share_msg = $res['share_msg'];
+        return view('redbag.rpDetail', compact('share_type','share_attr', 'id', 'redbag_addr', 'share_type_class', 'share_msg'));
     }
 
     // 红包领取界面
@@ -55,7 +54,7 @@ class RedbagController extends BaseController
         $redbag_id = $res['redbag_id'];
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
-        $qr_text = action('RedbagController@store', compact('id','redbag_addr'));
+        $qr_text = action('RedbagController@store', compact('id','redbag_addr') + ['_id' => $id, '_redbag_addr' => $redbag_addr]);
         return view('redbag.rpGetLink', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
     }
 
@@ -91,7 +90,6 @@ class RedbagController extends BaseController
         $info = HttpReq::url($url)->request([
             'wallet_addr' => $request->get('wallet_addr')
         ], 'POST');
-
 
         if(empty($info['code'])){
             return fail();
