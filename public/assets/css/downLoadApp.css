@@ -58,6 +58,7 @@ body {
   top: -2px;
 }
 .mask{
+	display: none;
 	position: fixed;
 	left: 0;
 	top: 0;
