@@ -87,6 +87,7 @@ class HttpReqService
                 break;
         }
         if (count($body) > 0 && in_array($method, ['POST','PUT','DELETE'])) {
+            curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json; charset=utf-8']);
             // 全部数据使用HTTP协议中的"POST"操作来发送。
             curl_setopt($this->ch, CURLOPT_POSTFIELDS, json_encode($body));
         }else{

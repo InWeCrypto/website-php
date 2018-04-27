@@ -1,0 +1,96 @@
+html,body{
+	height: 100%!important;
+	width: 100%!important;
+	padding: 0!important;
+}
+*{
+	box-sizing: border-box;
+}
+body {
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+}
+.content {
+   width: 100%;
+   padding: 0 15px 0 15px;
+   padding-bottom: 156px;
+}
+.content.iframe-ct{
+	height: 100%;
+}
+.content .cont{
+	width: 100%;
+	display: none;
+}
+.content.iframe-ct #iframe-ct{
+	display: block;
+}
+.content.img-ct #img-ct{
+	display: block;
+}
+.content.dom-ct{
+	display: none;
+}
+.content.dom-ct #dom-ct{
+	display: block;
+}
+.content #iframe-ct{
+	height: 100%;
+}
+.content .cont iframe{
+	border: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.content .cont .img-view{
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+
+
+
+.rp-bg{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 156px;
+	padding: 3px 15px;
+	background: #ffffff;
+}
+.rp-cont{
+	height: 150px;
+	padding-top: 33px;
+	background: transparent url(../images/rpbg-1.png) no-repeat center center / 100% 100%;
+}
+.rp-cont h1{
+	line-height: 25px;
+	height: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	color: #333333;
+	margin-bottom: 38px;
+	text-align: center;
+}
+.rp-cont button{
+	border: none;
+	outline: none;
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	height: 30px;
+	width: 125px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 19px;
+	background: #EB3E3C;
+	font-size: 15px;
+	color: #ffffff;
+}

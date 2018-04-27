@@ -1,0 +1,139 @@
+html,body{
+	height: 100%!important;
+	width: 100%!important;
+	padding: 0!important;
+}
+*{
+	box-sizing: border-box;
+}
+.content{
+	height: 100%;
+	width: 100%;
+	padding: 15px 20px 0;
+	position: relative;
+	background: #f04237 url(../images/rpbg-4.jpg) no-repeat center top / 100% 100%;
+}
+.content .top-ct{
+	height: 200px;
+	width: 100%;
+	padding: 0 45px;
+	background: transparent url(../images/rpbg-5.png) no-repeat center top / 100% 100%;
+}
+.content .top-ct h3{
+	height: 60px;
+	padding-top: 27px;
+	line-height: 33px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.content .top-ct h3 span{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0 20px;
+	display: inline-block;
+	color: #F04335;
+	max-width: 100%;
+	min-width: 150px;
+	background: transparent url(../images/rpbg-6.png) repeat-x center left / 33px 33px;
+}
+.content .top-ct p{
+	color: #333333;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+
+.content .center-ct{
+	margin-top: -15px;
+	height: 230px;
+	width: 100%;
+	padding-top: 60px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+	background: transparent url(../images/rpbg-7.png) no-repeat center top / 100% 100%;
+}
+.content .center-ct p{
+	color: #919191;
+	line-height: 16px;
+	font-size: 12px;
+	font-weight: 400;
+}
+.content .center-ct .box{
+	width: 120px;
+}
+.content .center-ct #qrCodeOrigin{
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+.content .center-ct #qrCode{
+	height: 108px;
+	width: 108px;
+	display: block;
+	margin: 0 auto;
+	background: #ffffff;
+	padding: 4px;
+	box-sizing: border-box;
+}
+
+
+
+.content .ct{
+	width: 100%;
+}
+.content .ct .input-ct{
+	border-radius: 10px;
+	overflow: hidden;
+	border: solid 1px #FFEB00;
+	background: #ffffff;
+	position: relative;
+	padding: 12px 100px 12px 10px;
+	height: 45px;
+	margin-bottom: 10px;
+}
+.content .ct .input-ct input{
+	height: 19px;
+	line-height: 21px;
+	border: none;
+	background: #ffffff;
+	color: 333333;
+	width: 100%;
+	font-size: 15px;
+	outline: none;
+}
+.content .ct .input-ct label{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 80px;
+	text-align: center;
+	background: #FFEB00;
+	text-align: center;
+	line-height: 45px;
+	font-size: 15px;
+	color: #BC7705;
+	font-weight: 500;
+}
+.content .ct ul{
+	width: 100%;
+}
+.content .ct ul li{
+	line-height: 15px;
+	color: #AB0043;
+	font-size: 12px;
+}
+
+
+
+
+

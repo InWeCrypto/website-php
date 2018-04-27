@@ -44,9 +44,9 @@
 </head>
 
 <body class="pace-done page-index">
-	<div style="height: 0;width: 0;overflow: hidden;opacity: 0;">
+	<!--<div style="height: 0;width: 0;overflow: hidden;opacity: 0;">
 		<script type="text/javascript">var cnzz_protocol = "https://";document.write(unescape("%3Cspan id='cnzz_stat_icon_1273500830'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1273500830%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
-	</div>
+	</div>-->
 	<div class="headerBox">
 		<script src="/template/top.js?{{ $jss_version }}"></script>
 	</div>
@@ -100,7 +100,7 @@
 			</div>
 		</div>
 		<a href="https://t.me/inwe_crypto">加入InWe</a>
-		<a href="/zh/platform">下载app</a>
+		<a href="/zh/download_app">下载app</a>
 	</div>
 
 
@@ -120,7 +120,9 @@
 	}
 
 	$(function(){
-
+		$(".articles li div p").each(function(){
+			$(this).text(getLocalTime($(this).text()))
+		})
 		$(".input input").bind("keydown",search);
 
 		$(".kw-ctl").click(function(){
