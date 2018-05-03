@@ -1446,7 +1446,7 @@ html,body {
 }
 
 
-html body.pace-done #root .mView{
+html body .mView{
 	display: none;
 }
 
