@@ -46,7 +46,7 @@
 	<script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
 </head>
 
-<body style="padding-left: 54px; padding-right: 54px;" class="pc pace-done">
+<body style="padding-left: 54px; padding-right: 54px;" class="pace-done">
 <!--	<div style="height: 0;width: 0;overflow: hidden;opacity: 0;">
 			<script type="text/javascript">var cnzz_protocol = "https://";document.write(unescape("%3Cspan id='cnzz_stat_icon_1273500830'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1273500830%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
 		</div> -->

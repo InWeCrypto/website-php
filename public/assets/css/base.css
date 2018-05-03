@@ -1446,8 +1446,8 @@ html,body {
 }
 
 
-html body .mView{
-	display: none;
+html body.pc .mView{
+	display: none!important;
 }
 
 

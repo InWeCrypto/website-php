@@ -46,7 +46,7 @@
   <script type="text/javascript" src="/assets/js/util.js"></script>
 </head>
 
-<body class="pc pace-done page-index">
+<body class="pace-done page-index">
 	<div class="content">
 		<div class="btn-cont">
 			<p><em>inwecrypto.com</em></p>

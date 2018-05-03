@@ -46,7 +46,7 @@
   <script type="text/javascript" src="/assets/js/util.js"></script>
 </head>
 
-<body class="pc pace-done page-index">
+<body class="pace-done page-index">
 	<div style="height: 0;width: 0;opacity: 0;overflow: hidden;">
 		<img src="data:image/png;base64,{!! base64_encode(\QrCode::format('png')->size(250)->generate($qr_text)) !!}" alt="微信预览图" />
 	</div>
