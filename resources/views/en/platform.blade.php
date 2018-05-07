@@ -150,7 +150,7 @@
                 return result;
             }
             var pcDownloadURI = getUrl();
-            if(pcDownloadURI){
+            /*if(pcDownloadURI){
                 var macd=$("#macdownload");
                 var wind=$("#windownload");
                 if(pcDownloadURI.mac&&pcDownloadURI.mac.length>0){
@@ -165,7 +165,7 @@
                         window.open(pcDownloadURI.win)
                     })
                 }
-            }
+            }*/
         });
         </script>
     </div>

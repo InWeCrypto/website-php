@@ -112,9 +112,12 @@ body {
     /*font-size: 26px;*/
     font-weight: normal;
     font-size: .16rem;
+    line-height: .36rem;
+    padding: 10px 0;
 }
 .mobile .content .page .article{
     font-size: .26rem;
+    line-height: .52rem;
 }
 .content .page .article p{
     margin: .18rem 0;

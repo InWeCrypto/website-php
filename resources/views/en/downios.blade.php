@@ -42,7 +42,7 @@
     <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
 </head>
 
-<body style="padding-left: 54px; padding-right: 54px;" class="pc pace-done">
+<body style="padding-left: 54px; padding-right: 54px;" class="pace-done">
     <div class="container m-container e-hugeDownIosBox" id="e-hugeDownIosBox">
         <div class="imgCover1">
             <img src="/assets/images/dyou_yingying.png" alt="" />

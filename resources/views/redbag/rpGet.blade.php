@@ -44,15 +44,17 @@
   <link rel="stylesheet" href="/assets/css/rpGet.css">
   <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/js/util.js"></script>
+  <script type="text/javascript" src="/assets/js/md5.js"></script>
 </head>
 
-<body class="pc pace-done page-index">
+<body class="pace-done page-index">
 	<div style="height: 0;width: 0;opacity: 0;overflow: hidden;">
 		<img src="data:image/png;base64,{!! base64_encode(\QrCode::format('png')->size(250)->generate($qr_text)) !!}" alt="微信预览图" />
 	</div>
   <div class="content">
   	<img id="qrCode" alt="qrCode" src="data:image/png;base64,{!! base64_encode(\QrCode::format('png')->size(250)->generate($qr_text)) !!}"/>
   	<div class="ct">
+  		<p class="promote-txt"></p>
   		<div class="input-ct">
   			<input type="text" placeholder="输入钱包地址，参与红包的领取" />
   			<label>领取</label>
@@ -64,6 +66,32 @@
   		</ul>
   	</div>
   </div>
-
+<script type="text/javascript">
+$(function(){
+	
+	var pth = location.pathname.split("/");
+  var id = pth[pth.length-2];
+  var addr = pth[pth.length-1];
+  
+  $(".input-ct label").click(function(){
+  	$(".promote-txt").text("");
+  	var signStatus = localStorage.getItem("signStatus") || "0";
+  	var wallet = $(".input-ct input").val().trim();
+  	if(!wallet)return false;
+    $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
+			wallet_addr: wallet ,
+			signStatus: signStatus,
+			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id);
+		},function(data){
+			if(data.code == 4000){
+				localStorage.getItem("signStatus","1");
+			}else{
+				$(".promote-txt").text(data.msg);
+			}
+		});
+  })
+  
+})
+</script>
 </body>
 </html>
