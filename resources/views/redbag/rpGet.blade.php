@@ -69,7 +69,7 @@
 <script type="text/javascript">
 $(function(){
 	
-	let baseUrl = /china.inwecrypto.com/.test(location.host)?"https://china.inwecrypto.com:4431/v2/":"https://dev.inwecrypto.com:4431/v2/";
+	//let baseUrl = /china.inwecrypto.com/.test(location.host)?"https://china.inwecrypto.com:4431/v2/":"https://dev.inwecrypto.com:4431/v2/";
 	var pth = location.pathname.split("/");
   var id = pth[pth.length-2];
   var addr = pth[pth.length-1];
