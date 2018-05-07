@@ -78,21 +78,28 @@
 <script type="text/javascript">
 $(function(){
 	
-	let baseUrl = /china.inwecrypto.com/.test(location.host)?"https://china.inwecrypto.com:4431/v2/":"https://dev.inwecrypto.com:4431/v2/";
+	//let baseUrl = /china.inwecrypto.com/.test(location.host)?"https://china.inwecrypto.com:4431/v2/":"https://dev.inwecrypto.com:4431/v2/";
 	var pth = location.pathname.split("/");
   var id = pth[pth.length-2];
   var addr = pth[pth.length-1];
+/*  var postSt = true;
+  var timeout = null;*/
   
   $(".input-ct label").click(function(){
-  	$(".promote-txt").text("");
+  	/*if(timeout){clearTimeout(timeout)};
+  	if(!postSt){$(".promote-txt").text("数据请求中");}*/
   	var signStatus = localStorage.getItem("signStatus") || "0";
   	var wallet = $(".input-ct input").val().trim();
+  	$(".promote-txt").text("");
   	if(!wallet)return false;
+  	/*postSt = false;
+  	timeout = setTimeout(function(){postSt = true},10000);*/
     $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
 			wallet_addr: wallet ,
 			signStatus: signStatus,
 			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id);
 		},function(data){
+			/*postSt = true;*/
 			if(data.code == 4000){
 				localStorage.getItem("signStatus","1");
 			}else{
