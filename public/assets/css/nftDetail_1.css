@@ -1,0 +1,28 @@
+html{
+	min-height: 100%;
+	background: #ffffff url(../images/detail-bg03.png) no-repeat bottom center / 100% auto;
+}
+body{
+	padding: 0 15px!important;
+	padding-bottom: 30px!important;
+}
+.list-ct{
+	list-style: none;
+}
+.list-ct li{
+	display: flex;
+	justify-content: space-between;
+	line-height: 20px;
+	padding: 15px 0;
+	border-bottom: solid 1px #F6F6F6;
+	color: #333333;
+	font-size: 13px;
+	font-weight: 400;
+}
+.list-ct li label{
+	padding-right: 10px;
+}
+.list-ct li p{
+	word-break: break-all;
+	text-align: right;
+}
