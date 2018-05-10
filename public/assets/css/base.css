@@ -1673,9 +1673,14 @@ html body.pc .mView{
 	margin: 0;
 	color: #333333;
 	font-size: 0.14rem;
-	margin-right: 1.4rem;
+	margin-right: 0.4rem;
 	margin-top: 0.08rem;
   margin-left: 0.15rem;
+}
+.contactBox a.user-aggre{
+	margin-top: 0.07rem;
+	color: #333333;
+	display: inline-block;
 }
 .contactBox .iconBox{
 	margin: 0;
