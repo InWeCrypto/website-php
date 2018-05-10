@@ -83,6 +83,7 @@ $(function(){
 			signStatus: signStatus,
 			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id)
 		},function(data){
+			alert(data.msg);
 			if(data.code == 4000){
 				localStorage.getItem("signStatus","1");
 			}else{
