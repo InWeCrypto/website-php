@@ -6,13 +6,18 @@ html,body{
 *{
 	box-sizing: border-box;
 }
-.content{
-	height: 100%;
-	width: 100%;
-	padding: 15px 20px 50px;
-	overflow-y: auto;
-	position: relative;
+
+body{
+	padding-top: 15px!important;
+	padding-bottom: 50px!important;
 	background: #f04237 url(../images/rpbg-4.jpg) no-repeat center top / 100% 100%;
+	height: auto!important;
+	min-height: 100%;
+}
+.content{
+	width: 100%;
+	padding:0 20px;
+	position: relative;
 }
 .content .top-ct{
 	height: 200px;
