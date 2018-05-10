@@ -81,7 +81,7 @@ $(function(){
     $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
 			wallet_addr: wallet ,
 			signStatus: signStatus,
-			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id);
+			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id)
 		},function(data){
 			if(data.code == 4000){
 				localStorage.getItem("signStatus","1");
