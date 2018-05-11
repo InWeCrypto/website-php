@@ -9,11 +9,13 @@ html,body{
 body {
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
+		position: relative;
 }
 .content {
    width: 100%;
-   padding: 0 15px 0 15px;
-   padding-bottom: 156px;
+   padding: 0 15px 0 15px!important;
+   padding-bottom: 156px!important;
+   box-sizing: border-box;
 }
 .content.iframe-ct{
 	height: 100%;
@@ -36,6 +38,7 @@ body {
 }
 .content #iframe-ct{
 	height: 100%;
+	overflow: auto;
 }
 .content .cont iframe{
 	border: none;

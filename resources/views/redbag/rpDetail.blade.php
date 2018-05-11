@@ -46,11 +46,8 @@
   <script type="text/javascript" src="/assets/js/util.js"></script>
 </head>
 
-<body class="pace-done page-index">
-	<div style="height: 0;width: 0;opacity: 0;overflow: hidden;">
-		<img src="" alt="微信预览图" />
-	</div>
-  <div class="content {{ $share_type_class }}">
+<body class="pace-done page-index content {{ $share_type_class }}">
+  <!--<div>-->
           <div id="iframe-ct" class="cont">
               <iframe src="{{ $share_attr }}"></iframe>
           </div>
@@ -60,7 +57,7 @@
           <div id="dom-ct" class="cont">
 
           </div>
-  </div>
+ <!-- </div>-->
 	<div class="rp-bg">
 		<div class="rp-cont" >
 			<h1>{{ $share_msg }}</h1>
