@@ -81,6 +81,7 @@ $(function(){
 	var pth = location.pathname.split("/");
   var id = pth[pth.length-2];
   var addr = pth[pth.length-1];
+  addr = (typeof addr == "string") ? addr.toLowerCase() : addr;
   
   $(".input-ct label").click(function(){
   	var signStatus = localStorage.getItem("signStatus") || "0";
