@@ -241,6 +241,7 @@ a.join{
 .mobile{
 	overflow: auto;
 	-webkit-overflow-scrolling:touch;
+	height: auto!important;
 }
 .mobile .cont {
 	padding-top: 1.55rem;
