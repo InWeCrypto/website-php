@@ -1,5 +1,4 @@
 let baseUrl = /china.inwecrypto.com/.test(location.host)?"https://china.inwecrypto.com:4431/v2/":"https://dev.inwecrypto.com:4431/v2/";
-alert('util--'+baseUrl);
 
 const getQuery = query => {
 	let res = {};
