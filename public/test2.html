@@ -40,8 +40,8 @@
   <!-- End -->
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
-  <link rel="stylesheet" href="/assets/css/rpGetLink.css?{{ $jss_version }}">
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/rpGetLink.css">
   <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/js/util.js"></script>
   <script type="text/javascript" src="/assets/js/md5.js"></script>
@@ -76,30 +76,33 @@
   	</div>
   </div>
 <script type="text/javascript">
+	alert('test2--1'+baseUrl);
 $(function(){
-	
 	var pth = location.pathname.split("/");
-  var id = pth[pth.length-2];
-  var addr = pth[pth.length-1];
+  var id = "98";
+  var addr = "0x96973005c14d98d4e48aba0124537ccb6b5975b0";
   addr = (typeof addr == "string") ? addr.toLowerCase() : addr;
-  
+  alert('test2--2'+baseUrl);
   $(".input-ct label").click(function(){
+  	try{
+  	alert('正常执行');
   	var signStatus = localStorage.getItem("signStatus") || "0";
   	var wallet = $(".input-ct input").val().trim();
   	$(".promote-txt").text("");
   	if(!wallet)return false;
     $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
-			wallet_addr: wallet ,
-			signStatus: signStatus,
-			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id)
-		},function(data){
-			alert(data.msg);
-			if(data.code == 4000){
-				localStorage.getItem("signStatus","1");
-			}else{
-				$(".promote-txt").text(data.msg);
-			}
-		});
+		wallet_addr: wallet ,
+		signStatus: signStatus,
+		hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id)
+	},function(data){
+		alert(data.msg);
+		if(data.code == 4000){
+			localStorage.getItem("signStatus","1");
+		}else{
+			$(".promote-txt").text(data.msg);
+		}
+	});
+	}catch(e){alert(e)}
   })
   
 })

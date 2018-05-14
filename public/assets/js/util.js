@@ -1,4 +1,5 @@
 let baseUrl = /china.inwecrypto.com/.test(location.host)?"https://china.inwecrypto.com:4431/v2/":"https://dev.inwecrypto.com:4431/v2/";
+alert('util--'+baseUrl);
 
 const getQuery = query => {
 	let res = {};
@@ -324,7 +325,22 @@ const isWeiXin = () => {
 
     function IsTouchDeviceFoo() {
         if (self != top) {
-            return true;
+        	var deviceAgent = navigator.userAgent.toLowerCase();
+          IsTouchDevice = (
+              deviceAgent.match(/(iphone|ipod|ipad)/) ||
+              deviceAgent.match(/(android)/) ||
+              deviceAgent.match(/(iemobile)/) ||
+              deviceAgent.match(/iphone/i) ||
+              deviceAgent.match(/ipad/i) ||
+              deviceAgent.match(/ipod/i) ||
+              deviceAgent.match(/blackberry/i) ||
+              deviceAgent.match(/bada/i)
+          );
+          if (IsTouchDevice !== null){
+          	return IsTouchDevice = true;
+          }else{
+          	return IsTouchDevice = false;
+          }
         }
         if (null !== IsTouchDevice)
             return IsTouchDevice;

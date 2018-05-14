@@ -40,21 +40,41 @@
   <!-- End -->
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
-  <link rel="stylesheet" href="/assets/css/rpQrCode.css?{{ $jss_version }}">
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/rpDetail.css">
   <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/js/util.js"></script>
 </head>
 
-<body class="pace-done page-index">
-	<div style="height: 0;width: 0;opacity: 0;overflow: hidden;">
-		<img src="" alt="微信预览图" />
+<body class="pace-done page-index content iframe-ct">
+  <!--<div>-->
+	  <div id="iframe-ct" class="cont">
+	      <iframe src="https://www.baidu.com/"></iframe>
+	  </div>
+	  <div id="img-ct" class="cont ">
+	      <img class="img-view" src="{{ $share_attr }}" />
+	  </div>
+	  <div id="dom-ct" class="cont">
+	
+	  </div>
+ <!-- </div>-->
+	<div class="rp-bg">
+		<div class="rp-cont" >
+			<h1>{{ $share_msg }}</h1>
+			<button>领红包</button>
+		</div>
 	</div>
-  <div class="content">
-  	<img id="qrCode" alt="qrCode" src="data:image/png;base64,{!! base64_encode(\QrCode::format('png')->size(250)->generate('Hello,LaravelAcademy!')) !!}" />
-  	<h3>“给你一铁锹”</h3>
-  	<p>给你一皋靶给你一皋靶给你一皋靶</p>
-  </div>
+  <script>
+    $(function(){
+        $(".rp-cont button").click(function(){
+            if($(".content").hasClass("dom-ct")){
+       //         window.open("{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}");
+            }else{
+       //         location.href = "{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}";
+            }
+        });
+    });
+  </script>
 
 </body>
 </html>
