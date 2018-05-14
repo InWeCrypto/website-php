@@ -86,7 +86,7 @@
 		<ul class="articles">
             @foreach($articles as $article)
             <li><a href="{{ action('ArticleController@show', ['art_id' => $article['id']]) }}">
-                @if(in_array($article['type'], [2,3,4,6]) && $article['img'])
+                @if(in_array($article['type'], [2,3,4,6,12,13,14,15]) && $article['img'])
                 <img src="{{ $article['img'] }}" />
                 @endif
                 <div>
