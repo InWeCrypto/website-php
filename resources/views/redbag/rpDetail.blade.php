@@ -68,9 +68,9 @@
     $(function(){
         $(".rp-cont button").click(function(){
             if($(".content").hasClass("dom-ct")){
-                window.open("{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}");
+                window.open("{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}");
             }else{
-                location.href = "{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}";
+                location.href = "{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}";
             }
         });
     });
