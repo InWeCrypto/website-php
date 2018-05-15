@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>红包</title>
+  <title></title>
   <meta name="renderer" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0">
@@ -61,11 +61,20 @@
 	<div class="rp-bg">
 		<div class="rp-cont" >
 			<h1>{{ $share_msg }}</h1>
-			<button>领红包</button>
+			<button></button>
 		</div>
 	</div>
   <script>
     $(function(){
+    		var query = getQuery(location.search);
+    		if(query.lang == "zh"){
+    			$(".rp-cont button").text("领红包");
+    			$("title").text("红包");
+    		}else{
+    			$("title").text("Red Packet");
+    			$(".rp-cont button").text("Get Red Packet");
+    		}
+    		//query.target = query.target||"draw2";
         $(".rp-cont button").click(function(){
             if($(".content").hasClass("dom-ct")){
                 window.open("{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}");

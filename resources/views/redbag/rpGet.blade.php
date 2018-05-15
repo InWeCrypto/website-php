@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>红包</title>
+  <title></title>
   <meta name="renderer" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0">
@@ -56,18 +56,34 @@
   	<div class="ct">
   		<p class="promote-txt"></p>
   		<div class="input-ct">
-  			<input type="text" placeholder="输入钱包地址，参与红包的领取" />
-  			<label>领取</label>
+  			<input type="text" placeholder="" />
+  			<label></label>
   		</div>
   		<ul>
-  			<li>打开InWeCrypto主页右上角“红包”按钮，</li>
-  			<li>点击扫一扫即可快速领取红包，抢到的几率更大哟～ </li>
-  			<li>红包到账时间约为24-72H，请耐心等待</li>
+  			<li class="li-1"></li>
+  			<li class="li-2"></li>
+  			<li class="li-3"></li>
   		</ul>
   	</div>
   </div>
 <script type="text/javascript">
 $(function(){
+	var lang = getQuery(location.search).lang;
+	if(lang == "zh"){
+		$("title").text("红包");
+		$(".input-ct input").attr("placeholder","输入钱包地址，参与红包的领取");
+		$(".input-ct label").text("领取");
+		$(".li-1").text("打开InWeCrypto主页右上角“红包”按钮，");
+		$(".li-2").text("点击扫一扫即可快速领取红包，抢到的几率更大哟～ ");
+		$(".li-3").text("红包到账时间约为24-72H，请耐心等待");
+	}else{
+		$("title").text("Red Packet");
+		$(".input-ct input").attr("placeholder","Enter your wallet address to get Red Packet");
+		$(".input-ct label").text("Get");
+		$(".li-1").text("Open Red Packet through the right corner on the InWeCrypto Home page. ");
+		$(".li-2").text("Click scaning to quickly access Red Packet. ");
+		$(".li-3").text("The processing time is 24-72H, please be patient.");
+	}
 	
 	var pth = location.pathname.split("/");
   var id = pth[pth.length-2];
