@@ -14,6 +14,9 @@ class RedbagController extends BaseController
     // 红包分享页面
     public function show(Request $request, $id, $redbag_addr)
     {
+        $lang = $request->get('lang', 'zh');
+        $target = $request->get('target', 'draw');
+
         $url = $this->uri . '/' . $id . '/' . $redbag_addr;
 
         $res = $this->httpReq($url);
@@ -26,7 +29,8 @@ class RedbagController extends BaseController
                 $share_type_class = 'img-ct';
             break;
             case 2:
-                return redirect(action('RedbagController@draw', compact('id','redbag_addr')));
+                $_target = $target == 'draw' ? 'draw' : 'draw2';
+                return redirect(action('RedbagController@' . $_target, compact('id','redbag_addr','target','lang')));
             break;
             case 3:
                 $share_type_class = 'iframe-ct';
