@@ -48,6 +48,15 @@
 
 <body class="pace-done page-index">
 	<div class="content">
+		<div class="ios-ct">
+			<p>1.Open the url with Safari and install the app on your mobile phone. 
+(Note: if your WeChat can’t open the url, please open it with 
+Safari and follow the steps to install the app.)</p>
+			<p>2.When the app is downloaded, user will encounter 
+a warning of “Untrusted App Developer”. 
+Then please open Settings -> General -> Device Management -> Trust App.</p>
+			<p>3.After the app is trusted, you can open the app and start your experience.</p>
+		</div>
 		<div class="btn-cont">
 			<p><em>inwecrypto.com</em></p>
 			<p>In Crypto We Trust.</p>
@@ -69,6 +78,7 @@
 		$(function(){
 			if(isiOS){
 				$(".btn.ios").addClass("active");
+				$(".ios-ct").show();
 			}else{
 				$(".btn.android").addClass("active");
 			}

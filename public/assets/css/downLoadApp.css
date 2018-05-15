@@ -75,6 +75,29 @@ body {
 
 
 
-
+.ios-ct{
+	display: none;
+	position: absolute;
+  bottom: 230px;
+  left: 0;
+  right: 0;
+  padding: 0 20px 30px 20px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.ios-ct p{
+	margin-bottom:5px;
+}
+.ios-ct:after{
+	content:"";
+	display: block;
+	height:1px;
+	position:absolute;
+	left:20px;
+	right:20px;
+	background:#ffffff;
+	bottom: 0;
+	opacity: 0.5;
+}
 
 

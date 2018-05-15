@@ -30,12 +30,22 @@ body {
 .content.img-ct #img-ct{
 	display: block;
 }
-.content.dom-ct{
+.content #dom-ct{
 	display: none;
 }
 .content.dom-ct #dom-ct{
 	display: block;
 }
+
+.content.dom-ct .rp-bg{
+	max-width: 450px;
+	left:50%;
+	transform: translateX(-50%);
+	top:50%;
+	margin-top:-75px;
+	width: 100%;
+}
+
 .content #iframe-ct{
 	height: 100%;
 	overflow: auto;

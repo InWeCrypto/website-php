@@ -48,6 +48,15 @@
 
 <body class="pace-done page-index">
 	<div class="content">
+		<div class="ios-ct">
+			<p>1.使用苹果手机自带的 Safari 浏览器打开安装链接， 
+点击安装到手机上。 （注：若微信内无法打开下载 
+链接，请复制下载网址到浏览器打开，进行安装步骤）</p>
+			<p>2.新下载APP的用户会出现提示框“未受信任的企业级 
+开发者”。此时需要打开：手机自带的设置 -> 
+通用 -> 设备管理 -> 选择应用 -> 点击信任。</p>
+			<p>3.信任应用完毕后，打开App，就可以尽情体验了。</p>
+		</div>
 		<div class="btn-cont">
 			<p><em>inwecrypto.com</em></p>
 			<p>In Crypto We Trust.</p>
@@ -69,6 +78,7 @@
 		$(function(){
 			if(isiOS){
 				$(".btn.ios").addClass("active");
+				$(".ios-ct").show();
 			}else{
 				$(".btn.android").addClass("active");
 			}
