@@ -95,6 +95,7 @@ $(function(){
 		$(".li-3").text("The processing time is 24-72H, please be patient.");
 		$(".p-text").text("Scan the QR code to open the Red Packet");
 	}
+	var walletPt = (lang == "zh") ? "请输入正确的钱包地址" : "Please enter correct wallet address";
 	
 	var pth = location.pathname.split("/");
   var id = pth[pth.length-2];
@@ -106,6 +107,13 @@ $(function(){
   	var wallet = $(".input-ct input").val().trim();
   	$(".promote-txt").text("");
   	if(!wallet)return false;
+  	
+  	wallet = wallet.replace(/^0x/,"");
+  	if(wallet.length!=40){
+  		return $(".promote-txt").text(walletPt);
+  	}
+  	wallet = "0x" + wallet;
+  	
     $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
 			wallet_addr: wallet ,
 			signStatus: signStatus,
