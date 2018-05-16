@@ -48,7 +48,7 @@
             <img src="/assets/images/dyou_yingying.png" alt="" />
         </div>
         <div class="headerBox">
-            <script src="/template/top.js?{{ $jss_version }}"></script>
+            <script src="/template/top-en.js?{{ $jss_version }}"></script>
             <p class="mess1">How to install InWeCrypto app (Android)?</p>
             <p class="mess2">
                 <img src="/assets/images/fiosqrcode.jpg" alt="" />
