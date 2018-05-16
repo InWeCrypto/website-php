@@ -60,7 +60,7 @@ html,body{
         </div>
         <div class="headerBox">
             <script src="/template/top-en.js?{{ $jss_version }}"></script>
-            <p class="mess1">How to install InWeCrypto app (Android)?</p>
+            <p class="mess1">Install InWeCrypto app (Android)?</p>
             <p class="mess2">
                 <img src="/assets/images/fiosqrcode.jpg" alt="" />
             </p>

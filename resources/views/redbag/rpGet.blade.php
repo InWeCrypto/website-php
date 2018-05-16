@@ -108,8 +108,8 @@ $(function(){
 			signStatus: signStatus,
 			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id)
 		},function(data){
-			//alert(data.msg);
 			if(data.code == 4000){
+				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
 				localStorage.getItem("signStatus","1");
 			}else{
 				$(".promote-txt").text(data.msg);

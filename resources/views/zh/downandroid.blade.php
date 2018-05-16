@@ -61,7 +61,7 @@ html,body{
         </div>
         <div class="headerBox">
             <script src="/template/top.js?{{ $jss_version }}"></script>
-            <p class="mess1">如何安装InWeCrypto的Android版APP</p>
+            <p class="mess1">安装InWeCrypto的Android版APP</p>
             <p class="mess2">
                 <img src="/assets/images/fiosqrcode-zh.png" alt="" />
             </p>
