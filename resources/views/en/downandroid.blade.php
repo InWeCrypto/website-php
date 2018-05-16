@@ -41,7 +41,18 @@
   <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
   <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
 </head>
-
+<style>
+html,body{
+  height:100%!important;
+  background: #f7f7f7;
+}
+.contactBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+</style>
 <body style="padding-left: 54px; padding-right: 54px;" class=" pace-done">
     <div class="container m-container e-hugeDownIosBox" id="e-hugeDownIosBox">
         <div class="imgCover1">
