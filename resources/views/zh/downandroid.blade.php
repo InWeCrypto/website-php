@@ -54,7 +54,7 @@
                 <img src="/assets/images/fiosqrcode.jpg" alt="" />
             </p>
             <p class="mess3">扫描二维码下载链接</p>
-            <button class="downloadIosBtn mView" onclick="location.href='zh/download_app'">下载</button>
+            <button class="downloadIosBtn mView" onclick="location.href='/zh/download_app'">下载</button>
         </div>
         <script src="/template/footer.js?{{ $jss_version }}"></script>
     </div>
