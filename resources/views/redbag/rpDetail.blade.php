@@ -64,9 +64,9 @@
 			<button></button>
 		</div>-->
 		<div class="rp-ct">
-			<img class="bg zh" src="assets/images/rpbg-01.png" />
-			<img class="bg en" src="assets/images/rpbg-02.png" />
-			<img class="icon" src="assets/images/rp-icon.png" />
+			<img class="bg zh" src="/assets/images/rpbg-01.png" />
+			<img class="bg en" src="/assets/images/rpbg-02.png" />
+			<img class="icon" src="/assets/images/rp-icon.png" />
 		</div>
 	</div>
   <script>
@@ -81,7 +81,7 @@
     			$(".rp-cont button").text("Get Red Packet");
     			$(".rp-ct .en").addClass("active");
     		}
-    		
+
     		//query.target = query.target||"draw2";
         $(".rp-ct").click(function(){
             if($(".content").hasClass("dom-ct")){
