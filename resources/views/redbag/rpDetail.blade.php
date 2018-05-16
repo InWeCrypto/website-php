@@ -59,9 +59,14 @@
           </div>
  <!-- </div>-->
 	<div class="rp-bg">
-		<div class="rp-cont" >
+		<!--<div class="rp-cont" >
 			<h1>{{ $share_msg }}</h1>
 			<button></button>
+		</div>-->
+		<div class="rp-ct">
+			<img class="bg zh" src="assets/images/rpbg-01.png" />
+			<img class="bg en" src="assets/images/rpbg-02.png" />
+			<img class="icon" src="assets/images/rp-icon.png" />
 		</div>
 	</div>
   <script>
@@ -70,12 +75,15 @@
     		if(query.lang == "zh"){
     			$(".rp-cont button").text("领红包");
     			$("title").text("红包");
+    			$(".rp-ct .zh").addClass("active");
     		}else{
     			$("title").text("Red Packet");
     			$(".rp-cont button").text("Get Red Packet");
+    			$(".rp-ct .en").addClass("active");
     		}
+    		
     		//query.target = query.target||"draw2";
-        $(".rp-cont button").click(function(){
+        $(".rp-ct").click(function(){
             if($(".content").hasClass("dom-ct")){
                 window.open("{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}");
             }else{

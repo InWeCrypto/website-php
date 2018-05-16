@@ -14,7 +14,7 @@ body {
 .content {
    width: 100%;
    padding: 0 15px 0 15px!important;
-   padding-bottom: 156px!important;
+   padding-bottom: 135px!important;
    box-sizing: border-box;
 }
 .content.iframe-ct{
@@ -73,11 +73,56 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 156px;
-	padding: 3px 15px;
+	height: auto;
+	padding: 0 35px;
 	background: #ffffff;
+	height: 130px;
 }
-.rp-cont{
+.rp-ct{
+	position: relative;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+.rp-ct:after{
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+}
+.rp-bg .bg{
+	width: 100%;
+	float: left;
+	height: auto;
+	display: none;
+}
+.rp-bg .bg.active{
+	display: block;
+}
+.rp-bg .icon{
+	position: absolute;
+  left: 10.4%;
+  top: 25.9%;
+	height: 24.8px;
+	width: 20px;
+	animation: redpack .2s infinite;
+}
+@keyframes redpack{
+	0% {transform: translateX(0px);}
+	25% {transform: translateX(-0.6px);}
+	50% {transform: translateX(0px);}
+	75% {transform: translateX(0.6px);}
+	100% {transform: translateX(0px);}
+}
+
+
+
+
+
+
+
+/*.rp-cont{
 	height: 150px;
 	padding-top: 33px;
 	background: transparent url(../images/rpbg-1.png) no-repeat center center / 100% 100%;
@@ -108,3 +153,4 @@ body {
 	font-size: 15px;
 	color: #ffffff;
 }
+*/
