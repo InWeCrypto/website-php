@@ -51,10 +51,10 @@
             <script src="/template/top.js?{{ $jss_version }}"></script>
             <p class="mess1">如何安装InWeCrypto的iOS版APP</p>
             <p class="mess2">
-                <img src="/assets/images/fiosqrcode.jpg" alt="" />
+                <img src="/assets/images/fiosqrcode-zh.png" alt="" />
             </p>
             <p class="mess3">扫描二维码下载链接</p>
-            <button class="downloadIosBtn mView" onclick="location.href='http://fir.im/InWeCrypto'">下载</button>
+            <button class="downloadIosBtn mView" onclick="location.href='/zh/download_app'">下载</button>
         </div>
         <div class="downloadBox" id="downloadBox">
             <div class="downloadPhoneImg">

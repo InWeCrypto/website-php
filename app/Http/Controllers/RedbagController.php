@@ -14,11 +14,16 @@ class RedbagController extends BaseController
     // 红包分享页面
     public function show(Request $request, $id, $redbag_addr)
     {
+        $lang = $request->get('lang', 'zh');
+        $target = $request->get('target', 'draw') == 'draw' ? 'draw' : 'draw2';
+
         $url = $this->uri . '/' . $id . '/' . $redbag_addr;
 
         $res = $this->httpReq($url);
 
         $share_type = $res['share_type'];
+        $share_attr = $res['share_attr'];
+        $share_msg = $res['share_msg'];
 
         $share_type_class = '';
         switch($share_type){
@@ -26,7 +31,7 @@ class RedbagController extends BaseController
                 $share_type_class = 'img-ct';
             break;
             case 2:
-                return redirect(action('RedbagController@draw', compact('id','redbag_addr')));
+                return redirect(action('RedbagController@' . $target, compact('id','redbag_addr','target','lang')));
             break;
             case 3:
                 $share_type_class = 'iframe-ct';
@@ -37,14 +42,19 @@ class RedbagController extends BaseController
             default:
                 abort(404);
         }
-        $share_attr = $res['share_attr'];
-        $share_msg = $res['share_msg'];
-        return view('redbag.rpDetail', compact('share_type','share_attr', 'id', 'redbag_addr', 'share_type_class', 'share_msg'));
+
+        if(in_array($share_type, [1, 3]) && !parse_url($share_attr, PHP_URL_SCHEME)){
+            $share_attr = 'http://' . $share_attr;
+        }
+
+        return view('redbag.rpDetail', compact('share_type','share_attr', 'id', 'redbag_addr', 'share_type_class', 'share_msg', 'lang', 'target'));
     }
 
     // 红包领取界面
     public function draw(Request $request, $id, $redbag_addr)
     {
+        $lang = $request->get('lang', 'zh');
+
         $url = $this->uri . '/' . $id . '/' . $redbag_addr;
 
         $res = $this->httpReq($url);
@@ -55,13 +65,15 @@ class RedbagController extends BaseController
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
         $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@store', compact('id','redbag_addr','share_user')) . '&inwe';
+        $qr_text = action('RedbagController@store', compact('id','redbag_addr','share_user','lang')) . '&inwe';
         return view('redbag.rpGetLink', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
     }
 
     // inwe App 红包界面
     public function draw2(Request $request, $id, $redbag_addr)
     {
+        $lang = $request->get('lang', 'zh');
+
         $url = $this->uri . '/' . $id . '/' . $redbag_addr;
 
         $res = $this->httpReq($url);
@@ -72,7 +84,7 @@ class RedbagController extends BaseController
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
         $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@store', compact('id','redbag_addr','share_user')) . '&inwe';
+        $qr_text = action('RedbagController@store', compact('id','redbag_addr','share_user', 'lang')) . '&inwe';
         return view('redbag.rpGet', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
     }
 

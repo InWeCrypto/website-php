@@ -54,7 +54,7 @@
                 <img src="/assets/images/fiosqrcode.jpg" alt="" />
             </p>
             <p class="mess3">Scan the QR code to download</p>
-            <button class="downloadIosBtn mView" onclick="location.href='http://fir.im/InWeCrypto'">Download</button>
+            <button class="downloadIosBtn mView" onclick="location.href='/en/download_app'">Download</button>
         </div>
         <div class="downloadBox" id="downloadBox">
             <div class="downloadPhoneImg">

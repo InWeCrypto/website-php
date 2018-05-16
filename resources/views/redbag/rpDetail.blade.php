@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>红包</title>
+  <title></title>
   <meta name="renderer" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0">
@@ -59,18 +59,35 @@
           </div>
  <!-- </div>-->
 	<div class="rp-bg">
-		<div class="rp-cont" >
+		<!--<div class="rp-cont" >
 			<h1>{{ $share_msg }}</h1>
-			<button>领红包</button>
+			<button></button>
+		</div>-->
+		<div class="rp-ct">
+			<img class="bg zh" src="/assets/images/rpbg-01.png" />
+			<img class="bg en" src="/assets/images/rpbg-02.png" />
+			<img class="icon" src="/assets/images/rp-icon.png" />
 		</div>
 	</div>
   <script>
     $(function(){
-        $(".rp-cont button").click(function(){
+    		var query = getQuery(location.search);
+    		if(query.lang == "zh"){
+    			$(".rp-cont button").text("领红包");
+    			$("title").text("红包");
+    			$(".rp-ct .zh").addClass("active");
+    		}else{
+    			$("title").text("Red Packet");
+    			$(".rp-cont button").text("Get Red Packet");
+    			$(".rp-ct .en").addClass("active");
+    		}
+
+    		//query.target = query.target||"draw2";
+        $(".rp-ct").click(function(){
             if($(".content").hasClass("dom-ct")){
-                window.open("{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}");
+                window.open("{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}");
             }else{
-                location.href = "{{ action('RedbagController@draw', ['id'=> $id,'redbag_addr'=> $redbag_addr]) }}";
+                location.href = "{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}";
             }
         });
     });

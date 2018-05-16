@@ -33,6 +33,9 @@ Route::group(['prefix' => $locale], function ($router) use ($locale) {
     $router->any('/downios', function() use ($locale) {
         return view($locale . '.' . 'downios');
     });
+    $router->any('/downandroid', function() use ($locale) {
+        return view($locale . '.' . 'downandroid');
+    });
     $router->any('download_app', function() use($locale) {
         return view($locale . '.' . 'downloadApp');
     });
