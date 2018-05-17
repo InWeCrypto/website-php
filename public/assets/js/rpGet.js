@@ -22,6 +22,11 @@ $(function(){
   var addr = pth[pth.length-1];
   addr = (typeof addr == "string") ? addr.toLowerCase() : addr;
   
+  
+  /*if(localStorage.getItem("signStatus")){
+  	$(".input-ct label").text("查看");
+  }*/
+  
   $(".input-ct label").click(function(){
   	$(".promote-txt").text("");
   	var signStatus = localStorage.getItem("signStatus") || "0";

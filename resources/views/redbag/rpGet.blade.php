@@ -58,7 +58,7 @@
   		<p class="promote-txt"></p>
   		<div class="input-ct">
   			<input type="text" placeholder="" />
-  			<label></label>
+  			<label class="get active"></label>
   			<span class="btn-mask">
   				<span class="loading"></span>
   			</span>

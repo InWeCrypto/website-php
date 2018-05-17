@@ -30,6 +30,11 @@ body{
 	left: 50%;
 	top: 75px;
 	margin-left: -35px;
+	background: #ffffff;
+}
+.top-ct .img-ct img{
+	height: 43px;
+	width: auto;
 }
 .top-ct h3{
 	line-height: 30px;
@@ -109,6 +114,12 @@ body{
 	color: #333333;
 	font-size: 13px;
 	word-break: break-all;
+}
+.record-list li .lt{
+	max-width: 50%;
+}
+.record-list li .rt{
+	max-width: 45%;
 }
 .record-list li .lt span{
 	color: #ACACAC;
