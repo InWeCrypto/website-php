@@ -15,7 +15,7 @@ $(function(){
 		$(".li-1").text("Open Red Packet through the right corner on the InWeCrypto Home page. ");
 		$(".li-2").html("Click scaning to quickly access Red Packet.<a href=\'http://inwecrypto.com/en/platform\' target=\'_blank\'>Download APP</a> ");
 		$(".li-3").text("The processing time is 24-72H, please be patient.");
-		$(".p-text").text("Scan the QR code to open the Red Packet");
+		$(".p-text").text("Scan the QR Code in InWe app and open the red packet");
 	}
 	var walletPt = (lang == "zh") ? "请输入正确的钱包地址" : "Please enter correct wallet address";
 	
