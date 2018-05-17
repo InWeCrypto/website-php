@@ -61,11 +61,12 @@ class RedbagController extends BaseController
         if($res['share_type'] == 0){
             abort(404);
         }
+        $target = 'draw';
         $redbag_id = $res['redbag_id'];
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
         $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@draw', compact('id','redbag_addr','share_user','lang')) . '&inwe';
+        $qr_text = action('RedbagController@show', compact('id','redbag_addr','share_user','lang','target')) . '&inwe';
         return view('redbag.rpGetLink', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
     }
 
@@ -80,11 +81,12 @@ class RedbagController extends BaseController
         if($res['share_type'] == 0){
             abort(404);
         }
+        $target = 'draw2';
         $redbag_id = $res['redbag_id'];
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
         $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@draw2', compact('id','redbag_addr','share_user', 'lang')) . '&inwe';
+        $qr_text = action('RedbagController@show', compact('id','redbag_addr','share_user', 'lang','target')) . '&inwe';
         return view('redbag.rpGet', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
     }
 
