@@ -24,7 +24,7 @@ $(function(){
 					li.addClass("cur");
 				}
 				li.find(".lt p").text(item.draw_addr);
-				li.find(".lt span").text(item.created_at);
+				li.find(".lt span").text(getLocalTime(item.created_at));
 				if(/-/.test(item.value)){
 					li.find(".rt").text("???"+data.gnt_category.name);
 				}else{
