@@ -3,8 +3,14 @@ $(function(){
 	var lang = query.lang;
 	if(lang == "zh"){
 		$("title").text("红包");
+		$(".txt").text("红包将在24H内开奖，请留意相关钱包关注");
+		$(".txt-name").text("领取数量");
+		$(".txt-hj").text("合计：");
 	}else{
 		$("title").text("Red Packet");
+		$(".txt").text("The Red Packet will be launched in 24H , Please keep watching the info of your wallet");
+		$(".txt-name").text("Opened Packet Number");
+		$(".txt-hj").text("Total：");
 	}
 	
   
@@ -66,7 +72,11 @@ $(function(){
 					$(".num").text(parseFloat(parseInt(info.value,16)/Math.pow(10,data.gnt_category.decimals)).toFixed(4)+data.gnt_category.name);
 				}
 			}
-			$(".name").text("你已经成功领取了"+data.share_user+"的红包");
+			if(lang == "zh"){
+				$(".name").text("你已经成功领取了"+data.share_user+"的红包");
+			}else{
+				$(".name").text("You have already opened the Packet "+data.share_user+"'s Red Packet");
+			}
 			$(".addr").text(data.redbag_addr);
 		}else{
 			
