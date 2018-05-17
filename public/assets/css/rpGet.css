@@ -3,6 +3,13 @@ html,body{
 	width: 100%!important;
 	padding: 0!important;
 }
+body{
+	background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #eb3e3c 51%, #eb3e3c 100%);
+	max-width: 450px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+}
 *{
 	box-sizing: border-box;
 }
@@ -11,6 +18,8 @@ html,body{
 	width: 100%;
 	position: relative;
 	background: transparent url(../images/rpbg-3.png) no-repeat center top / 100% 100%;
+  max-width: 450px;
+  max-height: 720px;
 }
 .content #qrCodeOrigin{
 	height: 0;
@@ -77,13 +86,18 @@ html,body{
 }
 .content .ct ul li{
 	line-height: 15px;
-	color: #AB0043;
+	color: #ffffff;
 	font-size: 12px;
+}
+.content .ct ul li a{
+	color: #FFEB00;
+	outline: #FFEB00;
+	text-decoration: underline;
 }
 .promote-txt{
 	padding-bottom: 5px;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 

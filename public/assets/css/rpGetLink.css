@@ -6,18 +6,26 @@ html,body{
 *{
 	box-sizing: border-box;
 }
-
+html{
+	background: #f04237;
+}
 body{
 	padding-top: 15px!important;
 	padding-bottom: 50px!important;
 	background: #f04237 url(../images/rpbg-4.jpg) no-repeat center top / 100% 100%;
 	height: auto!important;
 	min-height: 100%;
+	max-width: 450px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
 }
 .content{
 	width: 100%;
 	padding:0 20px;
 	position: relative;
+	max-width: 450px;
+  max-height: 720px;
 }
 .content .top-ct{
 	height: 200px;
@@ -129,21 +137,68 @@ body{
 	font-size: 15px;
 	color: #BC7705;
 	font-weight: 500;
+	z-index: 1;
 }
 .content .ct ul{
 	width: 100%;
 }
 .content .ct ul li{
 	line-height: 15px;
-	color: #AB0043;
+	color: #ffffff;
 	font-size: 12px;
+}
+.content .ct ul li a{
+	color: #FFEB00;
+	outline: #FFEB00;
+	text-decoration: underline;
 }
 
 
 .promote-txt{
 	padding-bottom: 5px;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 
+
+.loading{
+    /*固定loading*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*垂直水平居中*/
+    margin: -15px 0 0 -15px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-color: #fff #ffffff transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    /*动画时间1s，线性变化，无限循环*/
+    animation: loading 1s linear infinite;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.btn-mask.active{
+	display: block;
+}
+.btn-mask{
+	display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 80px;
+    text-align: center;
+    background: #FFEB00;
+    z-index: 10;
+}
