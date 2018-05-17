@@ -65,7 +65,7 @@ class RedbagController extends BaseController
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
         $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@store', compact('id','redbag_addr','share_user','lang')) . '&inwe';
+        $qr_text = action('RedbagController@draw', compact('id','redbag_addr','share_user','lang')) . '&inwe';
         return view('redbag.rpGetLink', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
     }
 
@@ -84,7 +84,7 @@ class RedbagController extends BaseController
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
         $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@store', compact('id','redbag_addr','share_user', 'lang')) . '&inwe';
+        $qr_text = action('RedbagController@draw2', compact('id','redbag_addr','share_user', 'lang')) . '&inwe';
         return view('redbag.rpGet', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
     }
 
