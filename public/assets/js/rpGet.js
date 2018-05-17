@@ -25,7 +25,7 @@ $(function(){
   addr = (typeof addr == "string") ? addr.toLowerCase() : addr;
   
   
-  if(localStorage.getItem("signStatus")){//如果已经领取过的终端
+  if(localStorage.getItem("id-"+id)){//如果已经领取过的终端
   	$(".input-ct .get").removeClass("active");
   	$(".input-ct .check").addClass("active").click(function(){
   		var wallet = $(".input-ct input").val().trim();
@@ -40,7 +40,7 @@ $(function(){
   
   $(".input-ct .get").click(function(){
   	$(".promote-txt").text("");
-  	var signStatus = localStorage.getItem("signStatus") || "0";
+  	var signStatus = localStorage.getItem("id-"+id) || "0";
   	var wallet = $(".input-ct input").val().trim();
   	wallet = wallet.replace(/^0x/,"");
   	if(wallet.length!=40){
@@ -59,7 +59,9 @@ $(function(){
 			$(".input-ct input").removeAttr("disabled");
 			if(data.code == 4000){
 				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
-				localStorage.setItem("signStatus","1");
+				
+				localStorage.setItem("id-"+id,"1");
+				
 				setTimeout(function(){
 					location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
 				},3000);

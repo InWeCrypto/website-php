@@ -31,13 +31,13 @@ $(function(){
 					var num = parseInt(item.value,16)/Math.pow(10,data.gnt_category.decimals);
 					console.log(num);
 					total+=num;
-					li.find(".rt").text(num+data.gnt_category.name);
+					li.find(".rt").text(parseFloat(num).toFixed(4)+data.gnt_category.name);
 				}
 				cont.append(li);
 			})
 			
 			if(total){
-				$(".record-title .rt em").text(total+data.gnt_category.name);
+				$(".record-title .rt em").text(parseFloat(total).toFixed(4)+data.gnt_category.name);
 			}else{
 				$(".record-title .rt em").text("???"+data.gnt_category.name);
 			}
@@ -63,7 +63,7 @@ $(function(){
 				if(/-/.test(info.value)){
 					$(".num").text("???"+data.gnt_category.name)
 				}else{
-					$(".num").text(parseInt(info.value,16)/Math.pow(10,data.gnt_category.decimals)+data.gnt_category.name);
+					$(".num").text(parseFloat(parseInt(info.value,16)/Math.pow(10,data.gnt_category.decimals)).toFixed(4)+data.gnt_category.name);
 				}
 			}
 			$(".name").text("你已经成功领取了"+data.share_user+"的红包");
