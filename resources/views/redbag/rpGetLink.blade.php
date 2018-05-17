@@ -107,7 +107,7 @@ $(function(){
   	var wallet = $(".input-ct input").val().trim();
   	$(".promote-txt").text("");
   	if(!wallet)return false;
-  	
+  	wallet = wallet.toLowerCase();
   	wallet = wallet.replace(/^0x/,"");
   	if(wallet.length!=40){
   		return $(".promote-txt").text(walletPt);
