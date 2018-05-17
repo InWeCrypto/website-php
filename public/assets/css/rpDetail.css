@@ -13,8 +13,8 @@ body {
 }
 .content {
    width: 100%;
-   padding: 0 15px 0 15px!important;
-   padding-bottom: 135px!important;
+   padding: 0!important;
+   padding-bottom: 0!important;
    box-sizing: border-box;
 }
 .content.iframe-ct{
@@ -43,7 +43,7 @@ body {
 	transform: translateX(-50%);
 	top:50%;
 	margin-top:-75px;
-	width: 100%;
+	margin-bottom: 0;
 }
 
 .content #iframe-ct{
@@ -68,16 +68,27 @@ body {
 
 
 
-.rp-bg{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: auto;
-	padding: 0 35px;
-	background: #ffffff;
-	height: 130px;
+
+
+.rp-bg {
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+  height: auto;
+  padding: 0 35px;
+  background: transparent;
+  height: 75px;
+  width: 75px;
+  padding: 0;
 }
+.rp-bg img {
+    vertical-align: middle;
+    height: 100%;
+    width: auto;
+}
+
+
+
 .rp-ct{
 	position: relative;
 	top: 50%;

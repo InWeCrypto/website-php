@@ -58,3 +58,8 @@ Route::get('/redbag/{id}/{redbag_addr}', 'RedbagController@show');
 Route::get('/redbag/draw/{id}/{redbag_addr}', 'RedbagController@draw');
 Route::get('/redbag/draw2/{id}/{redbag_addr}', 'RedbagController@draw2');
 Route::post('/redbag/{id}/{redbag_addr}', 'RedbagController@store');
+
+// 个人红包领取记录
+Route::get('/redbag/rpRecord', function(){
+	return view('redbag.rpRecord');
+});

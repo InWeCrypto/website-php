@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>红包</title>
+  <title></title>
   <meta name="renderer" content="webkit" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0">
@@ -41,44 +41,43 @@
 
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
-  <link rel="stylesheet" href="/assets/css/rpGetLink.css?{{ $jss_version }}">
-  <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
+  <link rel="stylesheet" href="/assets/css/rpRecord.css?{{ $jss_version }}">
+  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
-  <script type="text/javascript" src="/assets/js/md5.js?{{ $jss_version }}"></script>
-  <script type="text/javascript" src="/assets/js/rpGetLink.js?{{ $jss_version }}"></script>
+  <script type="text/javascript" src="/assets/js/md5.js"></script>
+  <script type="text/javascript" src="/assets/js/rpRecord.js?{{ $jss_version }}"></script>
 </head>
 
-<body class="pace-done page-index">
-	<div style="height: 0;width: 0;opacity: 0;overflow: hidden;">
-		<img src="data:image/png;base64,{!! base64_encode(\QrCode::format('png')->size(250)->generate('Hello,LaravelAcademy!')) !!}" alt="微信预览图" />
+<body>
+	<div class="top-ct">
+		<div class="img-ct">
+			<img src="" />
+		</div>
+		<h3 class="name"></h3>
+		<p class="addr"></p>
+		<h2 class="num"></h2>
+		<h4 class="txt">红包将在24H内开奖，请留意相关钱包关注</h4>
 	</div>
-  <div class="content">
-  	<div class="top-ct">
-  		<h3><span>{{ $share_user }}</span></h3>
-  		<p>{{ $share_msg }}</p>
-  	</div>
-  	<div class="center-ct">
-  		<div class="box">
-  			<img id="qrCode" alt="qrCode" src="data:image/png;base64,{!! base64_encode(\QrCode::format('png')->size(250)->generate($qr_text)) !!}"/>
-  			<p class="p-text"></p>
-  		</div>
-  	</div>
-  	<div class="ct">
-  		<p class="promote-txt"></p>
-  		<div class="input-ct">
-  			<input type="text" placeholder="" />
-  			<label class="get active"></label>
-  			<label class="check"></label>
-  			<span class="btn-mask">
-  				<span class="loading"></span>
-  			</span>
-  		</div>
-  		<ul>
-  			<li class="li-1"></li>
-  			<li class="li-2"> </li>
-  			<li class="li-3"></li>
-  		</ul>
-  	</div>
-  </div>
+	<div class="record-title">
+		<div class="lt">
+			领取数量<span></span>
+		</div>
+		<div class="rt">
+			合计：<em></em>
+		</div>
+	</div>
+	<ul class="record-list">
+		
+		
+	</ul>
+	<div style="display: none;" class="template">
+		<li>
+			<div class="lt">
+				<p></p>
+				<span></span>
+			</div>
+			<div class="rt"></div>
+		</li>
+	</div>
 </body>
 </html>

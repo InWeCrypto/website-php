@@ -42,8 +42,9 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
   <link rel="stylesheet" href="/assets/css/rpDetail.css?{{ $jss_version }}">
-  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/util.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.min.js?{{ $jss_version }}"></script>
+  <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
+  <script type="text/javascript" src="/assets/js/rpDetail.js?{{ $jss_version }}"></script>
 </head>
 
 <body class="pace-done page-index content {{ $share_type_class }}">
@@ -63,35 +64,14 @@
 			<h1>{{ $share_msg }}</h1>
 			<button></button>
 		</div>-->
-		<div class="rp-ct">
+		<!--<div class="rp-ct">
 			<img class="bg zh" src="/assets/images/rpbg-01.png" />
 			<img class="bg en" src="/assets/images/rpbg-02.png" />
 			<img class="icon" src="/assets/images/rp-icon.png" />
-		</div>
+		</div>-->
+		<img style="display: none;" class="zh" class="rp-icon" src="/assets/images/rp-icon.gif" />
+		<img style="display: none;" class="en" class="rp-icon" src="/assets/images/rp-icon-en.png" />
 	</div>
-  <script>
-    $(function(){
-    		var query = getQuery(location.search);
-    		if(query.lang == "zh"){
-    			$(".rp-cont button").text("领红包");
-    			$("title").text("红包");
-    			$(".rp-ct .zh").addClass("active");
-    		}else{
-    			$("title").text("Red Packet");
-    			$(".rp-cont button").text("Get Red Packet");
-    			$(".rp-ct .en").addClass("active");
-    		}
-
-    		//query.target = query.target||"draw2";
-        $(".rp-ct").click(function(){
-            if($(".content").hasClass("dom-ct")){
-                window.open("{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}");
-            }else{
-                location.href = "{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}";
-            }
-        });
-    });
-  </script>
-
+	<div id="urlTarget" style="display: none;">{{action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang])}}</div>
 </body>
 </html>
