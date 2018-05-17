@@ -40,12 +40,12 @@
   <!-- End -->
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="assets/css/base.css?{{ $jss_version }}" />
-  <link rel="stylesheet" href="assets/css/rpRecord.css?{{ $jss_version }}">
-  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/util.js?{{ $jss_version }}"></script>
-  <script type="text/javascript" src="assets/js/md5.js"></script>
-  <script type="text/javascript" src="assets/js/rpRecord.js?{{ $jss_version }}"></script>
+  <link rel="stylesheet" href="/assets/css/base.css?{{ $jss_version }}" />
+  <link rel="stylesheet" href="/assets/css/rpRecord.css?{{ $jss_version }}">
+  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/util.js?{{ $jss_version }}"></script>
+  <script type="text/javascript" src="/assets/js/md5.js"></script>
+  <script type="text/javascript" src="/assets/js/rpRecord.js?{{ $jss_version }}"></script>
 </head>
 
 <body>
