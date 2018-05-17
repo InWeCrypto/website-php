@@ -67,6 +67,9 @@
   		<div class="input-ct">
   			<input type="text" placeholder="" />
   			<label></label>
+  			<span class="btn-mask">
+  				<span class="loading"></span>
+  			</span>
   		</div>
   		<ul>
   			<li class="li-1"></li>
@@ -106,13 +109,13 @@ $(function(){
   	var signStatus = localStorage.getItem("signStatus") || "0";
   	var wallet = $(".input-ct input").val().trim();
   	$(".promote-txt").text("");
-  	if(!wallet)return false;
-  	wallet = wallet.toLowerCase();
+  	$(".input-ct .btn-mask").addClass("active");
+  	//if(!wallet)return false;
   	wallet = wallet.replace(/^0x/,"");
   	if(wallet.length!=40){
   		return $(".promote-txt").text(walletPt);
   	}
-  	wallet = "0x" + wallet;
+  	wallet = "0x" + wallet.toLowerCase();
   	
     $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
 			wallet_addr: wallet ,
@@ -120,6 +123,7 @@ $(function(){
 			hash: md5("wallet_addr="+wallet+"&signStatus="+signStatus+"&id="+id)
 		},function(data){
 			//alert(data.msg);
+			$(".input-ct .btn-mask").removeClass("active");
 			if(data.code == 4000){
 				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
 				localStorage.getItem("signStatus","1");
