@@ -51,7 +51,7 @@ $(function(){
 	},function(redata){
 		var info = {};
 		redata.data.data.forEach(function(item){
-			if(item.redbag_addr.toLowerCase() == addr.toLowerCase()){
+			if(item.redbag_addr.toLowerCase() == query.addr.toLowerCase()){
 				info = item;
 			}
 		})
