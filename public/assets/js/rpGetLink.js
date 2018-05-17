@@ -24,6 +24,22 @@ $(function(){
   var addr = pth[pth.length-1];
   addr = (typeof addr == "string") ? addr.toLowerCase() : addr;
   
+  
+  if(localStorage.getItem("signStatus")){//如果已经领取过的终端
+  	$(".input-ct .get").removeClass("active");
+  	$(".input-ct .check").addClass("active").click(function(){
+  		var wallet = $(".input-ct input").val().trim();
+	  	wallet = wallet.replace(/^0x/,"");
+	  	if(wallet.length!=40){
+	  		return $(".promote-txt").text(walletPt);
+	  	}
+	  	wallet = "0x" + wallet.toLowerCase();
+	  	location.href = "/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+  	});
+  }
+  
+  
+  
   $(".input-ct label").click(function(){
   	var signStatus = localStorage.getItem("signStatus") || "0";
   	var wallet = $(".input-ct input").val().trim();
@@ -47,8 +63,10 @@ $(function(){
 				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
 				localStorage.getItem("signStatus","1");
 				setTimeout(function(){
-					location.href = "rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+					location.href = "/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
 				},3000);
+				$(".input-ct .get").removeClass("active");
+  			$(".input-ct .check").addClass("active");
 			}else{
 				$(".promote-txt").text(data.msg);
 			}

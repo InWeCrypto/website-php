@@ -138,6 +138,10 @@ body{
 	color: #BC7705;
 	font-weight: 500;
 	z-index: 1;
+	display: none;
+}
+.content .ct .input-ct label.active{
+	display: block;
 }
 .content .ct ul{
 	width: 100%;

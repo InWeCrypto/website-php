@@ -34,7 +34,7 @@ $(function(){
 	  		return $(".promote-txt").text(walletPt);
 	  	}
 	  	wallet = "0x" + wallet.toLowerCase();
-	  	location.href = "rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+	  	location.href = "/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
   	});
   }
   
@@ -61,8 +61,10 @@ $(function(){
 				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
 				localStorage.getItem("signStatus","1");
 				setTimeout(function(){
-					location.href = "rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+					location.href = "/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
 				},3000);
+				$(".input-ct .get").removeClass("active");
+  			$(".input-ct .check").addClass("active");
 			}else{
 				$(".promote-txt").text(data.msg);
 			}
