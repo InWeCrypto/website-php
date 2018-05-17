@@ -96,7 +96,6 @@ $(function(){
   
   $(".input-ct label").click(function(){
   	$(".promote-txt").text("");
-  	$(".input-ct .btn-mask").addClass("active");
   	var signStatus = localStorage.getItem("signStatus") || "0";
   	var wallet = $(".input-ct input").val().trim();
   	//if(!wallet)return false;
@@ -105,7 +104,7 @@ $(function(){
   		return $(".promote-txt").text(walletPt);
   	}
   	wallet = "0x" + wallet.toLowerCase();
-  	
+  	$(".input-ct .btn-mask").addClass("active");
     $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
 			wallet_addr: wallet ,
 			signStatus: signStatus,
