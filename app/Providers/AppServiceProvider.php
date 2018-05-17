@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         view()->share('lang', \App::getLocale());
-        view()->share('jss_version', 'version=1.42');
+        view()->share('jss_version', 'version=1.43');
     }
 
     /**

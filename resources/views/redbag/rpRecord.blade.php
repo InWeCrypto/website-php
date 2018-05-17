@@ -54,8 +54,8 @@
 			<img src="" />
 		</div>
 		<h3 class="name"></h3>
-		<p class="addr">sdfkjashdfksdagsalkdfj</p>
-		<h2 class="num">???TTH</h2>
+		<p class="addr"></p>
+		<h2 class="num"></h2>
 		<h4 class="txt">红包将在24H内开奖，请留意相关钱包关注</h4>
 	</div>
 	<div class="record-title">
@@ -63,7 +63,7 @@
 			领取数量<span></span>
 		</div>
 		<div class="rt">
-			合计：<em>39489213749</em>
+			合计：<em></em>
 		</div>
 	</div>
 	<ul class="record-list">

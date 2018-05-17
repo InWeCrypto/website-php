@@ -20,7 +20,7 @@ $(function(){
 			
 			data.draws.forEach(function(item){
 				var li = dom.clone(true);
-				if(item.redbag.id == query.id){
+				if(item.draw_addr.toLowerCase() == query.addr){
 					li.addClass("cur");
 				}
 				li.find(".lt p").text(item.draw_addr);
@@ -51,7 +51,7 @@ $(function(){
 	},function(redata){
 		var info = {};
 		redata.data.data.forEach(function(item){
-			if(item.redbag_addr.toLowerCase() == query.addr.toLowerCase()){
+			if(item.redbag.id == query.id){
 				info = item;
 			}
 		})
