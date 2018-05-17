@@ -67,6 +67,8 @@ $(function(){
 				},3000);
 				$(".input-ct .get").removeClass("active");
   			$(".input-ct .check").addClass("active");
+			}else if(data.code == 6002){
+				location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
 			}else{
 				$(".promote-txt").text(data.msg);
 			}

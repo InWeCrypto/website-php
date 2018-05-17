@@ -59,14 +59,14 @@ $(function(){
 			$(".input-ct input").removeAttr("disabled");
 			if(data.code == 4000){
 				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
-				
 				localStorage.setItem("id-"+id,"1");
-				
 				setTimeout(function(){
 					location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
 				},3000);
 				$(".input-ct .get").removeClass("active");
   			$(".input-ct .check").addClass("active");
+			}else if(data.code == 6002){
+				location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
 			}else{
 				$(".promote-txt").text(data.msg);
 			}
