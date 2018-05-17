@@ -31,7 +31,7 @@ $(function(){
 					var num = parseInt(item.value,16)/Math.pow(10,data.gnt_category.decimals);
 					console.log(num);
 					total+=num;
-					li.find(".rt").text(num++data.gnt_category.name);
+					li.find(".rt").text(num+data.gnt_category.name);
 				}
 				cont.append(li);
 			})
