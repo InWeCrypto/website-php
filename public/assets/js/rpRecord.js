@@ -20,7 +20,7 @@ $(function(){
 			
 			data.draws.forEach(function(item){
 				var li = dom.clone(true);
-				if(item.draw_addr.toLowerCase() == query.addr){
+				if(item.draw_addr.toLowerCase() == query.wallet){
 					li.addClass("cur");
 				}
 				li.find(".lt p").text(item.draw_addr);
