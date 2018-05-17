@@ -26,20 +26,20 @@ $(function(){
 				li.find(".lt p").text(item.draw_addr);
 				li.find(".lt span").text(item.created_at);
 				if(/-/.test(item.value)){
-					li.find(".rt").text("???ETH");
+					li.find(".rt").text("???"+data.gnt_category.name);
 				}else{
 					var num = parseInt(item.value,16)/Math.pow(10,data.gnt_category.decimals);
 					console.log(num);
 					total+=num;
-					li.find(".rt").text(num+"ETH");
+					li.find(".rt").text(num++data.gnt_category.name);
 				}
 				cont.append(li);
 			})
 			
 			if(total){
-				$(".record-title .rt em").text("???ETH");
+				$(".record-title .rt em").text(total+data.gnt_category.name);
 			}else{
-				$(".record-title .rt em").text(total+"ETH");
+				$(".record-title .rt em").text("???"+data.gnt_category.name);
 			}
 			
 		}else{
@@ -49,7 +49,12 @@ $(function(){
 	$.post(baseUrl+"redbag/draw_record",{
 		wallet_addrs:[query.addr]
 	},function(redata){
-		var info = redata.data.data[0];
+		var info = {};
+		redata.data.data.forEach(function(item){
+			if(item.redbag_addr.toLowerCase() == addr.toLowerCase()){
+				info = item;
+			}
+		})
 		var data = info.redbag;
 		console.log('222',data)
 		if(redata.code == 4000){

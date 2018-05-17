@@ -34,7 +34,7 @@ $(function(){
 	  		return $(".promote-txt").text(walletPt);
 	  	}
 	  	wallet = "0x" + wallet.toLowerCase();
-	  	location.href = "/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+	  	location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
   	});
   }
   
@@ -59,9 +59,9 @@ $(function(){
 			$(".input-ct input").removeAttr("disabled");
 			if(data.code == 4000){
 				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
-				localStorage.getItem("signStatus","1");
+				localStorage.setItem("signStatus","1");
 				setTimeout(function(){
-					location.href = "/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+					location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
 				},3000);
 				$(".input-ct .get").removeClass("active");
   			$(".input-ct .check").addClass("active");

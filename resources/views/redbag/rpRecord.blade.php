@@ -67,35 +67,16 @@
 		</div>
 	</div>
 	<ul class="record-list">
-		<li class="cur">
-			<div class="lt">
-				<p>Alxln4p9in21…xlknfgr </p>
-				<span>2017-1-1 11:11:11</span>
-			</div>
-			<div class="rt">2.0987000000ETH</div>
-		</li>
-		<li>
-			<div class="lt">
-				<p>Alxln4p9in21…xlknfgr </p>
-				<span>2017-1-1 11:11:11</span>
-			</div>
-			<div class="rt">2.0987000000ETH</div>
-		</li>
-		<li>
-			<div class="lt">
-				<p>Alxln4p9in21…xlknfgr </p>
-				<span>2017-1-1 11:11:11</span>
-			</div>
-			<div class="rt">2.0987000000ETH</div>
-		</li>
+		
+		
 	</ul>
 	<div style="display: none;" class="template">
 		<li>
 			<div class="lt">
-				<p>Alxln4p9in21…xlknfgr </p>
-				<span>2017-1-1 11:11:11</span>
+				<p></p>
+				<span></span>
 			</div>
-			<div class="rt">2.0987000000ETH</div>
+			<div class="rt"></div>
 		</li>
 	</div>
 </body>
