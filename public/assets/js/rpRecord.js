@@ -47,7 +47,7 @@ $(function(){
 		}
 	});
 	$.post(baseUrl+"redbag/draw_record",{
-		wallet_addrs:[query.addr]
+		wallet_addrs:[query.wallet]
 	},function(redata){
 		var info = {};
 		redata.data.data.forEach(function(item){
