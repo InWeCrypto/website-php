@@ -12,10 +12,11 @@ $(function(){
 
 		//query.target = query.target||"draw2";
     $(".rp-bg").click(function(){
-        if($(".content").hasClass("dom-ct")){
-            window.open("{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}");
-        }else{
-            location.href = "{{ action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang]) }}";
-        }
+    	var urlTarget = $("#urlTarget").text().trim();
+      if($(".content").hasClass("dom-ct")){
+          window.open(urlTarget);
+      }else{
+          location.href = urlTarget;
+      }
     });
 });

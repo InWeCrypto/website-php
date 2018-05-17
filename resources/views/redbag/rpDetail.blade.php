@@ -69,7 +69,8 @@
 			<img class="bg en" src="/assets/images/rpbg-02.png" />
 			<img class="icon" src="/assets/images/rp-icon.png" />
 		</div>-->
-		<img class="rp-icon" src="assets/images/rp-icon.gif" />
+		<img class="rp-icon" src="/assets/images/rp-icon.gif" />
 	</div>
+	<div id="urlTarget" style="display: none;">{{action('RedbagController@' . $target, ['id'=> $id,'redbag_addr'=> $redbag_addr, 'lang'=> $lang])}}</div>
 </body>
 </html>
