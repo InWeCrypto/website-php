@@ -5,6 +5,8 @@ $(function(){
 		$("title").text("红包");
 		$(".input-ct input").attr("placeholder","输入钱包地址，参与红包的领取");
 		$(".input-ct label").text("领取");
+		$(".input-ct label.get").text("领取");
+		$(".input-ct label.check").text("查看");
 		$(".li-1").text("打开InWeCrypto主页右上角“红包”按钮，");
 		$(".li-2").html("点击扫一扫即可快速领取红包，<a href=\'http://inwecrypto.com/zh/platform\' target=\'_blank\'>即刻下载APP</a>抢到的几率更大哟～ ");
 		$(".li-3").text("红包到账时间约为24-72H，请耐心等待");
@@ -13,6 +15,8 @@ $(function(){
 		$("title").text("Red Packet");
 		$(".input-ct input").attr("placeholder","Enter your wallet address to get Red Packet");
 		$(".input-ct label").text("Get");
+		$(".input-ct label.get").text("Get");
+		$(".input-ct label.check").text("Record");
 		$(".li-1").text("Open Red Packet through the right corner on the InWeCrypto Home page. ");
 		$(".li-2").html("Click scaning to quickly access Red Packet.<a href=\'http://inwecrypto.com/en/platform\' target=\'_blank\'>Download APP</a> ");
 		$(".li-3").text("The processing time is 24-72H, please be patient.");
