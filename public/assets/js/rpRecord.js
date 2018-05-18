@@ -27,11 +27,13 @@ $(function(){
 			
 			var codemap = {
 				zh:{
+					"4004": '钱包地址错误',
 					"6003": '慢了一步，红包已经被抢完了...',
 					"6002": "你已经成功领取了"+data.share_user+"的红包",
 					"4000": "你已经成功领取了"+data.share_user+"的红包",
 				},
 				en:{
+					"4004": 'wallet address Invalid ',
 					"6003": 'The red packet has been brought out',
 					"6002": "You have already opened the Packet "+data.share_user+"'s Red Packet",
 					"4000": "You have already opened the Packet "+data.share_user+"'s Red Packet",
@@ -43,7 +45,10 @@ $(function(){
 				$(".name").text(codemap[lang][query.status]);
 				$(".box-2").show();
 			}else if(query.status == "6003"){
-				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
+				$(".name").text(codemap[lang][query.status]);
+				$(".box-1").show();
+			}else if(query.status == "4004"){
+				$(".name").text(codemap[lang][query.status]);
 				$(".box-1").show();
 			}else{
 				$(".box-1").show();

@@ -2,7 +2,7 @@ $(function(){
 	var lang = getQuery(location.search).lang||"zh";
 	if(lang == "zh"){
 		$("title").text("红包");
-		$(".input-ct input").attr("placeholder","输入钱包地址，参与红包的领取");
+		$(".input-ct input").attr("placeholder","输入ETH钱包地址，参与红包的领取");
 		$(".input-ct label.get").text("领取");
 		$(".input-ct label.check").text("查看");
 		$(".li-1").text("打开InWeCrypto主页右上角“红包”按钮，");
@@ -11,7 +11,7 @@ $(function(){
 	}else{
 		$("body .content").attr("style","background: transparent url(/assets/images/rpbg-3-en.png) no-repeat center top / 100% 100%;");
 		$("title").text("Red Packet");
-		$(".input-ct input").attr("placeholder","Enter your wallet address to get Red Packet");
+		$(".input-ct input").attr("placeholder","Enter your ETH wallet address to get Red Packet");
 		$(".input-ct label.get").text("Get");
 		$(".input-ct label.check").text("Record");
 		$(".li-1").text("Open Red Packet through the right corner on the InWeCrypto Home page. ");
@@ -43,11 +43,12 @@ $(function(){
   	$(".promote-txt").text("");
   	var signStatus = localStorage.getItem("id-"+id) || "0";
   	var wallet = $(".input-ct input").val().trim();
-  	wallet = wallet.replace(/^0x/,"");
+  	/*wallet = wallet.replace(/^0x/,"");
   	if(wallet.length!=40){
   		return $(".promote-txt").text(walletPt);
   	}
-  	wallet = "0x" + wallet.toLowerCase();
+  	wallet = "0x" + wallet.toLowerCase();*/
+  	wallet = wallet.toLowerCase();
   	$(".input-ct .btn-mask").addClass("active");
   	$(".input-ct input").attr("disabled","disabled");
   	loading();

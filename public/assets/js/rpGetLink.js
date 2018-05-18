@@ -3,7 +3,7 @@ $(function(){
 	if(lang == "zh"){
 		$("body").attr("style","background: #f04237 url(/assets/images/rpbg-4-zh.jpg) no-repeat center top / 100% 100%;");
 		$("title").text("红包");
-		$(".input-ct input").attr("placeholder","输入钱包地址，参与红包的领取");
+		$(".input-ct input").attr("placeholder","输入ETH钱包地址，参与红包的领取");
 		$(".input-ct label").text("领取");
 		$(".input-ct label.get").text("领取");
 		$(".input-ct label.check").text("查看");
@@ -13,7 +13,7 @@ $(function(){
 		$(".p-text").text("扫描二维码打开红包获取"+getQuery(location.search).symbol);
 	}else{
 		$("title").text("Red Packet");
-		$(".input-ct input").attr("placeholder","Enter your wallet address to get Red Packet");
+		$(".input-ct input").attr("placeholder","Enter your ETH wallet address to get Red Packet");
 		$(".input-ct label").text("Get");
 		$(".input-ct label.get").text("Get");
 		$(".input-ct label.check").text("Record");
@@ -50,11 +50,12 @@ $(function(){
   	var wallet = $(".input-ct input").val().trim();
   	$(".promote-txt").text("");
   	
-  	wallet = wallet.replace(/^0x/,"");
+  	/*wallet = wallet.replace(/^0x/,"");
   	if(wallet.length!=40){
   		return $(".promote-txt").text(walletPt);
   	}
-  	wallet = "0x" + wallet.toLowerCase();
+  	wallet = "0x" + wallet.toLowerCase();*/
+  	wallet = wallet.toLowerCase();
   	$(".input-ct .btn-mask").addClass("active");
   	$(".input-ct input").attr("disabled","disabled");
     $.post(baseUrl+"redbag/draw/"+id+"/"+addr, { 
