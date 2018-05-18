@@ -79,7 +79,7 @@ body{
 	font-weight: 400;
 }
 .content .center-ct .box{
-	width: 120px;
+	width: 190px;
 }
 .content .center-ct #qrCodeOrigin{
 	height: 0;
@@ -95,6 +95,7 @@ body{
 	background: #ffffff;
 	padding: 4px;
 	box-sizing: border-box;
+	margin-left: 0;
 }
 
 

@@ -41,11 +41,9 @@ body{
 	width: auto;
 }
 .top-ct h3{
-	line-height: 30px;
+	line-height: 20px;
+	padding: 5px 0;
 	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	text-align: center;
 	color: #030303;
 	font-size: 16px;
@@ -54,19 +52,14 @@ body{
 .top-ct p{
 	line-height: 20px;
 	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	text-align: center;
 	color: #757575;
 	font-size: 14px;
 }
 .top-ct h2{
-	line-height: 35px;
+	line-height: 25px;
+	padding: 5px 0;
 	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	text-align: center;
 	color: #333333;
 	font-size: 25px;

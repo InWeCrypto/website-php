@@ -53,10 +53,15 @@
 		<div class="img-ct">
 			<img src="" />
 		</div>
-		<h3 class="name"></h3>
-		<p class="addr"></p>
-		<h2 class="num"></h2>
-		<h4 class="txt"></h4>
+		<div style="display: none;" class="box-1">
+			<h3 class="name"></h3>
+		</div>
+		<div style="display: none;" class="box-2">
+			<h3 class="name"></h3>
+			<p class="addr"></p>
+			<h2 class="num"></h2>
+			<h4 class="txt"></h4>
+		</div>
 	</div>
 	<div class="record-title">
 		<div class="lt">
