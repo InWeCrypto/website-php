@@ -15,23 +15,22 @@ $(function(){
 	
   
   $.get(baseUrl+"redbag/send_record/"+query.id,function(redata){
-  	console.log('111',redata)
 		var data = redata.data;
 		if(redata.code == 4000){
 			var dom = $(".template li");
 			var cont = $(".record-list");
 			var total = parseFloat(0);
 			
-			$(".record-title .lt span").text(data.draws.length+"/"+data.redbag_number);
+			$(".record-title .lt span:eq(1)").text(data.draws.length+"/"+data.redbag_number);
 			
 			data.draws.forEach(function(item){
 				var li = dom.clone(true);
-				if(item.draw_addr.toLowerCase() == query.wallet){
+				if(item.draw_addr.toLowerCase() == query.wallet){//筛选当前人的钱包地址
 					li.addClass("cur");
 				}
 				li.find(".lt p").text(item.draw_addr);
 				li.find(".lt span").text(getLocalTime(item.created_at));
-				if(/-/.test(item.value)){
+				if(/-/.test(item.value)){//判断是否开奖 是否显示金额
 					li.find(".rt").text("???"+data.gnt_category.name);
 				}else{
 					var num = parseInt(item.value,16)/Math.pow(10,data.gnt_category.decimals);
@@ -62,7 +61,6 @@ $(function(){
 			}
 		})
 		var data = info.redbag;
-		console.log('222',data)
 		if(redata.code == 4000){
 			if(typeof data.gnt_category == "object"){
 				$(".img-ct img").attr("src",data.gnt_category.icon);

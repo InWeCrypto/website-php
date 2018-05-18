@@ -90,16 +90,17 @@ body{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
+  line-height: 20px;
 }
 .record-title .lt{
 	padding-left: 13px;
 	background: transparent url(../images/redpk-icon01.png) no-repeat left center / 9px 9px;
 	color: #333333;
-	font-size: 14px;
+	font-size: 15px;
 }
 .record-title .rt{
 	color: #333333;
-	font-size: 14px;
+	font-size: 15px;
 }
 .record-title .rt em{
 	font-style: normal;

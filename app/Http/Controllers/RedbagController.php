@@ -24,6 +24,7 @@ class RedbagController extends BaseController
         $share_type = $res['share_type'];
         $share_attr = $res['share_attr'];
         $share_msg = $res['share_msg'];
+        $symbol = $res['redbag_symbol'];
 
         $share_type_class = '';
         switch($share_type){
@@ -47,7 +48,7 @@ class RedbagController extends BaseController
             $share_attr = 'http://' . $share_attr;
         }
 
-        return view('redbag.rpDetail', compact('share_type','share_attr', 'id', 'redbag_addr', 'share_type_class', 'share_msg', 'lang', 'target'));
+        return view('redbag.rpDetail', compact('share_type','share_attr', 'id', 'redbag_addr', 'share_type_class', 'share_msg', 'lang', 'target', 'symbol'));
     }
 
     // 红包领取界面
@@ -65,9 +66,9 @@ class RedbagController extends BaseController
         $redbag_id = $res['redbag_id'];
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
-        $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@show', compact('id','redbag_addr','share_user','lang','target')) . '&inwe';
-        return view('redbag.rpGetLink', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
+        $symbol = $res['redbag_symbol'];
+        $qr_text = action('RedbagController@show', compact('id','redbag_addr','share_user','lang','target','symbol')) . '&inwe';
+        return view('redbag.rpGetLink', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg', 'symbol'));
     }
 
     // inwe App 红包界面
@@ -85,9 +86,9 @@ class RedbagController extends BaseController
         $redbag_id = $res['redbag_id'];
         $share_user = $res['share_user'];
         $share_msg = $res['share_msg'];
-        $share_user = $res['share_user'];
-        $qr_text = action('RedbagController@show', compact('id','redbag_addr','share_user', 'lang','target')) . '&inwe';
-        return view('redbag.rpGet', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg'));
+        $symbol = $res['redbag_symbol'];
+        $qr_text = action('RedbagController@show', compact('id','redbag_addr','share_user', 'lang','target', 'symbol')) . '&inwe';
+        return view('redbag.rpGet', compact('redbag_id', 'redbag_addr', 'qr_text', 'share_user', 'share_msg', 'symbol'));
     }
 
     // 拆红包
