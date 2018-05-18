@@ -9,6 +9,7 @@ $(function(){
 		$(".li-2").html("点击扫一扫即可快速领取红包，<a href=\'http://inwecrypto.com/zh/platform\' target=\'_blank\'>即刻下载APP</a>抢到的几率更大哟～ ");
 		$(".li-3").text("红包到账时间约为24-72H，请耐心等待");
 	}else{
+		$("body .content").attr("style","background: transparent url(/assets/images/rpbg-3-en.png) no-repeat center top / 100% 100%;");
 		$("title").text("Red Packet");
 		$(".input-ct input").attr("placeholder","Enter your wallet address to get Red Packet");
 		$(".input-ct label.get").text("Get");
@@ -60,15 +61,16 @@ $(function(){
 			if(data.code == 4000){
 				$(".promote-txt").text((lang == "zh") ? "领取成功" : "Get Success!");
 				localStorage.setItem("id-"+id,"1");
-				setTimeout(function(){
-					location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
-				},3000);
 				$(".input-ct .get").removeClass("active");
   			$(".input-ct .check").addClass("active");
-			}else if(data.code == 6002){
-				location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+  			setTimeout(function(){
+  				location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang+"&status="+data.code;
+  			},3000);
 			}else{
 				$(".promote-txt").text(data.msg);
+				setTimeout(function(){
+					location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang+"&status="+data.code;
+				},3000);
 			}
 		});
   })

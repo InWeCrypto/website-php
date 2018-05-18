@@ -31,7 +31,7 @@ $(function(){
 				li.find(".lt p").text(item.draw_addr);
 				li.find(".lt span").text(getLocalTime(item.created_at));
 				if(/-/.test(item.value)){//判断是否开奖 是否显示金额
-					li.find(".rt").text("???"+data.gnt_category.name);
+					li.find(".rt").text("***"+data.gnt_category.name);
 				}else{
 					var num = parseInt(item.value,16)/Math.pow(10,data.gnt_category.decimals);
 					console.log(num);
@@ -44,7 +44,7 @@ $(function(){
 			if(total){
 				$(".record-title .rt em").text(parseFloat(total).toFixed(4)+data.gnt_category.name);
 			}else{
-				$(".record-title .rt em").text("???"+data.gnt_category.name);
+				$(".record-title .rt em").text("***"+data.gnt_category.name);
 			}
 			
 		}else{
@@ -65,16 +65,39 @@ $(function(){
 			if(typeof data.gnt_category == "object"){
 				$(".img-ct img").attr("src",data.gnt_category.icon);
 				if(/-/.test(info.value)){
-					$(".num").text("???"+data.gnt_category.name)
+					$(".num").text("***"+data.gnt_category.name)
 				}else{
 					$(".num").text(parseFloat(parseInt(info.value,16)/Math.pow(10,data.gnt_category.decimals)).toFixed(4)+data.gnt_category.name);
 				}
 			}
-			if(lang == "zh"){
-				$(".name").text("你已经成功领取了"+data.share_user+"的红包");
-			}else{
-				$(".name").text("You have already opened the Packet "+data.share_user+"'s Red Packet");
+			
+			
+			var codemap = {
+				zh:{
+					"6003": '慢了一步，红包已经被抢完了...',
+					"6002": "你已经成功领取了"+data.share_user+"的红包",
+					"4000": "你已经成功领取了"+data.share_user+"的红包",
+				},
+				en:{
+					"6003": 'The red packet has been brought out',
+					"6002": "You have already opened the Packet "+data.share_user+"'s Red Packet",
+					"4000": "You have already opened the Packet "+data.share_user+"'s Red Packet",
+				}
 			}
+			
+			
+			if(codemap[lang][query.status]){
+				$(".name").text(codemap[lang][query.status]);
+				$(".box-1").show();
+			}else if(query.status == "6003"){
+				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
+				$(".box-2").show();
+			}else{
+				$(".box-2").show();
+				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
+			}
+			
+			
 			$(".addr").text(data.redbag_addr);
 		}else{
 			
