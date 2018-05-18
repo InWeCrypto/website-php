@@ -41,7 +41,7 @@ $(function(){
 			}
 			
 			
-			if(codemap[lang][query.status]){
+			if(query.status == "6002" || query.status == "4000"){
 				$(".name").text(codemap[lang][query.status]);
 				$(".box-2").show();
 			}else if(query.status == "6003"){
