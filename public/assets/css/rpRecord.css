@@ -28,13 +28,13 @@ body{
 	width: 70px;
 	border-radius: 50%;
 	border: solid 1px #F2E6BC;
-	line-height: 70px;
 	text-align: center;
 	position: absolute;
 	left: 50%;
 	top: 75px;
 	margin-left: -35px;
 	background: #ffffff;
+	padding-top: 13px;
 }
 .top-ct .img-ct img{
 	height: 43px;
@@ -49,6 +49,7 @@ body{
 	text-align: center;
 	color: #030303;
 	font-size: 16px;
+	font-weight: 400;
 }
 .top-ct p{
 	line-height: 20px;
@@ -68,7 +69,7 @@ body{
 	white-space: nowrap;
 	text-align: center;
 	color: #333333;
-	font-size: 14px;
+	font-size: 25px;
 	font-weight: 600;
 }
 .top-ct h4{
@@ -80,6 +81,7 @@ body{
 	text-align: center;
 	color: #333333;
 	font-size: 14px;
+	font-weight: 400;
 }
 
 
@@ -88,16 +90,17 @@ body{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
+  line-height: 20px;
 }
 .record-title .lt{
 	padding-left: 13px;
 	background: transparent url(../images/redpk-icon01.png) no-repeat left center / 9px 9px;
 	color: #333333;
-	font-size: 14px;
+	font-size: 15px;
 }
 .record-title .rt{
 	color: #333333;
-	font-size: 14px;
+	font-size: 15px;
 }
 .record-title .rt em{
 	font-style: normal;

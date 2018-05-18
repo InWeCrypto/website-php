@@ -56,14 +56,14 @@
 		<h3 class="name"></h3>
 		<p class="addr"></p>
 		<h2 class="num"></h2>
-		<h4 class="txt">红包将在24H内开奖，请留意相关钱包关注</h4>
+		<h4 class="txt"></h4>
 	</div>
 	<div class="record-title">
 		<div class="lt">
-			领取数量<span></span>
+			<span class="txt-name"></span><span></span>
 		</div>
 		<div class="rt">
-			合计：<em></em>
+			<span class="txt-hj"></span><em></em>
 		</div>
 	</div>
 	<ul class="record-list">
