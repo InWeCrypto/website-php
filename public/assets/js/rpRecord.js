@@ -88,12 +88,12 @@ $(function(){
 			
 			if(codemap[lang][query.status]){
 				$(".name").text(codemap[lang][query.status]);
-				$(".box-1").show();
+				$(".box-2").show();
 			}else if(query.status == "6003"){
 				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
-				$(".box-2").show();
+				$(".box-1").show();
 			}else{
-				$(".box-2").show();
+				$(".box-1").show();
 				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
 			}
 			
