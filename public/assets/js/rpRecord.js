@@ -22,6 +22,35 @@ $(function(){
 			var total = parseFloat(0);
 			
 			$(".record-title .lt span:eq(1)").text(data.draws.length+"/"+data.redbag_number);
+			$(".img-ct img").attr("src",data.gnt_category.icon);
+			
+			
+			var codemap = {
+				zh:{
+					"6003": '慢了一步，红包已经被抢完了...',
+					"6002": "你已经成功领取了"+data.share_user+"的红包",
+					"4000": "你已经成功领取了"+data.share_user+"的红包",
+				},
+				en:{
+					"6003": 'The red packet has been brought out',
+					"6002": "You have already opened the Packet "+data.share_user+"'s Red Packet",
+					"4000": "You have already opened the Packet "+data.share_user+"'s Red Packet",
+				}
+			}
+			
+			
+			if(codemap[lang][query.status]){
+				$(".name").text(codemap[lang][query.status]);
+				$(".box-2").show();
+			}else if(query.status == "6003"){
+				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
+				$(".box-1").show();
+			}else{
+				$(".box-1").show();
+				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
+			}
+			
+			
 			
 			data.draws.forEach(function(item){
 				var li = dom.clone(true);
@@ -51,57 +80,32 @@ $(function(){
 			
 		}
 	});
-	$.post(baseUrl+"redbag/draw_record",{
-		wallet_addrs:[query.wallet]
-	},function(redata){
-		var info = {};
-		redata.data.data.forEach(function(item){
-			if(item.redbag.id == query.id){
-				info = item;
+	
+	
+	if(query.status != "4006"){
+		$.post(baseUrl+"redbag/draw_record",{
+			wallet_addrs:[query.wallet]
+		},function(redata){
+			var info = {};
+			redata.data.data.forEach(function(item){
+				if(item.redbag.id == query.id){
+					info = item;
+				}
+			})
+			var data = info.redbag;
+			if(redata.code == 4000){
+				if(typeof data.gnt_category == "object"){
+					if(/-/.test(info.value)){
+						$(".num").text("***"+data.gnt_category.name)
+					}else{
+						$(".num").text(parseFloat(parseInt(info.value,16)/Math.pow(10,data.gnt_category.decimals)).toFixed(4)+data.gnt_category.name);
+					}
+				}
+				$(".addr").text(data.redbag_addr);
+			}else{
+			
 			}
 		})
-		var data = info.redbag;
-		if(redata.code == 4000){
-			if(typeof data.gnt_category == "object"){
-				$(".img-ct img").attr("src",data.gnt_category.icon);
-				if(/-/.test(info.value)){
-					$(".num").text("***"+data.gnt_category.name)
-				}else{
-					$(".num").text(parseFloat(parseInt(info.value,16)/Math.pow(10,data.gnt_category.decimals)).toFixed(4)+data.gnt_category.name);
-				}
-			}
-			
-			
-			var codemap = {
-				zh:{
-					"6003": '慢了一步，红包已经被抢完了...',
-					"6002": "你已经成功领取了"+data.share_user+"的红包",
-					"4000": "你已经成功领取了"+data.share_user+"的红包",
-				},
-				en:{
-					"6003": 'The red packet has been brought out',
-					"6002": "You have already opened the Packet "+data.share_user+"'s Red Packet",
-					"4000": "You have already opened the Packet "+data.share_user+"'s Red Packet",
-				}
-			}
-			
-			
-			if(codemap[lang][query.status]){
-				$(".name").text(codemap[lang][query.status]);
-				$(".box-2").show();
-			}else if(query.status == "6003"){
-				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
-				$(".box-1").show();
-			}else{
-				$(".box-1").show();
-				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
-			}
-			
-			
-			$(".addr").text(data.redbag_addr);
-		}else{
-			
-		}
-	})
+	}
   
 })
