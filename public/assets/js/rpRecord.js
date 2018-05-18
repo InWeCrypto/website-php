@@ -87,7 +87,7 @@ $(function(){
 	});
 	
 	
-	if(query.status != "4006"){
+	if(query.status != "4006" && query.status != "4004"){
 		$.post(baseUrl+"redbag/draw_record",{
 			wallet_addrs:[query.wallet]
 		},function(redata){
