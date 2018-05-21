@@ -2,7 +2,7 @@ $(function(){
 	var lang = getQuery(location.search).lang||"zh";
 	if(lang == "zh"){
 		$("title").text("红包");
-		$(".input-ct input").attr("placeholder","输入ETH钱包地址，参与红包的领取");
+		$(".input-ct input").attr("placeholder","输入ETH地址抢红包");
 		$(".input-ct label.get").text("领取");
 		$(".input-ct label.check").text("查看");
 		$(".li-1").text("打开InWeCrypto主页右上角“红包”按钮，");
