@@ -3,7 +3,7 @@ $(function(){
 	if(lang == "zh"){
 		$("body").attr("style","background: #f04237 url(/assets/images/rpbg-4-zh.jpg) no-repeat center top / 100% 100%;");
 		$("title").text("红包");
-		$(".input-ct input").attr("placeholder","输入ETH钱包地址，参与红包的领取");
+		$(".input-ct input").attr("placeholder","输入ETH地址抢红包");
 		$(".input-ct label").text("领取");
 		$(".input-ct label.get").text("领取");
 		$(".input-ct label.check").text("查看");
