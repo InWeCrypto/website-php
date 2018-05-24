@@ -35,7 +35,7 @@ $(function(){
 	  		return $(".promote-txt").text(walletPt);
 	  	}
 	  	wallet = "0x" + wallet.toLowerCase();
-	  	location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang;
+	  	location.href = "/redbag/rpRecord?id="+id+"&addr="+addr+"&wallet="+wallet+"&lang="+lang+"&status=6002";
   	});
   }
   

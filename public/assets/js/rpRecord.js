@@ -52,7 +52,7 @@ $(function(){
 				$(".box-1").show();
 			}else{
 				$(".box-1").show();
-				$(".name").text(lang == "zh"?"领取失败":"Get Faile");
+				$(".name").text(lang == "zh"?"领取失败":"Get Failure");
 			}
 			
 			
