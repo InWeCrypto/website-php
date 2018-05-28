@@ -125,7 +125,7 @@
                 </div>
             </div>
             <div class="article">
-                @if ($type = 6)
+                @if ($type == 6)
                     <span></span>
                 @else
                     {!! $content !!}
@@ -192,11 +192,11 @@
             // });
             $(".headerBox .navBox").addClass("active");
             
-            if ({{$type}} = 6){
+            if ({{$type}} == 6){
             	$(".article").append('<iframe src="{{ $url }}"  height="700"></iframe>');
             }
         }else{
-        	if ({{$type}} = 6){
+        	if ({{$type}} == 6){
         		$(".article").append('<a href="{{ $url }}"  height="700">查看pdf</a>');
         	}
         }
