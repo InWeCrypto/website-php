@@ -192,11 +192,13 @@
             // });
             $(".headerBox .navBox").addClass("active");
             
-            
-            $(".active").html('<iframe src="{{ $url }}"  height="700"></iframe>');
-            
+            if ({{$type}} = 6){
+            	$(".article").append('<iframe src="{{ $url }}"  height="700"></iframe>');
+            }
         }else{
-        	 $(".active").html('<a href="{{ $url }}"  height="700">查看pdf</a>');
+        	if ({{$type}} = 6){
+        		$(".article").append('<a href="{{ $url }}"  height="700">查看pdf</a>');
+        	}
         }
 
 				
