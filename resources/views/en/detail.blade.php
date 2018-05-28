@@ -126,7 +126,7 @@
             </div>
             <div class="article">
                 @if ($type = 6)
-                    <iframe src="{{ $url }}" width="100%" height="700"></iframe>
+                    <span></span>
                 @else
                     {!! $content !!}
                 @endif
@@ -191,9 +191,15 @@
             //     headInput.val($(this).val());
             // });
             $(".headerBox .navBox").addClass("active");
+            
+            
+            $(".active").html('<iframe src="{{ $url }}"  height="700"></iframe>');
+            
+        }else{
+        	 $(".active").html('<a href="{{ $url }}"  height="700">查看pdf</a>');
         }
 
-
+				
 
         function isWeiXin() {
             var ua = window.navigator.userAgent.toLowerCase();

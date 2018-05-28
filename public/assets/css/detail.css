@@ -121,6 +121,7 @@ body {
 }
 .mobile .content .page .article iframe{
 	width: 100%!important;
+	border: none;
 }
 .content .page .article p{
     margin: .18rem 0;
