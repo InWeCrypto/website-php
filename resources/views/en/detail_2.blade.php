@@ -68,7 +68,11 @@
                 </div>
             </div>
             <div class="article">
+                @if ($type = 6)
+                    <iframe src="{{ $url }}" width="100%" height="700"></iframe>
+                @else
                 {!! $content !!}
+                @endif
             </div>
         </div>
         <footer>
