@@ -197,7 +197,7 @@
             }
         }else{
         	if ({{$type}} == 6){
-        		$(".article").append('<a href="{{ $url }}"  height="700">查看pdf</a>');
+        		$(".article").append('<a href="{{ $url }}"  height="700">download pdf</a>');
         	}
         }
 

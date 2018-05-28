@@ -115,13 +115,17 @@ body {
     line-height: .36rem;
     padding: 10px 0;
 }
+.content .page .article iframe{
+	width: 100%!important;
+	border: none;
+}
+.mobile .content .page .article a{
+	color: #0051bc;
+  text-decoration: underline;
+}
 .mobile .content .page .article{
     font-size: .26rem;
     line-height: .52rem;
-}
-.mobile .content .page .article iframe{
-	width: 100%!important;
-	border: none;
 }
 .content .page .article p{
     margin: .18rem 0;

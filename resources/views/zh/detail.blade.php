@@ -125,8 +125,8 @@
                 </div>
             </div>
             <div class="article">
-                @if ($type = 6)
-                    <iframe src="{{ $url }}" width="100%" height="700"></iframe>
+                @if ($type == 6)
+                    <span></span>
                 @else
                     {!! $content !!}
                 @endif
@@ -193,6 +193,14 @@
             // });
             var offsetTop = parseInt($('.page').offset().top) + 100;
             $(".headerBox .navBox").addClass("active");
+            
+            if ({{$type}} == 6){
+            	$(".article").append('<iframe src="{{ $url }}"  height="700"></iframe>');
+            }
+        }else{
+        	if ({{$type}} == 6){
+        		$(".article").append('<a href="{{ $url }}"  height="700">下载pdf</a>');
+        	}
         }
 
 
