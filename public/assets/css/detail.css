@@ -119,6 +119,9 @@ body {
     font-size: .26rem;
     line-height: .52rem;
 }
+.mobile .content .page .article iframe{
+	width: 100%!important;
+}
 .content .page .article p{
     margin: .18rem 0;
     font-size: .16rem;
